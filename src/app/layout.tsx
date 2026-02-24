@@ -42,7 +42,7 @@ export default function RootLayout({
         </nav>
         {children}
         <footer className="p-12 text-center text-[10px] text-muted uppercase tracking-widest border-t border-white/5">
-          © 2026 VMG Systems | Chicago, IL | Designed for Momentum
+          © 2026 VMG Systems
         </footer>
       </body>
     </html>
