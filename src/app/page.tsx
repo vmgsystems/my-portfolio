@@ -46,7 +46,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen p-8 md:p-12 lg:p-24 max-w-7xl mx-auto">
+    <main className="min-h-screen p-8 pt-32 md:p-12 md:pt-36 lg:p-24 lg:pt-40 max-w-7xl mx-auto">
       <motion.div 
         variants={container}
         initial="hidden"

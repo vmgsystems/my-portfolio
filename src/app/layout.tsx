@@ -28,11 +28,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-white selection:text-black`}
       >
-        <nav className="fixed top-0 left-0 right-0 z-50 p-6 flex justify-between items-center backdrop-blur-md bg-black/20 border-b border-white/5">
-          <div className="font-bold tracking-tighter text-xl">
+        <nav className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 flex flex-col md:flex-row justify-between items-center backdrop-blur-md bg-black/20 border-b border-white/5 gap-4 md:gap-0">
+          <div className="font-bold tracking-tighter text-xl shrink-0">
             VMG <span className="text-muted font-normal">Systems</span>
           </div>
-          <div className="flex gap-8 text-[10px] uppercase tracking-[0.3em] font-bold text-muted">
+          <div className="flex gap-6 md:gap-8 text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-muted overflow-x-auto whitespace-nowrap w-full md:w-auto pb-2 md:pb-0 no-scrollbar justify-start md:justify-end">
             <Link href="/" className="hover:text-white transition-colors">Architecture</Link>
             <Link href="/consulting" className="hover:text-white transition-colors">Consulting</Link>
             <Link href="/timeline" className="hover:text-white transition-colors">Timeline</Link>
