@@ -84,7 +84,7 @@ export default function Consulting() {
             <span className="text-muted text-3xl md:text-4xl">Technical Consulting & Architecture</span>
           </h1>
           <p className="text-muted text-lg leading-relaxed max-w-2xl">
-            At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect "Clean Slate" solutions designed for scale, speed, and absolute stability.
+            At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect &quot;Clean Slate&quot; solutions designed for scale, speed, and absolute stability.
           </p>
         </motion.div>
 

@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { 
   ArrowUpRight, 
-  Cloud, 
   Cpu, 
   Zap, 
   Anchor, 
@@ -106,7 +105,7 @@ export default function Home() {
           <div>
             <h3 className="text-xl font-bold mb-2">VMG Systems</h3>
             <p className="text-muted text-sm leading-relaxed">
-              Technical consulting specializing in "Clean Slate" architecture and resilient infrastructure.
+              Technical consulting specializing in &quot;Clean Slate&quot; architecture and resilient infrastructure.
             </p>
           </div>
           <div className="mt-4 flex items-center text-xs font-bold uppercase tracking-widest gap-1 text-muted group-hover:text-white transition-colors">
@@ -142,7 +141,7 @@ export default function Home() {
             <h3 className="text-lg font-bold uppercase tracking-tighter">Milestones</h3>
             <div className="flex gap-4">
                <div className="text-right">
-                  <div className="text-[10px] text-muted uppercase font-bold tracking-widest">McDonald's</div>
+                  <div className="text-[10px] text-muted uppercase font-bold tracking-widest">McDonald&apos;s</div>
                   <div className="text-xs">AI Architecture</div>
                </div>
                <div className="text-right">
@@ -187,7 +186,7 @@ export default function Home() {
           <div>
             <h3 className="text-2xl font-black uppercase italic leading-none mb-2">Clean Slate</h3>
             <p className="text-sm leading-snug font-medium">
-              "We don't fight complexity; we design architectures that thrive on it."
+              &quot;We don&apos;t fight complexity; we design architectures that thrive on it.&quot;
             </p>
           </div>
           <div className="flex justify-between items-end mt-4">

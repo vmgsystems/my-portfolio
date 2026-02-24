@@ -72,7 +72,7 @@ export default function Lab() {
             <span className="text-muted">Mindset.</span>
           </h1>
           <p className="text-muted text-lg leading-relaxed max-w-2xl">
-            An engineering mindset isn't something you can just clock out of. It is a fundamental way of interacting with the world. Everything is a system; everything can be optimized.
+            An engineering mindset isn&apos;t something you can just clock out of. It is a fundamental way of interacting with the world. Everything is a system; everything can be optimized.
           </p>
         </motion.div>
 
