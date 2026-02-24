@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Send, ArrowLeft } from "lucide-react";
+import { Send, ArrowLeft, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 const container = {
   hidden: { opacity: 0 },
@@ -18,6 +19,39 @@ const item = {
 };
 
 export default function Contact() {
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("submitting");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    // Web3Forms Access Key - We will use a public testing key first, but you will need your own!
+    formData.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY"); 
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+        console.error("Form submission failed:", data.message);
+      }
+    } catch (error) {
+      setStatus("error");
+      console.error("Form submission error:", error);
+    }
+  };
+
   return (
     <main className="min-h-screen p-8 md:p-12 lg:p-24 max-w-4xl mx-auto pt-32">
       <motion.div 
@@ -38,44 +72,83 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <motion.div variants={item} className="glass-card">
-          <form className="space-y-6 flex flex-col" onSubmit={(e) => e.preventDefault()}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-widest text-muted">Name</label>
-                <input type="text" className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="John Doe" />
+        <motion.div variants={item} className="glass-card relative overflow-hidden">
+          {status === "success" ? (
+            <div className="flex flex-col items-center justify-center py-16 text-center">
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-6">
+                <CheckCircle2 size={32} className="text-white" />
               </div>
-              <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-widest text-muted">Company / Organization</label>
-                <input type="text" className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="Acme Corp" />
+              <h2 className="text-2xl font-bold mb-2">Transmission Received.</h2>
+              <p className="text-muted max-w-md">
+                Your architectural review request has been sent successfully. I will review the details and respond shortly.
+              </p>
+              <button 
+                onClick={() => setStatus("idle")}
+                className="mt-8 text-xs font-bold uppercase tracking-widest text-muted hover:text-white transition-colors underline underline-offset-4"
+              >
+                Send Another Request
+              </button>
+            </div>
+          ) : (
+            <form className="space-y-6 flex flex-col" onSubmit={handleSubmit}>
+              <input type="hidden" name="subject" value="New Architectural Review Request from VMG Systems" />
+              <input type="hidden" name="from_name" value="VMG Systems Contact Form" />
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label className="text-xs font-bold uppercase tracking-widest text-muted">Name</label>
+                  <input type="text" name="name" required className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="John Doe" />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-xs font-bold uppercase tracking-widest text-muted">Company / Organization</label>
+                  <input type="text" name="company" className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="Acme Corp" />
+                </div>
               </div>
-            </div>
 
-            <div className="space-y-2">
-              <label className="text-xs font-bold uppercase tracking-widest text-muted">Email Address</label>
-              <input type="email" className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="john@example.com" />
-            </div>
+              <div className="space-y-2">
+                <label className="text-xs font-bold uppercase tracking-widest text-muted">Email Address</label>
+                <input type="email" name="email" required className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="john@example.com" />
+              </div>
 
-            <div className="space-y-2">
-              <label className="text-xs font-bold uppercase tracking-widest text-muted">Primary Challenge</label>
-              <select className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors appearance-none cursor-pointer">
-                <option value="" disabled selected>Select a bottleneck...</option>
-                <option value="gcp">GCP Migration & Infrastructure</option>
-                <option value="legacy">Legacy App Rebuild</option>
-                <option value="ai">AI Pipeline Integration (RAG/LLM)</option>
-                <option value="leadership">Interim Tech Leadership / Canary Launch</option>
-              </select>
-            </div>
+              <div className="space-y-2">
+                <label className="text-xs font-bold uppercase tracking-widest text-muted">Primary Challenge</label>
+                <select name="challenge" required defaultValue="" className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors appearance-none cursor-pointer">
+                  <option value="" disabled>Select a bottleneck...</option>
+                  <option value="gcp">GCP Migration & Infrastructure</option>
+                  <option value="legacy">Legacy App Rebuild</option>
+                  <option value="ai">AI Pipeline Integration (RAG/LLM)</option>
+                  <option value="leadership">Interim Tech Leadership / Canary Launch</option>
+                </select>
+              </div>
 
-            <div className="space-y-2">
-              <label className="text-xs font-bold uppercase tracking-widest text-muted">Project Details & Current Stack</label>
-              <textarea rows={5} className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors resize-none" placeholder="We are currently running on..." />
-            </div>
+              <div className="space-y-2">
+                <label className="text-xs font-bold uppercase tracking-widest text-muted">Project Details & Current Stack</label>
+                <textarea rows={5} name="details" required className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors resize-none" placeholder="We are currently running on..." />
+              </div>
 
-            <button className="flex items-center justify-center gap-2 bg-white text-black font-bold px-8 py-4 rounded-lg hover:bg-white/90 transition-all w-full md:w-auto self-end mt-4 group">
-              Request Architectural Review <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-            </button>
-          </form>
+              {status === "error" && (
+                <div className="flex items-center gap-2 text-red-400 text-sm bg-red-400/10 p-4 rounded-lg border border-red-400/20">
+                  <AlertCircle size={16} />
+                  <span>There was an error sending your request. Please check your Access Key in the code.</span>
+                </div>
+              )}
+
+              <button 
+                disabled={status === "submitting"}
+                className="flex items-center justify-center gap-2 bg-white text-black font-bold px-8 py-4 rounded-lg hover:bg-white/90 transition-all w-full md:w-auto self-end mt-4 group disabled:opacity-70 disabled:cursor-not-allowed"
+              >
+                {status === "submitting" ? (
+                  <>
+                    <Loader2 size={18} className="animate-spin" /> Transmitting...
+                  </>
+                ) : (
+                  <>
+                    Request Architectural Review <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </>
+                )}
+              </button>
+            </form>
+          )}
         </motion.div>
       </motion.div>
     </main>
