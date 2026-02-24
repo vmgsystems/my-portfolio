@@ -28,8 +28,8 @@ export default function Contact() {
     const form = e.currentTarget;
     const formData = new FormData(form);
     
-    // Web3Forms Access Key - We will use a public testing key first, but you will need your own!
-    formData.append("access_key", "YOUR_WEB3FORMS_ACCESS_KEY"); 
+    // Web3Forms Access Key
+    formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || ""); 
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
