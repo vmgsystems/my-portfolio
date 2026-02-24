@@ -128,7 +128,7 @@ export default function Home() {
             </p>
           </div>
           <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-white/5 to-transparent pointer-events-none" />
-          <div className="font-mono text-[80px] font-black opacity-[0.03] absolute -right-4 -bottom-8 select-none pointer-events-none">
+          <div className="font-mono text-[80px] leading-none font-black opacity-[0.05] absolute right-0 bottom-0 select-none pointer-events-none translate-y-4 translate-x-4">
             J/99
           </div>
         </motion.div>
@@ -182,7 +182,7 @@ export default function Home() {
         {/* Manifesto Preview */}
         <motion.div 
           variants={item}
-          className="glass-card md:col-span-2 bg-white text-black flex flex-col justify-between hover:scale-[1.01] transition-transform"
+          className="glass-card md:col-span-2 !bg-white !text-black flex flex-col justify-between hover:scale-[1.01] transition-transform"
         >
           <div>
             <h3 className="text-2xl font-black uppercase italic leading-none mb-2">Clean Slate</h3>
