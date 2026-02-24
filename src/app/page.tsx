@@ -128,7 +128,7 @@ export default function Home() {
             </p>
           </div>
           <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-white/5 to-transparent pointer-events-none" />
-          <div className="font-mono text-[80px] leading-none font-black opacity-[0.05] absolute right-0 bottom-0 select-none pointer-events-none translate-y-4 translate-x-4">
+          <div className="font-mono text-[80px] leading-none font-black opacity-10 absolute right-4 bottom-4 select-none pointer-events-none">
             J/99
           </div>
         </motion.div>
