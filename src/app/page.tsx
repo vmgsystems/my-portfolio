@@ -182,18 +182,18 @@ export default function Home() {
         {/* Manifesto Preview */}
         <motion.div 
           variants={item}
-          className="glass-card md:col-span-2 !bg-white !text-black !border-transparent flex flex-col justify-between hover:scale-[1.01] transition-transform relative group/manifesto"
+          className="glass-card md:col-span-2 flex flex-col justify-between hover:scale-[1.01] transition-all relative group/manifesto hover:border-white/40"
         >
           <Link href="/consulting" className="absolute inset-0 z-10" aria-label="Read Manifesto" />
           <div className="relative z-0 pointer-events-none">
-            <h3 className="text-2xl font-black uppercase italic leading-none mb-2">Clean Slate</h3>
-            <p className="text-sm leading-snug font-medium">
+            <h3 className="text-2xl font-black uppercase italic leading-none mb-2 tracking-tighter">Clean Slate</h3>
+            <p className="text-sm leading-snug font-medium text-muted group-hover/manifesto:text-white transition-colors">
               &quot;We don&apos;t fight complexity; we design architectures that thrive on it.&quot;
             </p>
           </div>
           <div className="flex justify-between items-end mt-4 relative z-0 pointer-events-none">
-            <div className="text-[10px] font-bold uppercase tracking-tighter underline underline-offset-4 group-hover/manifesto:opacity-70 transition-opacity">Read Manifesto</div>
-            <Cpu size={24} strokeWidth={3} />
+            <div className="text-[10px] font-bold uppercase tracking-tighter underline underline-offset-4 opacity-50 group-hover/manifesto:opacity-100 transition-opacity">Read Manifesto</div>
+            <Cpu size={24} strokeWidth={2.5} className="text-muted group-hover/manifesto:text-white transition-colors" />
           </div>
         </motion.div>
 
