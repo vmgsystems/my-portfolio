@@ -30,10 +30,10 @@ const milestones = [
   },
   {
     year: "2022 – 2026",
-    title: "Senior Solutions Architect / IAM Specialist",
-    company: "Ping Identity, Okta, ForgeRock",
-    description: "Architected enterprise Identity and Access Management (IAM) solutions. Led complex integrations, zero-trust security model implementations, and scalable identity infrastructure for global clients.",
-    icon: <Briefcase className="text-white" />
+    title: "Deep Architecture Specialization & R&D",
+    company: "Stealth Mode / VMG Systems",
+    description: "Dedicated period of high-intensity technical research and architectural refinement. Specialized in zero-trust identity models and distributed systems while architecting the foundational 'Clean Slate' methodology used today.",
+    icon: <Lightbulb className="text-white" />
   },
   {
     year: "2018 – 2022",
