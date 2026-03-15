@@ -75,8 +75,8 @@ export default function Home() {
               <Zap size={14} className="text-white" />
               <span>Lead Architect & Head of Tech</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter mb-4 text-white leading-[1.1]">
-              The Architecture of <br />
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4 text-white leading-tight md:leading-tight">
+              Architecture of <br />
               <span className="text-white">Momentum.</span>
             </h1>
             <p className="text-white/70 text-base md:text-lg leading-relaxed mb-8 max-w-xl font-medium">
@@ -127,18 +127,29 @@ export default function Home() {
         {/* Sailing / Lab Card */}
         <motion.div 
           variants={item}
-          className="glass-card md:col-span-2 flex items-center justify-between group cursor-default relative overflow-hidden"
+          className="glass-card md:col-span-2 group cursor-default relative overflow-hidden !p-0 border border-[#1a1a1a] flex flex-col justify-center"
         >
-          <div className="relative z-10">
-            <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
-              <Anchor size={20} /> Rambler
-            </h3>
-            <p className="text-muted text-sm max-w-xs">
-              Active crew on a J/99. Racing where teamwork and real-time environmental adjustments are critical.
-            </p>
+          <div className="absolute inset-0 z-0">
+            <Image 
+              src="/sailing.png" 
+              alt="Sailing Fluid Dynamics" 
+              fill
+              className="object-cover opacity-30 group-hover:scale-105 group-hover:opacity-40 transition-all duration-1000 ease-out grayscale"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
           </div>
-          <div className="font-mono text-[80px] leading-none font-black opacity-5 absolute right-4 bottom-4 select-none pointer-events-none">
-            J/99
+          <div className="relative z-10 p-8 flex items-center justify-between w-full h-full">
+            <div className="relative z-10">
+              <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
+                <Anchor size={20} /> Rambler
+              </h3>
+              <p className="text-white/70 text-sm max-w-xs">
+                Active crew on a J/99. Racing where teamwork and real-time environmental adjustments are critical.
+              </p>
+            </div>
+            <div className="font-mono text-[80px] leading-none font-black opacity-10 select-none pointer-events-none relative z-10">
+              J/99
+            </div>
           </div>
         </motion.div>
 
@@ -191,18 +202,29 @@ export default function Home() {
         {/* Manifesto Preview */}
         <motion.div 
           variants={item}
-          className="glass-card md:col-span-2 flex flex-col justify-between hover:scale-[1.01] transition-all relative group/manifesto hover:border-white/40"
+          className="glass-card md:col-span-2 hover:scale-[1.01] transition-all relative group/manifesto hover:border-[#333] !p-0 overflow-hidden border border-[#1a1a1a] flex flex-col justify-between"
         >
-          <Link href="/consulting" className="absolute inset-0 z-10" aria-label="Read Manifesto" />
-          <div className="relative z-0 pointer-events-none">
-            <h3 className="text-2xl font-black uppercase italic leading-none mb-2 tracking-tighter">Clean Slate</h3>
-            <p className="text-sm leading-snug font-medium text-muted group-hover/manifesto:text-white transition-colors">
-              &quot;We don&apos;t fight complexity; we design architectures that thrive on it.&quot;
-            </p>
+          <div className="absolute inset-0 z-0">
+            <Image 
+              src="/manifesto.png" 
+              alt="Clean Slate Architecture Blueprint" 
+              fill
+              className="object-cover opacity-20 group-hover:scale-105 group-hover:opacity-40 transition-all duration-1000 ease-out grayscale"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40" />
           </div>
-          <div className="flex justify-between items-end mt-4 relative z-0 pointer-events-none">
-            <div className="text-[10px] font-bold uppercase tracking-tighter underline underline-offset-4 opacity-50 group-hover/manifesto:opacity-100 transition-opacity">Read Manifesto</div>
-            <Cpu size={24} strokeWidth={2.5} className="text-muted group-hover/manifesto:text-white transition-colors" />
+          <Link href="/consulting" className="absolute inset-0 z-20" aria-label="Read Manifesto" />
+          <div className="relative z-10 p-8 flex flex-col justify-between h-full pointer-events-none">
+            <div>
+              <h3 className="text-2xl font-black uppercase italic leading-none mb-2 tracking-tighter">Clean Slate</h3>
+              <p className="text-sm leading-snug font-medium text-white/60 group-hover/manifesto:text-white transition-colors max-w-sm">
+                &quot;We don&apos;t fight complexity; we design architectures that thrive on it.&quot;
+              </p>
+            </div>
+            <div className="flex justify-between items-end mt-6 relative z-0 pointer-events-none">
+              <div className="text-[10px] font-bold uppercase tracking-tighter underline underline-offset-4 opacity-50 group-hover/manifesto:opacity-100 transition-opacity text-white">Read Manifesto</div>
+              <Cpu size={24} strokeWidth={2.5} className="text-white/40 group-hover/manifesto:text-white transition-colors" />
+            </div>
           </div>
         </motion.div>
 
