@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Send, ArrowLeft, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -59,17 +60,29 @@ export default function Contact() {
         initial="hidden"
         animate="show"
       >
-        <motion.div variants={item} className="mb-12">
-          <Link href="/" className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors text-sm font-bold tracking-widest uppercase mb-8">
-            <ArrowLeft size={16} /> Back to Architecture
-          </Link>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-            Let’s Architect Your <br/>
-            <span className="text-muted">Next Phase.</span>
-          </h1>
-          <p className="text-muted text-lg leading-relaxed max-w-2xl">
-            Whether you are navigating a complex platform migration, dealing with technical debt, or integrating AI pipelines, the right architecture is the difference between scaling and stalling. Tell me about the bottleneck you are currently facing.
-          </p>
+        <motion.div variants={item} className="mb-12 relative overflow-hidden glass-card !p-0 border border-[#1a1a1a]">
+          <div className="absolute inset-0 z-0">
+            <Image 
+              src="/contact-bg.png" 
+              alt="Communication Network" 
+              fill
+              className="object-cover opacity-30 grayscale"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40" />
+          </div>
+          <div className="relative z-10 p-8 md:p-12">
+            <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm font-bold tracking-widest uppercase mb-8">
+              <ArrowLeft size={16} /> Back to Architecture
+            </Link>
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
+              Let’s Architect Your <br/>
+              <span className="text-white/60">Next Phase.</span>
+            </h1>
+            <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
+              Whether you are navigating a complex platform migration, dealing with technical debt, or integrating AI pipelines, the right architecture is the difference between scaling and stalling. Tell me about the bottleneck you are currently facing.
+            </p>
+          </div>
         </motion.div>
 
         <motion.div variants={item} className="glass-card relative overflow-hidden">

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { 
   Cloud, 
   Cpu, 
@@ -75,17 +76,29 @@ export default function Consulting() {
         initial="hidden"
         animate="show"
       >
-        <motion.div variants={item} className="mb-16">
-          <Link href="/" className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors text-sm font-bold tracking-widest uppercase mb-8">
-            <ArrowLeft size={16} /> Back to Architecture
-          </Link>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-            VMG Systems | <br/>
-            <span className="text-muted text-3xl md:text-4xl">Technical Consulting & Architecture</span>
-          </h1>
-          <p className="text-muted text-lg leading-relaxed max-w-2xl">
-            At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect &quot;Clean Slate&quot; solutions designed for scale, speed, and absolute stability.
-          </p>
+        <motion.div variants={item} className="mb-16 relative overflow-hidden glass-card !p-0 border border-[#1a1a1a]">
+          <div className="absolute inset-0 z-0">
+            <Image 
+              src="/consulting-bg.png" 
+              alt="Cloud Infrastructure" 
+              fill
+              className="object-cover opacity-30 grayscale"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40" />
+          </div>
+          <div className="relative z-10 p-8 md:p-12">
+            <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm font-bold tracking-widest uppercase mb-8">
+              <ArrowLeft size={16} /> Back to Architecture
+            </Link>
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
+              VMG Systems | <br/>
+              <span className="text-white/60 text-3xl md:text-4xl">Technical Consulting & Architecture</span>
+            </h1>
+            <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
+              At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect &quot;Clean Slate&quot; solutions designed for scale, speed, and absolute stability.
+            </p>
+          </div>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
