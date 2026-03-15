@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-white selection:text-black`}
       >
-        <nav className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 flex flex-col md:flex-row justify-between items-center backdrop-blur-md bg-black/20 border-b border-white/5 gap-4 md:gap-0">
+        <nav className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 flex flex-col md:flex-row justify-between items-center bg-black border-b border-[#1a1a1a] gap-4 md:gap-0">
           <div className="font-bold tracking-tighter text-xl shrink-0">
             VMG <span className="text-muted font-normal">Systems</span>
           </div>
@@ -41,7 +41,7 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
-        <footer className="p-12 text-center text-[10px] text-muted uppercase tracking-widest border-t border-white/5">
+        <footer className="p-8 text-center text-[10px] text-muted uppercase tracking-widest border-t border-[#1a1a1a] mt-24">
           © 2026 VMG Systems
         </footer>
       </body>

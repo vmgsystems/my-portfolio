@@ -75,7 +75,7 @@ export default function Contact() {
         <motion.div variants={item} className="glass-card relative overflow-hidden">
           {status === "success" ? (
             <div className="flex flex-col items-center justify-center py-16 text-center">
-              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mb-6">
+              <div className="w-16 h-16 border border-[#1a1a1a] flex items-center justify-center mb-6">
                 <CheckCircle2 size={32} className="text-white" />
               </div>
               <h2 className="text-2xl font-bold mb-2">Transmission Received.</h2>
@@ -97,22 +97,22 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-xs font-bold uppercase tracking-widest text-muted">Name</label>
-                  <input type="text" name="name" required className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="John Doe" />
+                  <input type="text" name="name" required className="w-full bg-black border border-[#1a1a1a] p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="John Doe" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-bold uppercase tracking-widest text-muted">Company / Organization</label>
-                  <input type="text" name="company" className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="Acme Corp" />
+                  <input type="text" name="company" className="w-full bg-black border border-[#1a1a1a] p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="Acme Corp" />
                 </div>
               </div>
 
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-widest text-muted">Email Address</label>
-                <input type="email" name="email" required className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="john@example.com" />
+                <input type="email" name="email" required className="w-full bg-black border border-[#1a1a1a] p-4 text-white focus:outline-none focus:border-white/50 transition-colors" placeholder="john@example.com" />
               </div>
 
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-widest text-muted">Primary Challenge</label>
-                <select name="challenge" required defaultValue="" className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors appearance-none cursor-pointer">
+                <select name="challenge" required defaultValue="" className="w-full bg-black border border-[#1a1a1a] p-4 text-white focus:outline-none focus:border-white/50 transition-colors appearance-none cursor-pointer rounded-none">
                   <option value="" disabled>Select a bottleneck...</option>
                   <option value="gcp">GCP Migration & Infrastructure</option>
                   <option value="legacy">Legacy App Rebuild</option>
@@ -123,11 +123,11 @@ export default function Contact() {
 
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-widest text-muted">Project Details & Current Stack</label>
-                <textarea rows={5} name="details" required className="w-full bg-black/50 border border-white/10 rounded-lg p-4 text-white focus:outline-none focus:border-white/50 transition-colors resize-none" placeholder="We are currently running on..." />
+                <textarea rows={5} name="details" required className="w-full bg-black border border-[#1a1a1a] p-4 text-white focus:outline-none focus:border-white/50 transition-colors resize-none" placeholder="We are currently running on..." />
               </div>
 
               {status === "error" && (
-                <div className="flex items-center gap-2 text-red-400 text-sm bg-red-400/10 p-4 rounded-lg border border-red-400/20">
+                <div className="flex items-center gap-2 text-red-400 text-sm bg-red-400/10 p-4 border border-red-400/20">
                   <AlertCircle size={16} />
                   <span>There was an error sending your request. Please check your Access Key in the code.</span>
                 </div>
@@ -135,7 +135,7 @@ export default function Contact() {
 
               <button 
                 disabled={status === "submitting"}
-                className="flex items-center justify-center gap-2 bg-white text-black font-bold px-8 py-4 rounded-lg hover:bg-white/90 transition-all w-full md:w-auto self-end mt-4 group disabled:opacity-70 disabled:cursor-not-allowed"
+                className="flex items-center justify-center gap-2 bg-white text-black font-bold px-8 py-4 hover:bg-white/90 transition-all w-full md:w-auto self-end mt-4 group disabled:opacity-70 disabled:cursor-not-allowed"
               >
                 {status === "submitting" ? (
                   <>
