@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { 
   Briefcase, 
   Lightbulb, 
@@ -71,17 +72,29 @@ export default function Timeline() {
         initial="hidden"
         animate="show"
       >
-        <motion.div variants={item} className="mb-16">
-          <Link href="/" className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors text-sm font-bold tracking-widest uppercase mb-8">
-            <ArrowLeft size={16} /> Back to Architecture
-          </Link>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-            Experience & <br/>
-            <span className="text-muted">Milestones.</span>
-          </h1>
-          <p className="text-muted text-lg leading-relaxed max-w-2xl">
-            From engineering edge-compute AI at a global enterprise to executing architectural rebuilds for agile startups.
-          </p>
+        <motion.div variants={item} className="mb-16 relative overflow-hidden glass-card !p-0 border border-[#1a1a1a]">
+          <div className="absolute inset-0 z-0">
+            <Image 
+              src="/timeline-bg.png" 
+              alt="Experience Timeline" 
+              fill
+              className="object-cover opacity-30 grayscale"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40" />
+          </div>
+          <div className="relative z-10 p-8 md:p-12">
+            <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm font-bold tracking-widest uppercase mb-8">
+              <ArrowLeft size={16} /> Back to Architecture
+            </Link>
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
+              Experience & <br/>
+              <span className="text-white/60">Milestones.</span>
+            </h1>
+            <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
+              From engineering edge-compute AI at a global enterprise to executing architectural rebuilds for agile startups.
+            </p>
+          </div>
         </motion.div>
 
         <div className="relative border-l border-[#1a1a1a] ml-4 md:ml-8 pl-8 md:pl-12 space-y-16">
