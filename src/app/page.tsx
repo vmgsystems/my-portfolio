@@ -52,38 +52,38 @@ export default function Home() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[180px]"
+        className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[minmax(180px,auto)]"
       >
         {/* Hero Card */}
         <motion.div 
           variants={item}
-          className="md:col-span-3 md:row-span-2 glass-card !p-0 relative overflow-hidden group cursor-default flex flex-col justify-end min-h-[400px] border-0 ring-1 ring-white/10"
+          className="md:col-span-3 md:row-span-2 glass-card !p-0 relative overflow-hidden group cursor-default flex flex-col justify-end min-h-[400px] border border-[#1a1a1a]"
         >
           <div className="absolute inset-0 z-0">
             <Image 
               src="/hero.png" 
               alt="Gilberto Piña - VMG Systems" 
               fill
-              className="object-cover opacity-60 group-hover:scale-105 group-hover:opacity-80 transition-all duration-1000 ease-[cubic-bezier(0.4,0,0.2,1)]"
+              className="object-cover opacity-50 group-hover:scale-105 group-hover:opacity-70 transition-all duration-1000 ease-[cubic-bezier(0.4,0,0.2,1)]"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           </div>
           
-          <div className="relative z-10 p-8 md:p-12 flex flex-col justify-end h-full mt-32 md:mt-48">
-            <div className="flex items-center gap-2 text-white/80 mb-4 uppercase tracking-[0.2em] text-xs font-semibold bg-black/50 w-fit px-4 py-2 border border-[#1a1a1a]">
+          <div className="relative z-10 p-8 md:p-10 flex flex-col justify-end h-full pt-32">
+            <div className="flex items-center gap-2 text-white/80 mb-4 uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold bg-black w-fit px-3 py-1.5 border border-[#1a1a1a]">
               <Zap size={14} className="text-white" />
               <span>Lead Architect & Head of Tech</span>
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 text-white leading-[0.9]">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter mb-4 text-white leading-[1.1]">
               The Architecture of <br />
               <span className="text-white">Momentum.</span>
             </h1>
-            <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl font-medium">
+            <p className="text-white/70 text-base md:text-lg leading-relaxed mb-8 max-w-xl font-medium">
               Bridging the gap between complex engineering and scalable product strategy. Founder of VMG Systems.
             </p>
-            <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-8 py-4 font-bold hover:bg-white/90 transition-all duration-300 ease-out group/btn">
-              Explore the Architecture <ArrowUpRight size={18} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+            <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-6 py-3 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm">
+              Explore the Architecture <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
             </Link>
           </div>
         </motion.div>
