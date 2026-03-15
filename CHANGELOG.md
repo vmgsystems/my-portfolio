@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/guarox/my-portfolio/compare/v0.1.3...v0.1.4) (2026-03-15)
+
+
+### Features
+
+* integrate nanobanana generated images into cards and refine typography ([0f454e8](https://github.com/guarox/my-portfolio/commit/0f454e87936f6e12ed12c5aacfd4343d188a6e8a))
+
 ### [0.1.3](https://github.com/guarox/my-portfolio/compare/v0.1.2...v0.1.3) (2026-03-15)
 
 
