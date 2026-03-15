@@ -120,6 +120,71 @@ export default function Consulting() {
             </motion.div>
           ))}
         </div>
+
+        {/* VMG Systems Core Philosophy & Standards */}
+        <motion.div variants={item} className="mt-24 glass-card p-8 md:p-12">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">VMG SYSTEMS, LLC</h2>
+          <h3 className="text-xl text-muted mb-6">Precision Engineering for the AI-Native Era</h3>
+          <p className="text-muted leading-relaxed mb-12 max-w-3xl">
+            Modern problems require more than just code—they require a foundational strategy that prevents expensive mistakes before they happen.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+            <div>
+              <h4 className="text-lg font-bold uppercase tracking-widest mb-6">Our Core Philosophy: The Alfred Protocol</h4>
+              <p className="text-muted text-sm leading-relaxed mb-6">
+                We don&apos;t just build software; we build systems designed for human-AI collaboration. By establishing strict &quot;Rules of Engagement&quot; on Day 0, we ensure that every project is scalable, observable, and resilient.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3 text-sm text-muted">
+                  <CheckCircle2 size={16} className="text-white mt-1 shrink-0" />
+                  <div><strong className="text-white">Monorepo Architecture:</strong> We start with a unified structure to provide AI agents and human developers full context across the entire stack.</div>
+                </li>
+                <li className="flex items-start gap-3 text-sm text-muted">
+                  <CheckCircle2 size={16} className="text-white mt-1 shrink-0" />
+                  <div><strong className="text-white">Infrastructure as Code (IaC):</strong> &quot;ClickOps&quot; is banned. Every resource is codified via Terraform from the start to ensure security and reproducibility.</div>
+                </li>
+                <li className="flex items-start gap-3 text-sm text-muted">
+                  <CheckCircle2 size={16} className="text-white mt-1 shrink-0" />
+                  <div><strong className="text-white">The &quot;Plan → Act → Validate&quot; Loop:</strong> We never write massive features in one go; we execute via documented specs and rigorous validation.</div>
+                </li>
+                <li className="flex items-start gap-3 text-sm text-muted">
+                  <CheckCircle2 size={16} className="text-white mt-1 shrink-0" />
+                  <div><strong className="text-white">Stochastic Reliability:</strong> We treat LLM outputs as variables that must be tested against &quot;Golden Datasets&quot; to prevent performance degradation.</div>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-lg font-bold uppercase tracking-widest mb-6">Technical Standards</h4>
+              <div className="space-y-6">
+                <div className="border-b border-white/10 pb-4">
+                  <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Security</div>
+                  <div className="text-sm text-muted">Workload Identity Federation and strict, authenticated-only access from Day 1.</div>
+                </div>
+                <div className="border-b border-white/10 pb-4">
+                  <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Backend</div>
+                  <div className="text-sm text-muted">Modular, asynchronous Python (FastAPI) with abstracted LLM orchestration.</div>
+                </div>
+                <div className="border-b border-white/10 pb-4">
+                  <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Frontend</div>
+                  <div className="text-sm text-muted">Accessible (WCAG 2.2 AA), type-safe interfaces built with Next.js and React Native.</div>
+                </div>
+                <div className="border-b border-white/10 pb-4 border-b-0">
+                  <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Observability</div>
+                  <div className="text-sm text-muted">Real-time error tracking and full logging of every AI call, including inputs, outputs, and latency.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-6 md:p-8 bg-white/5 rounded-xl border border-white/10">
+            <h4 className="text-lg font-bold uppercase tracking-widest mb-4">&quot;The VMG Secret Sauce&quot;</h4>
+            <p className="text-muted text-sm leading-relaxed">
+              We believe observability is not a &quot;Phase 2&quot; task. From the first line of code, we implement automated triage, AI-driven PR reviews, and &quot;Destruction Guards&quot; to protect your production data.
+            </p>
+          </div>
+        </motion.div>
       </motion.div>
     </main>
   );
