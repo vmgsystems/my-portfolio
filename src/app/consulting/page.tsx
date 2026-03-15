@@ -96,7 +96,7 @@ export default function Consulting() {
               className="glass-card flex flex-col justify-between group"
             >
               <div>
-                <div className="p-3 rounded-xl bg-white/5 w-fit mb-6 group-hover:bg-white/10 transition-colors">
+                <div className="p-3 border border-[#1a1a1a] w-fit mb-6 group-hover:bg-[#111] transition-colors">
                   {service.icon}
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
@@ -112,7 +112,7 @@ export default function Consulting() {
                   ))}
                 </ul>
               </div>
-              <div className="mt-8 pt-8 border-t border-white/5">
+              <div className="mt-8 pt-8 border-t border-[#1a1a1a]">
                 <Link href="/contact" className="text-[10px] font-bold uppercase tracking-[0.2em] text-white hover:underline underline-offset-4">
                   Request Review for {service.title.split(' ')[0]} →
                 </Link>
@@ -158,19 +158,19 @@ export default function Consulting() {
             <div>
               <h4 className="text-lg font-bold uppercase tracking-widest mb-6">Technical Standards</h4>
               <div className="space-y-6">
-                <div className="border-b border-white/10 pb-4">
+                <div className="border-b border-[#1a1a1a] pb-4">
                   <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Security</div>
                   <div className="text-sm text-muted">Workload Identity Federation and strict, authenticated-only access from Day 1.</div>
                 </div>
-                <div className="border-b border-white/10 pb-4">
+                <div className="border-b border-[#1a1a1a] pb-4">
                   <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Backend</div>
                   <div className="text-sm text-muted">Modular, asynchronous Python (FastAPI) with abstracted LLM orchestration.</div>
                 </div>
-                <div className="border-b border-white/10 pb-4">
+                <div className="border-b border-[#1a1a1a] pb-4">
                   <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Frontend</div>
                   <div className="text-sm text-muted">Accessible (WCAG 2.2 AA), type-safe interfaces built with Next.js and React Native.</div>
                 </div>
-                <div className="border-b border-white/10 pb-4 border-b-0">
+                <div className="border-b border-[#1a1a1a] pb-4 border-b-0">
                   <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Observability</div>
                   <div className="text-sm text-muted">Real-time error tracking and full logging of every AI call, including inputs, outputs, and latency.</div>
                 </div>
@@ -178,7 +178,7 @@ export default function Consulting() {
             </div>
           </div>
 
-          <div className="p-6 md:p-8 bg-white/5 rounded-xl border border-white/10">
+          <div className="p-6 md:p-8 bg-transparent border border-[#1a1a1a]">
             <h4 className="text-lg font-bold uppercase tracking-widest mb-4">&quot;The VMG Secret Sauce&quot;</h4>
             <p className="text-muted text-sm leading-relaxed">
               We believe observability is not a &quot;Phase 2&quot; task. From the first line of code, we implement automated triage, AI-driven PR reviews, and &quot;Destruction Guards&quot; to protect your production data.

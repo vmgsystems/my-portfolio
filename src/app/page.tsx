@@ -71,18 +71,18 @@ export default function Home() {
           </div>
           
           <div className="relative z-10 p-8 md:p-12 flex flex-col justify-end h-full mt-32 md:mt-48">
-            <div className="flex items-center gap-2 text-white/80 mb-4 uppercase tracking-[0.2em] text-xs font-semibold backdrop-blur-md bg-black/20 w-fit px-4 py-2 rounded-full border border-white/10">
+            <div className="flex items-center gap-2 text-white/80 mb-4 uppercase tracking-[0.2em] text-xs font-semibold bg-black/50 w-fit px-4 py-2 border border-[#1a1a1a]">
               <Zap size={14} className="text-white" />
               <span>Lead Architect & Head of Tech</span>
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 text-white leading-[0.9]">
               The Architecture of <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Momentum.</span>
+              <span className="text-white">Momentum.</span>
             </h1>
             <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl font-medium">
               Bridging the gap between complex engineering and scalable product strategy. Founder of VMG Systems.
             </p>
-            <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-8 py-4 rounded-full font-bold hover:scale-105 hover:bg-white/90 transition-all duration-300 ease-out group/btn shadow-[0_0_40px_rgba(255,255,255,0.15)]">
+            <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-8 py-4 font-bold hover:bg-white/90 transition-all duration-300 ease-out group/btn">
               Explore the Architecture <ArrowUpRight size={18} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
             </Link>
           </div>
@@ -108,9 +108,9 @@ export default function Home() {
         {/* VMG Systems Card */}
         <motion.div 
           variants={item}
-          className="glass-card md:row-span-2 flex flex-col justify-between group cursor-pointer hover:bg-white/5"
+          className="glass-card md:row-span-2 flex flex-col justify-between group cursor-pointer hover:bg-[#111]"
         >
-          <div className="p-2 rounded-lg bg-white/5 w-fit mb-4">
+          <div className="p-2 border border-[#1a1a1a] w-fit mb-4">
             <Code2 className="text-white" />
           </div>
           <div>
@@ -137,8 +137,7 @@ export default function Home() {
               Active crew on a J/99. Racing where teamwork and real-time environmental adjustments are critical.
             </p>
           </div>
-          <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-white/5 to-transparent pointer-events-none" />
-          <div className="font-mono text-[80px] leading-none font-black opacity-10 absolute right-4 bottom-4 select-none pointer-events-none">
+          <div className="font-mono text-[80px] leading-none font-black opacity-5 absolute right-4 bottom-4 select-none pointer-events-none">
             J/99
           </div>
         </motion.div>
@@ -162,10 +161,10 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 grid grid-cols-2 gap-4">
-            <div className="border-t border-white/10 pt-4 text-xs text-muted">
+            <div className="border-t border-[#1a1a1a] pt-4 text-xs text-muted">
               Pioneered AI order architecture.
             </div>
-            <div className="border-t border-white/10 pt-4 text-xs text-muted">
+            <div className="border-t border-[#1a1a1a] pt-4 text-xs text-muted">
               28-day Canary Launch execution.
             </div>
           </div>
@@ -180,9 +179,9 @@ export default function Home() {
             <Terminal size={12} />
             <span>Infrastructure Stack</span>
           </div>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2">
             {['GCP', 'AWS', 'Python', 'React Native', 'Docker', 'Tailscale', 'Postgres', 'Gemini'].map((tech) => (
-              <span key={tech} className="px-3 py-1 rounded-full border border-white/10 text-xs font-mono hover:border-white/40 transition-colors">
+              <span key={tech} className="px-3 py-1 border border-[#1a1a1a] text-xs font-mono hover:border-[#333] transition-colors">
                 {tech}
               </span>
             ))}

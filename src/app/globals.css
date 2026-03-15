@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #000000;
+  --foreground: #ffffff;
   --accent: #ffffff;
-  --card-bg: #111111;
-  --card-border: #222222;
-  --muted: #888888;
+  --card-bg: transparent;
+  --card-border: #1a1a1a;
+  --muted: #666666;
 }
 
 @theme {
@@ -45,13 +45,12 @@ body {
   .glass-card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     padding: 2rem;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 0.3s ease;
   }
 
   .glass-card:hover {
-    border-color: var(--muted);
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+    border-color: #333333;
   }
 }

@@ -84,7 +84,7 @@ export default function Timeline() {
           </p>
         </motion.div>
 
-        <div className="relative border-l border-white/10 ml-4 md:ml-8 pl-8 md:pl-12 space-y-16">
+        <div className="relative border-l border-[#1a1a1a] ml-4 md:ml-8 pl-8 md:pl-12 space-y-16">
           {milestones.map((milestone, index) => (
             <motion.div 
               key={index}
@@ -92,7 +92,7 @@ export default function Timeline() {
               className="relative"
             >
               {/* Timeline Dot */}
-              <div className={`absolute -left-[41px] md:-left-[57px] top-0 w-4 h-4 rounded-full border-2 border-background ${milestone.current ? 'bg-white shadow-[0_0_15px_rgba(255,255,255,0.5)]' : 'bg-muted'}`} />
+              <div className={`absolute -left-[41px] md:-left-[57px] top-0 w-4 h-4 rounded-none border border-white ${milestone.current ? 'bg-white' : 'bg-black'}`} />
               
               <div className="flex flex-col md:flex-row md:items-baseline gap-2 mb-4">
                 <span className="text-xs font-mono font-bold uppercase tracking-widest text-muted flex items-center gap-2">
@@ -104,9 +104,9 @@ export default function Timeline() {
                 </h3>
               </div>
 
-              <div className="glass-card group hover:bg-white/5 transition-colors">
+              <div className="glass-card group hover:bg-[#111] transition-colors">
                 <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-white/5 group-hover:bg-white/10 transition-colors shrink-0">
+                  <div className="p-2 border border-[#1a1a1a] group-hover:border-[#333] transition-colors shrink-0">
                     {milestone.icon}
                   </div>
                   <div>
@@ -125,7 +125,7 @@ export default function Timeline() {
 
         <motion.div variants={item} className="mt-24 text-center">
             <p className="text-muted text-sm mb-6 uppercase tracking-[0.3em] font-bold">End of chronological log</p>
-            <Link href="/contact" className="inline-block border border-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition-all font-bold">
+            <Link href="/contact" className="inline-block border border-white px-8 py-4 hover:bg-white hover:text-black transition-all font-bold">
               Discuss Your Architecture
             </Link>
         </motion.div>

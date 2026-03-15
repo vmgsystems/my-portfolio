@@ -85,10 +85,10 @@ export default function Lab() {
             >
               <div className="relative z-10">
                 <div className="flex justify-between items-start mb-6">
-                  <div className="p-3 rounded-xl bg-white/5 group-hover:bg-white/10 transition-colors">
+                  <div className="p-3 border border-[#1a1a1a] group-hover:bg-[#111] transition-colors">
                     {exp.icon}
                   </div>
-                  <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full border border-white/10 bg-black/50">
+                  <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] px-3 py-1 border border-[#1a1a1a] bg-black">
                     {exp.tag}
                   </span>
                 </div>
