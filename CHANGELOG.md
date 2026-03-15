@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/guarox/my-portfolio/compare/v0.1.5...v0.1.6) (2026-03-15)
+
+
+### Features
+
+* add unique nanobanana abstract backgrounds to subpages ([18c7c1b](https://github.com/guarox/my-portfolio/commit/18c7c1bb0e15bca11ee2561c45b4e70bab9011f6))
+
 ### [0.1.5](https://github.com/guarox/my-portfolio/compare/v0.1.4...v0.1.5) (2026-03-15)
 
 
