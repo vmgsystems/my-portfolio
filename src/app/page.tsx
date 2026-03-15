@@ -47,12 +47,12 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen p-8 pt-32 md:p-12 md:pt-36 lg:p-24 lg:pt-40 max-w-7xl mx-auto">
+    <main className="min-h-screen p-4 pt-28 md:p-8 md:pt-36 lg:p-12 lg:pt-40 max-w-7xl mx-auto">
       <motion.div 
         variants={container}
         initial="hidden"
         animate="show"
-        className="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[minmax(180px,auto)]"
+        className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[minmax(180px,auto)]"
       >
         {/* Hero Card */}
         <motion.div 
@@ -70,16 +70,16 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           </div>
           
-          <div className="relative z-10 p-8 md:p-10 flex flex-col justify-end h-full pt-32">
+          <div className="relative z-10 p-6 md:p-10 flex flex-col justify-end h-full pt-32">
             <div className="flex items-center gap-2 text-white/80 mb-4 uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold bg-black w-fit px-3 py-1.5 border border-[#1a1a1a]">
               <Zap size={14} className="text-white" />
               <span>Lead Architect & Head of Tech</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4 text-white leading-tight md:leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4 text-white leading-tight md:leading-tight">
               Architecture of <br />
               <span className="text-white">Momentum.</span>
             </h1>
-            <p className="text-white/70 text-base md:text-lg leading-relaxed mb-8 max-w-xl font-medium">
+            <p className="text-white/70 text-sm md:text-base lg:text-lg leading-relaxed mb-8 max-w-xl font-medium">
               Bridging the gap between complex engineering and scalable product strategy. Founder of VMG Systems.
             </p>
             <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-6 py-3 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm">
@@ -91,16 +91,16 @@ export default function Home() {
         {/* Chicago Clock Card */}
         <motion.div 
           variants={item}
-          className="glass-card flex flex-col justify-between items-center text-center group cursor-default overflow-hidden"
+          className="glass-card flex flex-col justify-between items-center text-center group cursor-default overflow-hidden p-6 md:p-8"
         >
-          <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-[10px] font-bold">
+          <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-[10px] font-bold mb-4 md:mb-0">
             <Clock size={12} />
             <span>Chicago, IL</span>
           </div>
-          <div className="text-4xl font-mono font-bold tracking-tighter tabular-nums">
+          <div className="text-3xl sm:text-4xl font-mono font-bold tracking-tighter tabular-nums my-4 md:my-0">
             {time || "00:00:00"}
           </div>
-          <div className="text-[10px] text-muted uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="text-[10px] text-muted uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
             Velocity Made Good
           </div>
         </motion.div>
@@ -108,7 +108,7 @@ export default function Home() {
         {/* VMG Systems Card */}
         <motion.div 
           variants={item}
-          className="glass-card md:row-span-2 flex flex-col justify-between group cursor-pointer hover:bg-[#111]"
+          className="glass-card md:row-span-2 flex flex-col justify-between group cursor-pointer hover:bg-[#111] p-6 md:p-8"
         >
           <div className="p-2 border border-[#1a1a1a] w-fit mb-4">
             <Code2 className="text-white" />
@@ -127,7 +127,7 @@ export default function Home() {
         {/* Sailing / Lab Card */}
         <motion.div 
           variants={item}
-          className="glass-card md:col-span-2 group cursor-default relative overflow-hidden !p-0 border border-[#1a1a1a] flex flex-col justify-center"
+          className="glass-card md:col-span-2 group cursor-default relative overflow-hidden !p-0 border border-[#1a1a1a] flex flex-col justify-center min-h-[180px]"
         >
           <div className="absolute inset-0 z-0">
             <Image 
@@ -138,45 +138,50 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
           </div>
-          <div className="relative z-10 p-8 flex items-center justify-between w-full h-full">
+          <div className="relative z-10 p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between w-full h-full gap-4">
             <div className="relative z-10">
-              <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 flex items-center gap-2">
                 <Anchor size={20} /> Rambler
               </h3>
               <p className="text-white/70 text-sm max-w-xs">
                 Active crew on a J/99. Racing where teamwork and real-time environmental adjustments are critical.
               </p>
             </div>
-            <div className="font-mono text-[80px] leading-none font-black opacity-10 select-none pointer-events-none relative z-10">
+            <div className="font-mono text-5xl sm:text-[80px] leading-none font-black opacity-10 select-none pointer-events-none relative z-10 self-end sm:self-auto">
               J/99
             </div>
           </div>
         </motion.div>
 
-        {/* Experience Timeline Mini */}
+        {/* Genubi Highlight Card */}
         <motion.div 
           variants={item}
-          className="glass-card md:col-span-2 flex flex-col justify-between group"
+          className="glass-card md:col-span-2 flex flex-col justify-between group cursor-pointer hover:bg-[#111] relative overflow-hidden !p-0 border border-[#1a1a1a] min-h-[180px]"
         >
-          <div className="flex justify-between items-start">
-            <h3 className="text-lg font-bold uppercase tracking-tighter">Milestones</h3>
-            <div className="flex gap-4">
-               <div className="text-right">
-                  <div className="text-[10px] text-muted uppercase font-bold tracking-widest">McDonald&apos;s</div>
-                  <div className="text-xs">AI Architecture</div>
-               </div>
-               <div className="text-right">
-                  <div className="text-[10px] text-muted uppercase font-bold tracking-widest">Genubi</div>
-                  <div className="text-xs">Chief of Eng</div>
-               </div>
-            </div>
+          <div className="absolute inset-0 z-0">
+             <div className="absolute inset-0 bg-gradient-to-br from-[#111] to-black" />
+             <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+             <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/5 blur-[80px] rounded-full group-hover:bg-white/10 transition-colors duration-700" />
           </div>
-          <div className="mt-8 grid grid-cols-2 gap-4">
-            <div className="border-t border-[#1a1a1a] pt-4 text-xs text-muted">
-              Pioneered AI order architecture.
+          <Link href="/lab" className="absolute inset-0 z-20" aria-label="View Genubi Project" />
+          <div className="relative z-10 p-6 md:p-8 flex flex-col justify-between h-full pointer-events-none">
+            <div className="flex justify-between items-start">
+              <h3 className="text-lg font-bold uppercase tracking-tighter flex items-center gap-2 text-white">
+                Genubi <ArrowUpRight size={16} className="text-white/50 group-hover:text-white transition-colors" />
+              </h3>
+              <div className="text-right">
+                  <div className="text-[10px] text-muted uppercase font-bold tracking-widest">Current</div>
+                  <div className="text-xs text-white">Chief of Eng</div>
+              </div>
             </div>
-            <div className="border-t border-[#1a1a1a] pt-4 text-xs text-muted">
-              28-day Canary Launch execution.
+            <div className="mt-8">
+              <div className="border-t border-[#1a1a1a] pt-4 text-sm text-white/70 leading-relaxed font-medium">
+                AI coaching platform for automotive dealerships. 28-day clean-slate rebuild: React Native, FastAPI, Gemini AI, Next.js.
+              </div>
+              <div className="mt-4 flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                <span className="text-[10px] uppercase tracking-widest font-bold text-white">Prod • 99.5% Uptime</span>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -184,7 +189,7 @@ export default function Home() {
         {/* Tech Stack Card */}
         <motion.div 
           variants={item}
-          className="glass-card md:col-span-2 flex flex-col justify-between overflow-hidden"
+          className="glass-card md:col-span-2 flex flex-col justify-between overflow-hidden p-6 md:p-8"
         >
           <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-[10px] font-bold mb-4">
             <Terminal size={12} />
@@ -202,7 +207,7 @@ export default function Home() {
         {/* Manifesto Preview */}
         <motion.div 
           variants={item}
-          className="glass-card md:col-span-2 hover:scale-[1.01] transition-all relative group/manifesto hover:border-[#333] !p-0 overflow-hidden border border-[#1a1a1a] flex flex-col justify-between"
+          className="glass-card md:col-span-2 hover:scale-[1.01] transition-all relative group/manifesto hover:border-[#333] !p-0 overflow-hidden border border-[#1a1a1a] flex flex-col justify-between min-h-[180px]"
         >
           <div className="absolute inset-0 z-0">
             <Image 
@@ -214,16 +219,16 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40" />
           </div>
           <Link href="/consulting" className="absolute inset-0 z-20" aria-label="Read Manifesto" />
-          <div className="relative z-10 p-8 flex flex-col justify-between h-full pointer-events-none">
+          <div className="relative z-10 p-6 md:p-8 flex flex-col justify-between h-full pointer-events-none">
             <div>
-              <h3 className="text-2xl font-black uppercase italic leading-none mb-2 tracking-tighter">Clean Slate</h3>
+              <h3 className="text-xl sm:text-2xl font-black uppercase italic leading-none mb-2 tracking-tighter">Clean Slate</h3>
               <p className="text-sm leading-snug font-medium text-white/60 group-hover/manifesto:text-white transition-colors max-w-sm">
                 &quot;We don&apos;t fight complexity; we design architectures that thrive on it.&quot;
               </p>
             </div>
             <div className="flex justify-between items-end mt-6 relative z-0 pointer-events-none">
               <div className="text-[10px] font-bold uppercase tracking-tighter underline underline-offset-4 opacity-50 group-hover/manifesto:opacity-100 transition-opacity text-white">Read Manifesto</div>
-              <Cpu size={24} strokeWidth={2.5} className="text-white/40 group-hover/manifesto:text-white transition-colors" />
+              <Cpu size={24} strokeWidth={2.5} className="text-white/40 group-hover/manifesto:text-white transition-colors hidden sm:block" />
             </div>
           </div>
         </motion.div>

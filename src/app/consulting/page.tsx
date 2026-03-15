@@ -198,6 +198,41 @@ export default function Consulting() {
             </p>
           </div>
         </motion.div>
+
+        {/* Engagement Model & CTA */}
+        <motion.div variants={item} className="mt-8 glass-card p-8 md:p-12 border border-[#1a1a1a] bg-[#050505]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight mb-4">Engagement Model</h2>
+              <p className="text-muted leading-relaxed mb-6">
+                We operate as a high-velocity, integrated strike team. Whether you need an interim Chief of Engineering to right the ship, or a dedicated squad to execute a 28-day Canary Launch, we align our success with your deployment metrics.
+              </p>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3 text-sm text-white/80">
+                  <div className="w-1.5 h-1.5 rounded-full bg-white mt-1.5 shrink-0" />
+                  <div><strong>Architecture Audits:</strong> 1-2 week deep dives into existing codebases.</div>
+                </li>
+                <li className="flex items-start gap-3 text-sm text-white/80">
+                  <div className="w-1.5 h-1.5 rounded-full bg-white mt-1.5 shrink-0" />
+                  <div><strong>Canary Launches:</strong> 28-day MVP development cycles.</div>
+                </li>
+                <li className="flex items-start gap-3 text-sm text-white/80">
+                  <div className="w-1.5 h-1.5 rounded-full bg-white mt-1.5 shrink-0" />
+                  <div><strong>Retained Leadership:</strong> Ongoing strategic technical advisory.</div>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col justify-center items-start md:items-end md:text-right border-t md:border-t-0 md:border-l border-[#1a1a1a] pt-8 md:pt-0 md:pl-12">
+              <h3 className="text-2xl font-bold mb-4">Ready to rebuild?</h3>
+              <p className="text-muted text-sm mb-8 max-w-sm">
+                Stop fighting technical debt. Let&apos;s design a system that accelerates your business.
+              </p>
+              <Link href="/contact" className="w-fit flex items-center gap-2 bg-white text-black px-8 py-4 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/cta text-sm uppercase tracking-widest">
+                Initiate Contact <Cloud size={16} className="group-hover/cta:translate-y-[-2px] transition-transform" />
+              </Link>
+            </div>
+          </div>
+        </motion.div>
       </motion.div>
     </main>
   );
