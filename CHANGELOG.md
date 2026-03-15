@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/guarox/my-portfolio/compare/v0.1.2...v0.1.3) (2026-03-15)
+
+
+### Bug Fixes
+
+* resolve overflowing hero text and rigid grid heights in minimalist design ([1406474](https://github.com/guarox/my-portfolio/commit/140647418cfcec25f7a9c57652ef38190c2431ac))
+
 ### [0.1.2](https://github.com/guarox/my-portfolio/compare/v0.1.1...v0.1.2) (2026-03-15)
 
 ### 0.1.1 (2026-03-15)
