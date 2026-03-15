@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/guarox/my-portfolio/compare/v0.1.4...v0.1.5) (2026-03-15)
+
+
+### Features
+
+* generate and integrate high-tech abstract company logo ([579feca](https://github.com/guarox/my-portfolio/commit/579feca7299623414a33652dae8b8f45df9f21b7))
+
 ### [0.1.4](https://github.com/guarox/my-portfolio/compare/v0.1.3...v0.1.4) (2026-03-15)
 
 
