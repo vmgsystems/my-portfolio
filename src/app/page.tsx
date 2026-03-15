@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { 
   ArrowUpRight, 
   Cpu, 
@@ -56,25 +57,34 @@ export default function Home() {
         {/* Hero Card */}
         <motion.div 
           variants={item}
-          className="md:col-span-3 md:row-span-2 glass-card flex flex-col justify-between group cursor-default"
+          className="md:col-span-3 md:row-span-2 glass-card !p-0 relative overflow-hidden group cursor-default flex flex-col justify-end min-h-[400px] border-0 ring-1 ring-white/10"
         >
-          <div>
-            <div className="flex items-center gap-2 text-muted mb-4 uppercase tracking-[0.2em] text-xs font-semibold">
+          <div className="absolute inset-0 z-0">
+            <Image 
+              src="/hero.png" 
+              alt="Gilberto Piña - VMG Systems" 
+              fill
+              className="object-cover opacity-60 group-hover:scale-105 group-hover:opacity-80 transition-all duration-1000 ease-[cubic-bezier(0.4,0,0.2,1)]"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
+          </div>
+          
+          <div className="relative z-10 p-8 md:p-12 flex flex-col justify-end h-full mt-32 md:mt-48">
+            <div className="flex items-center gap-2 text-white/80 mb-4 uppercase tracking-[0.2em] text-xs font-semibold backdrop-blur-md bg-black/20 w-fit px-4 py-2 rounded-full border border-white/10">
               <Zap size={14} className="text-white" />
               <span>Lead Architect & Head of Tech</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-6 text-white leading-[0.9]">
               The Architecture of <br />
-              <span className="text-muted group-hover:text-white transition-colors duration-500">Momentum.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Momentum.</span>
             </h1>
-          </div>
-          <div className="max-w-xl">
-            <p className="text-muted text-lg leading-relaxed mb-6">
+            <p className="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl font-medium">
               Bridging the gap between complex engineering and scalable product strategy. Founder of VMG Systems.
             </p>
-            <button className="flex items-center gap-2 border border-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition-all group/btn">
+            <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-8 py-4 rounded-full font-bold hover:scale-105 hover:bg-white/90 transition-all duration-300 ease-out group/btn shadow-[0_0_40px_rgba(255,255,255,0.15)]">
               Explore the Architecture <ArrowUpRight size={18} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-            </button>
+            </Link>
           </div>
         </motion.div>
 
