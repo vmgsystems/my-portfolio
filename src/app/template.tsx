@@ -47,7 +47,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             );
           })}
           <div className="w-[1px] h-3 bg-[#1a1a1a] mx-2 hidden md:block" />
-          <a href="https://github.com/gilbertopina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Github size={14} /></a>
+          <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Github size={14} /></a>
           <a href="https://linkedin.com/in/gilbertopina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Linkedin size={14} /></a>
         </div>
       </nav>
@@ -67,7 +67,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
       <footer className="p-8 flex flex-col items-center justify-center gap-4 text-[10px] text-muted uppercase tracking-widest border-t border-[#1a1a1a] mt-24">
         <div className="flex gap-6">
-          <a href="https://github.com/gilbertopina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><Github size={12} /> GitHub</a>
+          <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><Github size={12} /> GitHub</a>
           <a href="https://linkedin.com/in/gilbertopina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><Linkedin size={12} /> LinkedIn</a>
         </div>
         <div>© 2026 VMG Systems</div>
