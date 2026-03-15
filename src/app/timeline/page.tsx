@@ -29,6 +29,13 @@ const milestones = [
     icon: <Briefcase className="text-white" />
   },
   {
+    year: "2022 – 2026",
+    title: "Senior Solutions Architect / IAM Specialist",
+    company: "Ping Identity, Okta, ForgeRock",
+    description: "Architected enterprise Identity and Access Management (IAM) solutions. Led complex integrations, zero-trust security model implementations, and scalable identity infrastructure for global clients.",
+    icon: <Briefcase className="text-white" />
+  },
+  {
     year: "2018 – 2022",
     title: "Enterprise Innovation & AI Architecture",
     company: "McDonald’s Corporation",
