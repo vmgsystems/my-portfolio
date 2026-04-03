@@ -2,13 +2,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { 
-  ArrowUpRight, 
-  Cpu, 
-  Zap, 
-  Anchor, 
-  Clock, 
-  Code2, 
+import {
+  ArrowUpRight,
+  Cpu,
+  Zap,
+  Clock,
+  Code2,
   Terminal,
   ChevronRight
 } from "lucide-react";
@@ -73,7 +72,7 @@ export default function Home() {
           <div className="relative z-10 p-6 md:p-10 flex flex-col justify-end h-full pt-32">
             <div className="flex items-center gap-2 text-white/80 mb-4 uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold bg-black w-fit px-3 py-1.5 border border-[#1a1a1a]">
               <Zap size={14} className="text-white" />
-              <span>Lead Architect & Head of Tech</span>
+              <span>AI Infrastructure · Clean Slate</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4 text-white leading-tight md:leading-tight">
               Architecture of <br />
@@ -108,47 +107,54 @@ export default function Home() {
         {/* VMG Systems Card */}
         <motion.div 
           variants={item}
-          className="glass-card md:row-span-2 flex flex-col justify-between group cursor-pointer hover:bg-[#111] p-6 md:p-8"
-        >
-          <div className="p-2 border border-[#1a1a1a] w-fit mb-4">
-            <Code2 className="text-white" />
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-2">VMG Systems</h3>
-            <p className="text-muted text-sm leading-relaxed">
-              Technical consulting specializing in &quot;Clean Slate&quot; architecture and resilient infrastructure.
-            </p>
-          </div>
-          <div className="mt-4 flex items-center text-xs font-bold uppercase tracking-widest gap-1 text-muted group-hover:text-white transition-colors">
-            View Services <ChevronRight size={14} />
-          </div>
-        </motion.div>
-
-        {/* Sailing / Lab Card */}
-        <motion.div 
-          variants={item}
-          className="glass-card md:col-span-2 group cursor-default relative overflow-hidden !p-0 border border-[#1a1a1a] flex flex-col justify-center min-h-[180px]"
+          className="glass-card md:row-span-2 flex flex-col justify-between group cursor-pointer hover:bg-[#111] !p-0 relative overflow-hidden border border-[#1a1a1a]"
         >
           <div className="absolute inset-0 z-0">
             <Image 
-              src="/sailing.png" 
-              alt="Sailing Fluid Dynamics" 
+              src="/vmg-pattern.png" 
+              alt="VMG Systems Technical Architecture" 
               fill
-              className="object-cover opacity-30 group-hover:scale-105 group-hover:opacity-40 transition-all duration-1000 ease-out grayscale"
+              className="object-cover opacity-10 group-hover:scale-105 group-hover:opacity-20 transition-all duration-1000 ease-out"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-br from-black via-black/80 to-transparent" />
           </div>
+          <Link href="/consulting" className="absolute inset-0 z-20" aria-label="View VMG Services" />
+          
+          <div className="relative z-10 p-6 md:p-8 flex flex-col justify-between h-full pointer-events-none">
+            <div className="p-2 border border-[#1a1a1a] w-fit mb-4 bg-black/50 backdrop-blur-sm">
+              <Code2 className="text-white" />
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-2">VMG Systems</h3>
+              <p className="text-muted text-sm leading-relaxed">
+                Technical consulting specializing in &quot;Clean Slate&quot; architecture and resilient infrastructure.
+              </p>
+            </div>
+            <div className="mt-4 flex items-center text-xs font-bold uppercase tracking-widest gap-1 text-muted group-hover:text-white transition-colors">
+              View Services <ChevronRight size={14} />
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Currently Building Card */}
+        <motion.div
+          variants={item}
+          className="glass-card md:col-span-2 group cursor-default relative overflow-hidden !p-0 border border-[#1a1a1a] flex flex-col justify-center min-h-[180px]"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] to-black" />
           <div className="relative z-10 p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between w-full h-full gap-4">
             <div className="relative z-10">
-              <h3 className="text-xl sm:text-2xl font-bold mb-2 flex items-center gap-2">
-                <Anchor size={20} /> Rambler
-              </h3>
+              <div className="flex items-center gap-2 text-white/50 uppercase tracking-widest text-[10px] font-bold mb-3">
+                <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                Currently Building
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold mb-2">Homelab AI OS</h3>
               <p className="text-white/70 text-sm max-w-xs">
-                Active crew on a J/99. Racing where teamwork and real-time environmental adjustments are critical.
+                10 self-hosted services. Proxmox, OPNsense, Qdrant, n8n, Langfuse — zero ClickOps, full IaC.
               </p>
             </div>
             <div className="font-mono text-5xl sm:text-[80px] leading-none font-black opacity-10 select-none pointer-events-none relative z-10 self-end sm:self-auto">
-              J/99
+              IaC
             </div>
           </div>
         </motion.div>
@@ -176,7 +182,7 @@ export default function Home() {
             </div>
             <div className="mt-8">
               <div className="border-t border-[#1a1a1a] pt-4 text-sm text-white/70 leading-relaxed font-medium">
-                AI coaching platform for automotive dealerships. 28-day clean-slate rebuild: React Native, FastAPI, Gemini AI, Next.js.
+                AI coaching platform for automotive dealerships. 28-day clean-slate rebuild across 5 services: React Native, FastAPI, Gemini AI, Next.js, GCP.
               </div>
               <div className="mt-4 flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />

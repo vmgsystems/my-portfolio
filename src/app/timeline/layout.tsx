@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Timeline | Gilberto Pina",
     description: "Experience and milestones from engineering edge-compute AI at a global enterprise to executing architectural rebuilds for agile startups.",
-    url: "https://gilbertopina.com/timeline",
+    url: "https://www.vmg.systems/timeline",
     images: [
       {
         url: "/timeline-bg.png",

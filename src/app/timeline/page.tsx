@@ -25,14 +25,14 @@ const milestones = [
     year: "2026",
     title: "Interim Chief of Engineering",
     company: "Genubi",
-    description: "Led a high-intensity 28-day 'Canary Launch' sprint to completely rebuild a legacy mobile data capture platform. Engineered native background audio persistence and secure GCP data pipelines.",
+    description: "Led a high-intensity 28-day 'Canary Launch' sprint to completely rebuild a legacy mobile data capture platform. Engineered native background audio persistence and secure GCP data pipelines, achieving a 4× reduction in end-to-end audio processing latency and 99.5% production uptime from day one.",
     icon: <Briefcase className="text-white" />
   },
   {
     year: "2022 – 2026",
-    title: "Deep Architecture Specialization & R&D",
-    company: "Stealth Mode / VMG Systems",
-    description: "Dedicated period of high-intensity technical research and architectural refinement. Specialized in zero-trust identity models and distributed systems while architecting the foundational 'Clean Slate' methodology used today.",
+    title: "Founder & Principal Architect",
+    company: "VMG Systems",
+    description: "Built and operated 3 proprietary internal platforms covering infrastructure automation, AI tooling, and developer workflow — forming the foundation of the 'Clean Slate' methodology. Designed zero-trust network architecture using Tailscale and Workload Identity Federation, established IaC-first pipelines with Terraform, and developed an AI orchestration layer now powering production client systems.",
     icon: <Lightbulb className="text-white" />
   },
   {
