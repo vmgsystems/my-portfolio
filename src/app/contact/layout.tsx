@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact | Gilberto Pina",
     description: "Get in touch for architectural audits, canary launches, and interim engineering leadership.",
-    url: "https://gilbertopina.com/contact",
+    url: "https://www.vmg.systems/contact",
     images: [
       {
         url: "/contact-bg.png",

@@ -2,17 +2,27 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { 
-  Cloud, 
-  Cpu, 
-  BrainCircuit, 
-  Users, 
-  CheckCircle2, 
-  ArrowLeft 
+import {
+  Cloud,
+  Cpu,
+  BrainCircuit,
+  CheckCircle2,
+  ArrowLeft
 } from "lucide-react";
 import Link from "next/link";
 
 const services = [
+  {
+    title: "AI Integration & Data Pipelines",
+    icon: <BrainCircuit className="text-white" />,
+    description: "Turn proprietary data into a strategic asset using modern LLM frameworks and vector databases.",
+    details: [
+      "Vector Database implementation (PostgreSQL/pgvector)",
+      "RAG workflows using Gemini Pro and Claude",
+      "Voice-Recognized Data Analysis methodologies"
+    ],
+    cta: "Request an AI/ML Strategy Review"
+  },
   {
     title: "Cloud Infrastructure & Modernization",
     icon: <Cloud className="text-white" />,
@@ -21,7 +31,8 @@ const services = [
       "Custom GCP and AWS (S3) architecture",
       "Zero-trust infrastructure via Tailscale",
       "Docker-based containerization and migration"
-    ]
+    ],
+    cta: "Request a Cloud Architecture Review"
   },
   {
     title: "Custom Platform & API Engineering",
@@ -31,27 +42,8 @@ const services = [
       "React Native with native background persistence",
       "High-throughput Python API architecture",
       "28-day 'Canary Launch' rapid prototyping"
-    ]
-  },
-  {
-    title: "AI Integration & Data Pipelines",
-    icon: <BrainCircuit className="text-white" />,
-    description: "Turn proprietary data into a strategic asset using modern LLM frameworks and vector databases.",
-    details: [
-      "Vector Database implementation (PostgreSQL/pgvector)",
-      "RAG workflows using Gemini Pro and Claude",
-      "Voice-Recognized Data Analysis methodologies"
-    ]
-  },
-  {
-    title: "Interim Technical Leadership",
-    icon: <Users className="text-white" />,
-    description: "Stepping in as Interim Chief of Engineering to realign teams, reset technical roadmaps, and ensure execution.",
-    details: [
-      "Translating business goals into engineering sprints",
-      "Nearshore/Offshore team management",
-      "Rigorous code-quality standards enforcement"
-    ]
+    ],
+    cta: "Request a Platform Engineering Consultation"
   }
 ];
 
@@ -96,7 +88,7 @@ export default function Consulting() {
               <span className="text-white/60 text-3xl md:text-4xl">Technical Consulting & Architecture</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect &quot;Clean Slate&quot; solutions designed for scale, speed, and absolute stability.
+              At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect &quot;Clean Slate&quot; solutions designed for scale, speed, and absolute stability — delivering production systems in 28 days and maintaining 99.5% uptime across every platform we ship.
             </p>
           </div>
         </motion.div>
@@ -127,7 +119,7 @@ export default function Consulting() {
               </div>
               <div className="mt-8 pt-8 border-t border-[#1a1a1a]">
                 <Link href="/contact" className="text-[10px] font-bold uppercase tracking-[0.2em] text-white hover:underline underline-offset-4">
-                  Request Review for {service.title.split(' ')[0]} →
+                  {service.cta} →
                 </Link>
               </div>
             </motion.div>
@@ -215,10 +207,6 @@ export default function Consulting() {
                 <li className="flex items-start gap-3 text-sm text-white/80">
                   <div className="w-1.5 h-1.5 rounded-full bg-white mt-1.5 shrink-0" />
                   <div><strong>Canary Launches:</strong> 28-day MVP development cycles.</div>
-                </li>
-                <li className="flex items-start gap-3 text-sm text-white/80">
-                  <div className="w-1.5 h-1.5 rounded-full bg-white mt-1.5 shrink-0" />
-                  <div><strong>Retained Leadership:</strong> Ongoing strategic technical advisory.</div>
                 </li>
               </ul>
             </div>

@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gilbertopina.com"),
+  metadataBase: new URL("https://www.vmg.systems"),
   title: "Gilberto Pina | VMG Systems",
-  description: "Lead Architect & Head of Technology. Clean Slate engineering and high-performance architecture.",
+  description: "VMG Systems helps startups ship production-grade AI infrastructure in 28 days. Clean Slate architecture, zero ClickOps, built for the AI-native era.",
   openGraph: {
     title: "Gilberto Pina | VMG Systems",
-    description: "Lead Architect & Head of Technology. Clean Slate engineering and high-performance architecture.",
-    url: "https://gilbertopina.com",
+    description: "VMG Systems helps startups ship production-grade AI infrastructure in 28 days. Clean Slate architecture, zero ClickOps, built for the AI-native era.",
+    url: "https://www.vmg.systems",
     siteName: "Gilberto Pina",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Gilberto Pina | VMG Systems",
-    description: "Lead Architect & Head of Technology. Clean Slate engineering and high-performance architecture.",
+    description: "VMG Systems helps startups ship production-grade AI infrastructure in 28 days. Clean Slate architecture, zero ClickOps, built for the AI-native era.",
     images: ["/hero.png"],
   },
 };

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Consulting | VMG Systems",
     description: "Technical consulting specializing in Clean Slate architecture, Cloud Infrastructure, and AI Integration.",
-    url: "https://gilbertopina.com/consulting",
+    url: "https://www.vmg.systems/consulting",
     images: [
       {
         url: "/consulting-bg.png",

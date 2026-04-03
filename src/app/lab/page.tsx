@@ -2,11 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { 
-  Anchor, 
-  Leaf, 
-  Flame, 
-  Settings2, 
+import {
+  BrainCircuit,
+  Workflow,
+  Server,
+  LineChart,
   ArrowLeft,
   Gauge
 } from "lucide-react";
@@ -14,32 +14,32 @@ import Link from "next/link";
 
 const experiments = [
   {
-    title: "Competitive Sailing",
-    subtitle: "Rambler | J/99",
-    icon: <Anchor className="text-white" />,
-    description: "Experienced in high-stakes offshore racing, including the Bayview Mackinac Race. Success depends on real-time environmental adjustments and tight-loop communication.",
-    tag: "Fluid Dynamics"
+    title: "EA Agent System",
+    subtitle: "Qdrant · Gemini · Claude CLI",
+    icon: <BrainCircuit className="text-white" />,
+    description: "Autonomous morning brief and EOD wrap agents running on a self-hosted LXC. Each run recalls context from a Qdrant vector store (3,072-dim Gemini embeddings), generates a brief via Claude, posts to Slack, then extracts and stores new memories — creating a persistent, self-improving context loop.",
+    tag: "AI / Memory"
   },
   {
-    title: "Horticulture & Climate Systems",
-    subtitle: "Spectrum Optimization",
-    icon: <Leaf className="text-white" />,
-    description: "Utilizing light meters and SANSI grow-light spectrums to fine-tune indoor climate variables for optimal plant health. Engineering growth in controlled environments.",
-    tag: "Precision Growth"
+    title: "n8n Automation Layer",
+    subtitle: "GCP · Linear · Slack · Firestore",
+    icon: <Workflow className="text-white" />,
+    description: "Self-hosted n8n instance orchestrating three production workflows: GCP infrastructure health checks with Slack alerting, Linear→Slack sprint summaries, and a Firestore polling agent that notifies on completed sales call recordings with full AI-extracted deal summaries.",
+    tag: "Automation"
   },
   {
-    title: "Culinary Precision",
-    subtitle: "Masterbuilt 545 Log",
-    icon: <Flame className="text-white" />,
-    description: "Mastering the 'low and slow' parameters of temperature and airflow. Treating the smoking process as a thermodynamic system to be optimized.",
-    tag: "Thermodynamics"
+    title: "Homelab AI OS",
+    subtitle: "Proxmox · OPNsense · Tailscale",
+    icon: <Server className="text-white" />,
+    description: "10-service self-hosted stack running across two Proxmox nodes with full VLAN isolation (OPNsense), zero-trust remote access (Tailscale), wildcard HTTPS via mkcert, and secrets management through a self-hosted Vaultwarden instance. Every service IaC-managed, zero ClickOps.",
+    tag: "Infrastructure"
   },
   {
-    title: "Mechanical Restoration",
-    subtitle: "Harley-Davidson & Tesla",
-    icon: <Settings2 className="text-white" />,
-    description: "Maintaining a deep respect for legacy machinery while embracing the innovation of the Tesla Model 3. A balance of wrenching and high-voltage systems.",
-    tag: "Mechanical/Electric"
+    title: "Langfuse Observability",
+    subtitle: "Gemini · FastAPI · pgvector",
+    icon: <LineChart className="text-white" />,
+    description: "Full LLM observability layer wrapping every Gemini call in Genubi's FastAPI pipeline. Traces inputs, outputs, latency, and token cost per request. Feeds a pgvector store for RAG workflows and enables 'Golden Dataset' regression testing against eval accuracy baselines.",
+    tag: "Observability"
   }
 ];
 
@@ -81,10 +81,10 @@ export default function Lab() {
             </Link>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
               The Builder’s <br/>
-              <span className="text-white/60">Mindset.</span>
+              <span className="text-white/60">Lab.</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              An engineering mindset isn&apos;t something you can just clock out of. It is a fundamental way of interacting with the world. Everything is a system; everything can be optimized.
+              Production systems built in the open. These are the tools, agents, and infrastructure experiments that run VMG Systems — dogfooding everything we sell.
             </p>
           </div>
         </motion.div>
