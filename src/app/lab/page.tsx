@@ -101,7 +101,7 @@ export default function Lab() {
                   <div className="p-3 border border-[#1a1a1a] group-hover:bg-[#111] transition-colors">
                     {exp.icon}
                   </div>
-                  <span className="text-[10px] font-mono font-bold uppercase tracking-[0.2em] px-3 py-1 border border-[#1a1a1a] bg-black">
+                  <span className="text-xs font-mono font-bold uppercase tracking-[0.2em] px-3 py-1 border border-[#1a1a1a] bg-black">
                     {exp.tag}
                   </span>
                 </div>
@@ -114,7 +114,7 @@ export default function Lab() {
               
               <div className="mt-8 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
                 <Gauge size={14} className="text-white" />
-                <span className="text-[10px] font-bold uppercase tracking-widest">Optimizing...</span>
+                <span className="text-xs font-bold uppercase tracking-widest">Optimizing...</span>
               </div>
 
               {/* Decorative Background Element */}
@@ -126,7 +126,7 @@ export default function Lab() {
         </div>
         <motion.div variants={item} className="glass-card border border-[#1a1a1a] p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-muted mb-3">Everything here runs in production</p>
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted mb-3">Everything here runs in production</p>
             <h3 className="text-2xl md:text-3xl font-black text-white">We dogfood what we sell.</h3>
             <p className="text-muted text-sm mt-2 max-w-lg">Every system above runs live. If it works for VMG, it ships to clients.</p>
           </div>

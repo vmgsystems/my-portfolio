@@ -131,7 +131,7 @@ export default function Timeline() {
                   </div>
                   <div>
                     {milestone.location && (
-                      <p className="text-[10px] font-bold uppercase tracking-widest text-muted mb-2">{milestone.location}</p>
+                      <p className="text-xs font-bold uppercase tracking-widest text-muted mb-2">{milestone.location}</p>
                     )}
                     <p className="text-muted text-sm leading-relaxed max-w-3xl">
                       {milestone.description}
