@@ -222,32 +222,39 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* Manifesto Preview */}
-        <motion.div 
+        {/* CTA Card */}
+        <motion.div
           variants={item}
-          className="glass-card md:col-span-4 hover:scale-[1.01] transition-all relative group/manifesto hover:border-[#333] !p-0 overflow-hidden border border-[#1a1a1a] flex flex-col justify-between min-h-[180px]"
+          className="glass-card md:col-span-4 relative group/cta !p-0 overflow-hidden border border-[#1a1a1a] flex flex-col justify-between min-h-[220px]"
         >
           <div className="absolute inset-0 z-0">
-            <Image 
-              src="/manifesto.png" 
-              alt="Clean Slate Architecture Blueprint" 
+            <Image
+              src="/manifesto.png"
+              alt="Clean Slate Architecture Blueprint"
               fill
-              className="object-cover opacity-20 group-hover:scale-105 group-hover:opacity-40 transition-all duration-1000 ease-out grayscale"
+              className="object-cover opacity-10 group-hover/cta:scale-105 group-hover/cta:opacity-20 transition-all duration-1000 ease-out grayscale"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/70" />
           </div>
-          <Link href="/consulting" className="absolute inset-0 z-20" aria-label="Read Manifesto" />
-          <div className="relative z-10 p-6 md:p-8 flex flex-col justify-between h-full pointer-events-none">
+          <div className="relative z-10 p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 h-full">
             <div>
-              <h3 className="text-xl sm:text-2xl font-black uppercase italic leading-none mb-2 tracking-tighter">Clean Slate</h3>
-              <p className="text-sm leading-snug font-medium text-white/60 group-hover/manifesto:text-white transition-colors max-w-sm">
-                &quot;We don&apos;t fight complexity; we design architectures that thrive on it.&quot;
+              <div className="flex items-center gap-2 text-white/40 uppercase tracking-widest text-[10px] font-bold mb-4">
+                <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                Clean Slate Engagements
+              </div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight mb-3 text-white leading-tight">
+                Ready to ship?
+              </h3>
+              <p className="text-white/60 text-sm md:text-base max-w-lg leading-relaxed">
+                Your stack rebuilt. Production-ready in 28 days. No ClickOps. No shortcuts. Full IaC from day one.
               </p>
             </div>
-            <div className="flex justify-between items-end mt-6 relative z-0 pointer-events-none">
-              <div className="text-[10px] font-bold uppercase tracking-tighter underline underline-offset-4 opacity-50 group-hover/manifesto:opacity-100 transition-opacity text-white">Read Manifesto</div>
-              <Cpu size={24} strokeWidth={2.5} className="text-white/40 group-hover/manifesto:text-white transition-colors hidden sm:block" />
-            </div>
+            <Link
+              href="/contact"
+              className="shrink-0 flex items-center gap-2 bg-white text-black px-8 py-4 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm whitespace-nowrap"
+            >
+              Start the Conversation <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+            </Link>
           </div>
         </motion.div>
 
