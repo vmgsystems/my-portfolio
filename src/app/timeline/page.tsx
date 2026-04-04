@@ -13,47 +13,47 @@ import Link from "next/link";
 
 const milestones = [
   {
-    year: "2026 – Present",
+    year: "2022 – Present",
     title: "Founder & Principal Architect",
     company: "VMG Systems",
     location: "Chicago, IL",
-    description: "Independent technical consultancy specializing in infrastructure modernization, zero-trust environments, and custom AI/LLM integrations for startups and mid-market companies.",
+    description: "Independent AI infrastructure practice built around the ‘Clean Slate’ methodology — shipping production-grade systems in 28 days. Built and operate a 10-service self-hosted AI OS as a proving ground for every system sold to clients. Current engagement: Interim Chief of Engineering at Genubi, where a 28-day Canary Launch achieved 4× latency reduction and 99.5% uptime from day one.",
     icon: <Briefcase className="text-white" />,
     current: true
   },
   {
-    year: "2026",
+    year: "2025 – Present",
     title: "Interim Chief of Engineering",
     company: "Genubi",
-    description: "Led a high-intensity 28-day 'Canary Launch' sprint to completely rebuild a legacy mobile data capture platform. Engineered native background audio persistence and secure GCP data pipelines, achieving a 4× reduction in end-to-end audio processing latency and 99.5% production uptime from day one.",
+    description: "Led a high-intensity 28-day ‘Canary Launch’ sprint to completely rebuild a legacy mobile data capture platform. Engineered native background audio persistence and secure GCP data pipelines, achieving a 4× reduction in end-to-end audio processing latency and 99.5% production uptime from day one.",
     icon: <Briefcase className="text-white" />
-  },
-  {
-    year: "2022 – 2026",
-    title: "Founder & Principal Architect",
-    company: "VMG Systems",
-    description: "Built and operated 3 proprietary internal platforms covering infrastructure automation, AI tooling, and developer workflow — forming the foundation of the 'Clean Slate' methodology. Designed zero-trust network architecture using Tailscale and Workload Identity Federation, established IaC-first pipelines with Terraform, and developed an AI orchestration layer now powering production client systems.",
-    icon: <Lightbulb className="text-white" />
   },
   {
     year: "2018 – 2022",
     title: "Enterprise Innovation & AI Architecture",
     company: "McDonald’s Corporation",
-    description: "Pioneered early architectural frameworks for the AI-Enhanced Drive-Thru. Engineered edge-to-cloud pipelines allowing localized hardware to communicate instantly with centralized AI models.",
+    description: "Core contributor to the Automated Order Taker (AOT) — McDonald’s AI-powered drive-thru voice system, now patent-pending and deployed across 14,000+ locations globally. Led development contributing to an 82% improvement in order accuracy. Engineered edge-to-cloud pipelines allowing localized hardware to communicate instantly with centralized AI models.",
+    icon: <Briefcase className="text-white" />
+  },
+  {
+    year: "2008 – 2018",
+    title: "Director of Technology",
+    company: "Halverson Group, Inc.",
+    description: "Led technology strategy for a firm specializing in video analytics and ethnographic research systems for Fortune 500 clients including McDonald’s and Timberland. Architected and deployed video ethnography systems for McDonald’s Innovation Center Laboratory. Directed international deployments in Singapore and Hong Kong.",
     icon: <Briefcase className="text-white" />
   },
   {
     year: "2017",
     title: "Inventor (Patent Pending)",
     company: "Voice Recognized Data Analysis",
-    description: "Filed core patent for 'Voice Recognized Data Analysis and Corrective Action System,' outlining a proprietary framework for processing real-time audio input to trigger automated corrective actions.",
+    description: "Filed core patent for ‘Voice Recognized Data Analysis and Corrective Action System,’ outlining a proprietary framework for processing real-time audio input to trigger automated corrective actions.",
     icon: <Lightbulb className="text-white" />
   },
   {
     year: "Education",
     title: "B.S. Electrical Engineering",
     company: "University of Illinois at Chicago (UIC)",
-    description: "First Place at the UIC Engineering EXPO for 'Wireless Price Tag Display.'",
+    description: "First Place at the UIC Engineering EXPO for ‘Wireless Price Tag Display.’",
     icon: <GraduationCap className="text-white" />
   }
 ];
