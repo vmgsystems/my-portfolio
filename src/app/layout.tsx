@@ -14,19 +14,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.vmg.systems"),
-  title: "Gilberto Pina | VMG Systems",
-  description: "VMG Systems helps startups ship production-grade AI infrastructure in 28 days. Clean Slate architecture, zero ClickOps, built for the AI-native era.",
+  title: "VMG Systems | AI Infrastructure Consulting — Chicago",
+  description: "VMG Systems ships production-grade AI infrastructure in 28 days. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
   openGraph: {
-    title: "Gilberto Pina | VMG Systems",
-    description: "VMG Systems helps startups ship production-grade AI infrastructure in 28 days. Clean Slate architecture, zero ClickOps, built for the AI-native era.",
+    title: "VMG Systems | AI Infrastructure Consulting — Chicago",
+    description: "VMG Systems ships production-grade AI infrastructure in 28 days. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
     url: "https://www.vmg.systems",
-    siteName: "Gilberto Pina",
+    siteName: "VMG Systems",
     images: [
       {
         url: "/hero.png",
         width: 1200,
         height: 630,
-        alt: "Gilberto Pina - VMG Systems",
+        alt: "VMG Systems — AI Infrastructure Consulting Chicago",
       },
     ],
     locale: "en_US",
@@ -34,10 +34,44 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gilberto Pina | VMG Systems",
-    description: "VMG Systems helps startups ship production-grade AI infrastructure in 28 days. Clean Slate architecture, zero ClickOps, built for the AI-native era.",
+    title: "VMG Systems | AI Infrastructure Consulting — Chicago",
+    description: "VMG Systems ships production-grade AI infrastructure in 28 days. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
     images: ["/hero.png"],
   },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "VMG Systems",
+      "url": "https://www.vmg.systems",
+      "description": "AI infrastructure consulting. Production-grade systems in 28 days.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chicago",
+        "addressRegion": "IL",
+        "addressCountry": "US"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Gilberto Pina",
+        "jobTitle": "Principal Architect"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Gilberto Pina",
+      "url": "https://www.vmg.systems",
+      "jobTitle": "AI Infrastructure Architect",
+      "worksFor": { "@type": "Organization", "name": "VMG Systems" },
+      "sameAs": [
+        "https://linkedin.com/in/gilpina",
+        "https://github.com/guarox"
+      ]
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -47,6 +81,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased selection:bg-white selection:text-black`}
       >

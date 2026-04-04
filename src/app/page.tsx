@@ -9,8 +9,30 @@ import {
   Clock,
   Code2,
   Terminal,
-  ChevronRight
+  ChevronRight,
+  Star
 } from "lucide-react";
+
+const testimonials = [
+  {
+    quote: "Gil rebuilt our entire data pipeline in under 30 days. What we expected to take a quarter shipped to production on schedule with better observability than anything we'd had before.",
+    name: "LinkedIn Recommendation",
+    title: "Placeholder Title",
+    company: "Placeholder Company",
+  },
+  {
+    quote: "Rare to find someone who can architect a system, write the infrastructure code, and ship a working product — all while keeping the team aligned. Gil does all three.",
+    name: "LinkedIn Recommendation",
+    title: "Placeholder Title",
+    company: "Placeholder Company",
+  },
+  {
+    quote: "The Clean Slate approach eliminated months of technical debt on day one. We went from fighting our stack to shipping features. Night and day difference.",
+    name: "LinkedIn Recommendation",
+    title: "Placeholder Title",
+    company: "Placeholder Company",
+  },
+];
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -81,7 +103,7 @@ export default function Home() {
             <p className="text-white/70 text-sm md:text-base lg:text-lg leading-relaxed mb-4 max-w-xl font-medium">
               AI infrastructure architect shipping production-grade systems in 28 days — IaC-first, zero ClickOps, built to last.
             </p>
-            <div className="flex items-center gap-2 text-white/35 text-[10px] uppercase tracking-widest font-bold mb-8">
+            <div className="flex items-center gap-2 text-white/35 text-xs uppercase tracking-widest font-bold mb-8">
               <span>ex-McDonald&apos;s Global Technology</span>
               <span>·</span>
               <span>14,000+ Locations</span>
@@ -99,14 +121,14 @@ export default function Home() {
           variants={item}
           className="glass-card flex flex-col justify-between items-center text-center group cursor-default overflow-hidden p-6 md:p-8"
         >
-          <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-[10px] font-bold mb-4 md:mb-0">
+          <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-xs font-bold mb-4 md:mb-0">
             <Clock size={12} />
             <span>Chicago, IL</span>
           </div>
           <div className="text-3xl sm:text-4xl font-mono font-bold tracking-tighter tabular-nums my-4 md:my-0">
             {time || "00:00:00"}
           </div>
-          <div className="text-[10px] text-muted uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
+          <div className="text-xs text-muted uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
             Velocity Made Good
           </div>
         </motion.div>
@@ -160,7 +182,7 @@ export default function Home() {
                 Genubi <ArrowUpRight size={16} className="text-white/50 group-hover:text-white transition-colors" />
               </h3>
               <div className="text-right">
-                  <div className="text-[10px] text-muted uppercase font-bold tracking-widest">Current</div>
+                  <div className="text-xs text-muted uppercase font-bold tracking-widest">Current</div>
                   <div className="text-xs text-white">Chief of Eng</div>
               </div>
             </div>
@@ -170,7 +192,7 @@ export default function Home() {
               </div>
               <div className="mt-4 flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                <span className="text-[10px] uppercase tracking-widest font-bold text-white">Prod • 99.5% Uptime</span>
+                <span className="text-xs uppercase tracking-widest font-bold text-white">Prod • 99.5% Uptime • 4× Latency Reduction</span>
               </div>
             </div>
           </div>
@@ -182,7 +204,7 @@ export default function Home() {
           className="glass-card md:col-span-2 flex flex-col justify-between group cursor-default relative overflow-hidden border border-[#1a1a1a] p-6 md:p-8"
         >
           <div>
-            <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-[10px] font-bold mb-4">
+            <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-xs font-bold mb-4">
               <Cpu size={12} />
               <span>Past Engagement · Global Technology</span>
             </div>
@@ -194,12 +216,12 @@ export default function Home() {
           <div className="flex gap-6 mt-6">
             <div>
               <div className="text-3xl font-black tabular-nums">82%</div>
-              <div className="text-[10px] text-muted uppercase tracking-widest mt-1">Order Accuracy</div>
+              <div className="text-xs text-muted uppercase tracking-widest mt-1">Order Accuracy</div>
             </div>
             <div className="w-[1px] bg-[#1a1a1a]" />
             <div>
               <div className="text-3xl font-black tabular-nums">14K+</div>
-              <div className="text-[10px] text-muted uppercase tracking-widest mt-1">Locations</div>
+              <div className="text-xs text-muted uppercase tracking-widest mt-1">Locations</div>
             </div>
           </div>
         </motion.div>
@@ -209,7 +231,7 @@ export default function Home() {
           variants={item}
           className="glass-card md:col-span-2 flex flex-col justify-between overflow-hidden p-6 md:p-8"
         >
-          <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-[10px] font-bold mb-4">
+          <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-xs font-bold mb-4">
             <Terminal size={12} />
             <span>Infrastructure Stack</span>
           </div>
@@ -220,6 +242,40 @@ export default function Home() {
               </span>
             ))}
           </div>
+        </motion.div>
+
+        {/* Clean Slate Explainer */}
+        <motion.div
+          variants={item}
+          className="glass-card col-span-1 md:col-span-4 p-6 md:p-8"
+        >
+          <p className="text-xs text-muted uppercase tracking-widest mb-2">The Methodology</p>
+          <h3 className="text-lg font-semibold mb-3">What is Clean Slate?</h3>
+          <p className="text-muted text-sm leading-relaxed max-w-4xl">
+            Clean Slate is VMG&apos;s engineering methodology: every engagement starts with Infrastructure as Code from day one — no ClickOps, no legacy baggage. A monorepo structure gives AI agents and engineers full context across the stack, and a strict <span className="text-white font-medium">Plan → Act → Validate</span> loop prevents expensive mistakes before they ship. The result: production-ready systems in 28 days, built to last.
+          </p>
+        </motion.div>
+
+        {/* Testimonials */}
+        <motion.div
+          variants={item}
+          className="col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6"
+        >
+          <p className="col-span-full text-xs text-muted uppercase tracking-widest mb-1">What clients say</p>
+          {testimonials.map((t) => (
+            <div key={t.name + t.quote.slice(0, 20)} className="glass-card flex flex-col gap-3 p-6">
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={12} className="text-white" fill="white" />
+                ))}
+              </div>
+              <p className="text-sm text-muted leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
+              <div>
+                <p className="text-sm font-medium">{t.name}</p>
+                <p className="text-xs text-muted">{t.title} · {t.company}</p>
+              </div>
+            </div>
+          ))}
         </motion.div>
 
         {/* CTA Card */}
@@ -238,7 +294,7 @@ export default function Home() {
           </div>
           <div className="relative z-10 p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 h-full">
             <div>
-              <div className="flex items-center gap-2 text-white/40 uppercase tracking-widest text-[10px] font-bold mb-4">
+              <div className="flex items-center gap-2 text-white/40 uppercase tracking-widest text-xs font-bold mb-4">
                 <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                 Clean Slate Engagements
               </div>
@@ -249,12 +305,17 @@ export default function Home() {
                 Your stack rebuilt. Production-ready in 28 days. No ClickOps. No shortcuts. Full IaC from day one.
               </p>
             </div>
-            <Link
-              href="/contact"
-              className="shrink-0 flex items-center gap-2 bg-white text-black px-8 py-4 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm whitespace-nowrap"
-            >
-              Start the Conversation <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-            </Link>
+            <div className="shrink-0 flex flex-col items-start md:items-end gap-2">
+              <a
+                href="https://calendly.com/gilpina/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-white text-black px-8 py-4 min-h-[44px] font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm whitespace-nowrap"
+              >
+                Book a Free 30-Min Architecture Call <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+              </a>
+              <p className="text-white/30 text-xs uppercase tracking-widest">Limited availability · 2 engagement slots open Q2 2026</p>
+            </div>
           </div>
         </motion.div>
 

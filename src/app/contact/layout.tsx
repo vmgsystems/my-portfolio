@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Gilberto Pina",
-  description: "Get in touch for architectural audits, canary launches, and interim engineering leadership.",
+  title: "Book a Consultation | VMG Systems — AI Infrastructure",
+  description: "Book a free 30-minute architecture call with VMG Systems. Get a full remediation roadmap in 1–2 weeks.",
   openGraph: {
-    title: "Contact | Gilberto Pina",
-    description: "Get in touch for architectural audits, canary launches, and interim engineering leadership.",
+    title: "Book a Consultation | VMG Systems — AI Infrastructure",
+    description: "Book a free 30-minute architecture call with VMG Systems. Get a full remediation roadmap in 1–2 weeks.",
     url: "https://www.vmg.systems/contact",
     images: [
       {
         url: "/contact-bg.png",
         width: 1200,
         height: 630,
-        alt: "Contact - Gilberto Pina",
+        alt: "Book a Consultation — VMG Systems",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact | Gilberto Pina",
-    description: "Get in touch for architectural audits, canary launches, and interim engineering leadership.",
+    title: "Book a Consultation | VMG Systems — AI Infrastructure",
+    description: "Book a free 30-minute architecture call with VMG Systems. Get a full remediation roadmap in 1–2 weeks.",
     images: ["/contact-bg.png"],
   },
 };
