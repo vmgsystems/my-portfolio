@@ -169,7 +169,7 @@ export default function Consulting() {
                 </div>
                 <div className="border-b border-[#1a1a1a] pb-4">
                   <div className="text-xs font-bold uppercase tracking-widest text-white mb-2">Backend</div>
-                  <div className="text-sm text-muted">Modular, asynchronous Python (FastAPI) with abstracted LLM orchestration.</div>
+                  <div className="text-sm text-muted">Async Python (FastAPI) with clean LLM abstraction layers and structured output validation.</div>
                 </div>
                 <div className="border-b border-[#1a1a1a] pb-4">
                   <div className="text-xs font-bold uppercase tracking-widest text-white mb-2">Frontend</div>
