@@ -25,7 +25,7 @@ const milestones = [
     year: "2025-Present",
     title: "Interim Chief of Engineering",
     company: "Genubi",
-    description: "Led a high-intensity 28-day ‘Canary Launch’ sprint to completely rebuild a legacy mobile data capture platform. Engineered native background audio persistence and secure GCP data pipelines, achieving a 4× reduction in end-to-end audio processing latency and 99.5% production uptime from day one.",
+    description: "Completely rebuilt a legacy mobile data capture platform in 28 days. Engineered native background audio persistence and secure GCP data pipelines, achieving a 4x reduction in end-to-end audio processing latency and 99.5% production uptime from day one.",
     icon: <Briefcase className="text-white" />
   },
   {
@@ -99,7 +99,7 @@ export default function Timeline() {
               <span className="text-white/60">Milestones.</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              From engineering edge-compute AI at a global enterprise to executing architectural rebuilds for agile startups.
+              From McDonald&apos;s drive-thrus to early-stage startups. Same standard either way.
             </p>
           </div>
         </motion.div>
