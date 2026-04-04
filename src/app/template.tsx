@@ -26,14 +26,14 @@ export default function Template({ children }: { children: React.ReactNode }) {
           </div>
           <div>VMG <span className="text-muted font-normal">Systems</span></div>
         </Link>
-        <div className="flex gap-6 md:gap-8 text-[10px] uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-muted overflow-x-auto whitespace-nowrap w-full md:w-auto pb-2 md:pb-0 no-scrollbar justify-start md:justify-end items-center">
+        <div className="flex gap-6 md:gap-8 text-xs uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-muted overflow-x-auto whitespace-nowrap w-full md:w-auto pb-2 md:pb-0 no-scrollbar justify-start md:justify-end items-center">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
-              <Link 
+              <Link
                 key={link.href}
-                href={link.href} 
-                className={`transition-colors relative py-1 ${isActive ? "text-white" : "hover:text-white"}`}
+                href={link.href}
+                className={`transition-colors relative py-3 md:py-1 ${isActive ? "text-white" : "hover:text-white"}`}
               >
                 {link.label}
                 {isActive && (
@@ -47,8 +47,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
             );
           })}
           <div className="w-[1px] h-3 bg-[#1a1a1a] mx-2 hidden md:block" />
-          <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Github size={14} /></a>
-          <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Linkedin size={14} /></a>
+          <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-3 -m-3 md:p-0 md:m-0"><Github size={14} /></a>
+          <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-3 -m-3 md:p-0 md:m-0"><Linkedin size={14} /></a>
         </div>
       </nav>
 
@@ -65,7 +65,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         </motion.div>
       </AnimatePresence>
 
-      <footer className="p-8 flex flex-col items-center justify-center gap-4 text-[10px] text-muted uppercase tracking-widest border-t border-[#1a1a1a] mt-24">
+      <footer className="p-8 flex flex-col items-center justify-center gap-4 text-xs text-muted uppercase tracking-widest border-t border-[#1a1a1a] mt-24">
         <div className="flex gap-6">
           <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><Github size={12} /> GitHub</a>
           <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><Linkedin size={12} /> LinkedIn</a>

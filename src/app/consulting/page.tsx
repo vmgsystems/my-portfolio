@@ -88,7 +88,7 @@ export default function Consulting() {
               <span className="text-white/60 text-3xl md:text-4xl">Technical Consulting & Architecture</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect &quot;Clean Slate&quot; solutions designed for scale, speed, and absolute stability — delivering production systems in 28 days and maintaining 99.5% uptime across every platform we ship.
+              At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect &quot;Clean Slate&quot; solutions designed for scale, speed, and absolute stability — delivering production systems in 28 days and maintaining 99.5% uptime across every platform we ship. Most recent engagement: 4× latency reduction in a single 28-day sprint.
             </p>
           </div>
         </motion.div>
@@ -118,7 +118,7 @@ export default function Consulting() {
                 </ul>
               </div>
               <div className="mt-8 pt-8 border-t border-[#1a1a1a]">
-                <Link href="/contact" className="text-[10px] font-bold uppercase tracking-[0.2em] text-white hover:underline underline-offset-4">
+                <Link href="/contact" className="text-xs font-bold uppercase tracking-[0.2em] text-white hover:underline underline-offset-4 inline-block py-3">
                   {service.cta} →
                 </Link>
               </div>
@@ -164,19 +164,19 @@ export default function Consulting() {
               <h4 className="text-lg font-bold uppercase tracking-widest mb-6">Technical Standards</h4>
               <div className="space-y-6">
                 <div className="border-b border-[#1a1a1a] pb-4">
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Security</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-white mb-2">Security</div>
                   <div className="text-sm text-muted">Workload Identity Federation and strict, authenticated-only access from Day 1.</div>
                 </div>
                 <div className="border-b border-[#1a1a1a] pb-4">
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Backend</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-white mb-2">Backend</div>
                   <div className="text-sm text-muted">Modular, asynchronous Python (FastAPI) with abstracted LLM orchestration.</div>
                 </div>
                 <div className="border-b border-[#1a1a1a] pb-4">
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Frontend</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-white mb-2">Frontend</div>
                   <div className="text-sm text-muted">Accessible (WCAG 2.2 AA), type-safe interfaces built with Next.js and React Native.</div>
                 </div>
                 <div className="border-b border-[#1a1a1a] pb-4 border-b-0">
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-white mb-2">Observability</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-white mb-2">Observability</div>
                   <div className="text-sm text-muted">Real-time error tracking and full logging of every AI call, including inputs, outputs, and latency.</div>
                 </div>
               </div>
