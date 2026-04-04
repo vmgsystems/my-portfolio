@@ -88,7 +88,7 @@ export default function Consulting() {
               <span className="text-white/60 text-3xl md:text-4xl">Technical Consulting & Architecture</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect &quot;Clean Slate&quot; solutions designed for scale, speed, and absolute stability — delivering production systems in 28 days and maintaining 99.5% uptime across every platform we ship. Most recent engagement: 4× latency reduction in a single 28-day sprint.
+              At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect &quot;Clean Slate&quot; solutions designed for scale, speed, and absolute stability, delivering production systems in 28 days and maintaining 99.5% uptime across every platform we ship. Most recent engagement: 4x latency reduction in a single 28-day sprint.
             </p>
           </div>
         </motion.div>
@@ -131,7 +131,7 @@ export default function Consulting() {
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">VMG SYSTEMS, LLC</h2>
           <h3 className="text-xl text-muted mb-6">Precision Engineering for the AI-Native Era</h3>
           <p className="text-muted leading-relaxed mb-12 max-w-3xl">
-            Modern problems require more than just code—they require a foundational strategy that prevents expensive mistakes before they happen.
+            Modern problems require more than just code. They require a foundational strategy that prevents expensive mistakes before they happen.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">

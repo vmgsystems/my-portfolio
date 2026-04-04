@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.vmg.systems"),
-  title: "VMG Systems | AI Infrastructure Consulting — Chicago",
+  title: "VMG Systems | AI Infrastructure Consulting, Chicago",
   description: "VMG Systems ships production-grade AI infrastructure in 28 days. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
   openGraph: {
-    title: "VMG Systems | AI Infrastructure Consulting — Chicago",
+    title: "VMG Systems | AI Infrastructure Consulting, Chicago",
     description: "VMG Systems ships production-grade AI infrastructure in 28 days. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
     url: "https://www.vmg.systems",
     siteName: "VMG Systems",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: "/hero.png",
         width: 1200,
         height: 630,
-        alt: "VMG Systems — AI Infrastructure Consulting Chicago",
+        alt: "VMG Systems | AI Infrastructure Consulting Chicago",
       },
     ],
     locale: "en_US",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "VMG Systems | AI Infrastructure Consulting — Chicago",
+    title: "VMG Systems | AI Infrastructure Consulting, Chicago",
     description: "VMG Systems ships production-grade AI infrastructure in 28 days. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
     images: ["/hero.png"],
   },
