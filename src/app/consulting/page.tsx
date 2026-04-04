@@ -15,18 +15,18 @@ const services = [
   {
     title: "AI Integration & Data Pipelines",
     icon: <BrainCircuit className="text-white" />,
-    description: "Turn proprietary data into a strategic asset using modern LLM frameworks and vector databases.",
+    description: "Your data is already valuable. We build the pipelines and retrieval layers that make it usable by AI.",
     details: [
       "Vector Database implementation (PostgreSQL/pgvector)",
       "RAG workflows using Gemini Pro and Claude",
-      "Voice-Recognized Data Analysis methodologies"
+      "Voice AI data capture and processing pipelines"
     ],
     cta: "Request an AI/ML Strategy Review"
   },
   {
     title: "Cloud Infrastructure & Modernization",
     icon: <Cloud className="text-white" />,
-    description: "Legacy technical debt is the anchor slowing down modern businesses. We design and deploy high-performance, cloud-native environments.",
+    description: "We replace manual cloud configuration with Terraform-managed, reproducible infrastructure. GCP and AWS, built to last.",
     details: [
       "Custom GCP and AWS (S3) architecture",
       "Zero-trust infrastructure via Tailscale",
@@ -37,11 +37,11 @@ const services = [
   {
     title: "Custom Platform & API Engineering",
     icon: <Cpu className="text-white" />,
-    description: "We build the engines that power your products, focusing on robust backend logic and seamless frontend execution.",
+    description: "FastAPI backends, React Native frontends, and the integration layer between them. Shipped in 28 days, not 6 months.",
     details: [
       "React Native with native background persistence",
       "High-throughput Python API architecture",
-      "28-day 'Canary Launch' rapid prototyping"
+      "28-day production launch with full observability"
     ],
     cta: "Request a Platform Engineering Consultation"
   }
@@ -88,7 +88,7 @@ export default function Consulting() {
               <span className="text-white/60 text-3xl md:text-4xl">Technical Consulting & Architecture</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              At VMG Systems, we specialize in bridging the gap between ambitious product vision and production-ready, highly resilient infrastructure. We architect &quot;Clean Slate&quot; solutions designed for scale, speed, and absolute stability, delivering production systems in 28 days and maintaining 99.5% uptime across every platform we ship. Most recent engagement: 4x latency reduction in a single 28-day sprint.
+              We come in, strip the technical debt, and ship a production system in 28 days. IaC from day one, zero ClickOps, full observability. Most recent engagement: Genubi, 4x latency reduction, 99.5% uptime from launch.
             </p>
           </div>
         </motion.div>
@@ -129,16 +129,16 @@ export default function Consulting() {
         {/* VMG Systems Core Philosophy & Standards */}
         <motion.div variants={item} className="mt-24 glass-card p-8 md:p-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">VMG SYSTEMS, LLC</h2>
-          <h3 className="text-xl text-muted mb-6">Precision Engineering for the AI-Native Era</h3>
+          <h3 className="text-xl text-muted mb-6">How we work.</h3>
           <p className="text-muted leading-relaxed mb-12 max-w-3xl">
-            Modern problems require more than just code. They require a foundational strategy that prevents expensive mistakes before they happen.
+            Most engineering failures are architectural, not technical. We fix the foundation first, then build on top of it.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
               <h4 className="text-lg font-bold uppercase tracking-widest mb-6">Our Core Philosophy: The VMG Protocol</h4>
               <p className="text-muted text-sm leading-relaxed mb-6">
-                We don&apos;t just build software; we build systems designed for human-AI collaboration. By establishing strict &quot;Rules of Engagement&quot; on Day 0, we ensure that every project is scalable, observable, and resilient.
+                Every engagement starts with rules. Before writing a line of code, we define how the system is built, tested, and observed. That upfront work is what makes 28 days possible.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3 text-sm text-muted">
@@ -155,7 +155,7 @@ export default function Consulting() {
                 </li>
                 <li className="flex items-start gap-3 text-sm text-muted">
                   <CheckCircle2 size={16} className="text-white mt-1 shrink-0" />
-                  <div><strong className="text-white">Stochastic Reliability:</strong> We treat LLM outputs as variables that must be tested against &quot;Golden Datasets&quot; to prevent performance degradation.</div>
+                  <div><strong className="text-white">LLM Output Testing:</strong> AI models drift. We build eval datasets on day one and run regression tests on every deployment to catch accuracy drops before users do.</div>
                 </li>
               </ul>
             </div>
@@ -184,9 +184,9 @@ export default function Consulting() {
           </div>
 
           <div className="p-6 md:p-8 bg-transparent border border-[#1a1a1a]">
-            <h4 className="text-lg font-bold uppercase tracking-widest mb-4">&quot;The VMG Secret Sauce&quot;</h4>
+            <h4 className="text-lg font-bold uppercase tracking-widest mb-4">Observability on day one.</h4>
             <p className="text-muted text-sm leading-relaxed">
-              We believe observability is not a &quot;Phase 2&quot; task. From the first line of code, we implement automated triage, AI-driven PR reviews, and &quot;Destruction Guards&quot; to protect your production data.
+              We set up Langfuse before writing the first feature. Every AI call is logged with inputs, outputs, and latency from the first deployment. When something breaks, you know why before your users do.
             </p>
           </div>
         </motion.div>
@@ -197,7 +197,7 @@ export default function Consulting() {
             <div>
               <h2 className="text-3xl font-bold tracking-tight mb-4">Engagement Model</h2>
               <p className="text-muted leading-relaxed mb-6">
-                We operate as a high-velocity, integrated strike team. Whether you need an interim Chief of Engineering to right the ship, or a dedicated squad to execute a 28-day Canary Launch, we align our success with your deployment metrics.
+                Two modes: embedded or sprint. Embedded means I&apos;m your interim engineering lead. Sprint means a defined 28-day build with a fixed scope and a production handoff at the end.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3 text-sm text-white/80">
@@ -213,7 +213,7 @@ export default function Consulting() {
             <div className="flex flex-col justify-center items-start md:items-end md:text-right border-t md:border-t-0 md:border-l border-[#1a1a1a] pt-8 md:pt-0 md:pl-12">
               <h3 className="text-2xl font-bold mb-4">Ready to rebuild?</h3>
               <p className="text-muted text-sm mb-8 max-w-sm">
-                Stop fighting technical debt. Let&apos;s design a system that accelerates your business.
+                Tell me what&apos;s broken. I&apos;ll tell you if I can fix it.
               </p>
               <Link href="/contact" className="w-fit flex items-center gap-2 bg-white text-black px-8 py-4 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/cta text-sm uppercase tracking-widest">
                 Initiate Contact <Cloud size={16} className="group-hover/cta:translate-y-[-2px] transition-transform" />
