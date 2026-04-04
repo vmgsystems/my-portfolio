@@ -68,12 +68,12 @@ export default function Contact() {
             <p className="text-muted text-xs uppercase tracking-widest font-bold">Connect & Message</p>
           </a>
 
-          <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="glass-card flex flex-col items-center justify-center text-center group hover:bg-[#111] transition-colors border border-[#1a1a1a] p-12">
+          <a href="https://calendly.com/gilpina/30min" target="_blank" rel="noopener noreferrer" className="glass-card flex flex-col items-center justify-center text-center group hover:bg-[#111] transition-colors border border-[#1a1a1a] p-12">
             <div className="p-4 border border-[#1a1a1a] mb-6 group-hover:border-[#333] transition-colors">
               <Calendar className="text-white" size={24} />
             </div>
             <h3 className="text-xl font-bold mb-2">Book a Call</h3>
-            <p className="text-muted text-xs uppercase tracking-widest font-bold">Message on LinkedIn</p>
+            <p className="text-muted text-xs uppercase tracking-widest font-bold">Schedule via Calendly</p>
           </a>
         </motion.div>
 
