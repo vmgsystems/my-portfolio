@@ -30,7 +30,7 @@ const milestones = [
   },
   {
     year: "2018 – 2022",
-    title: "Enterprise Innovation & AI Architecture",
+    title: "Technology Advisor",
     company: "McDonald’s Corporation",
     description: "Core contributor to the Automated Order Taker (AOT) — McDonald’s AI-powered drive-thru voice system, now patent-pending and deployed across 14,000+ locations globally. Led development contributing to an 82% improvement in order accuracy. Engineered edge-to-cloud pipelines allowing localized hardware to communicate instantly with centralized AI models.",
     icon: <Briefcase className="text-white" />
