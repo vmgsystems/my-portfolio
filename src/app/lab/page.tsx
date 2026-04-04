@@ -89,7 +89,7 @@ export default function Lab() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {experiments.map((exp, index) => (
             <motion.div 
               key={index}
@@ -124,6 +124,19 @@ export default function Lab() {
             </motion.div>
           ))}
         </div>
+        <motion.div variants={item} className="glass-card border border-[#1a1a1a] p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-muted mb-3">Everything here runs in production</p>
+            <h3 className="text-2xl md:text-3xl font-black text-white">We dogfood what we sell.</h3>
+            <p className="text-muted text-sm mt-2 max-w-lg">Every system above runs live. If it works for VMG, it ships to clients.</p>
+          </div>
+          <Link
+            href="/contact"
+            className="shrink-0 flex items-center gap-2 bg-white text-black px-8 py-4 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm whitespace-nowrap"
+          >
+            Build With Us <ArrowLeft size={16} className="rotate-180 group-hover/btn:translate-x-1 transition-transform" />
+          </Link>
+        </motion.div>
       </motion.div>
     </main>
   );

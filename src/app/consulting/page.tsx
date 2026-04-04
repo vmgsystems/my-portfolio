@@ -136,7 +136,7 @@ export default function Consulting() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
-              <h4 className="text-lg font-bold uppercase tracking-widest mb-6">Our Core Philosophy: The Alfred Protocol</h4>
+              <h4 className="text-lg font-bold uppercase tracking-widest mb-6">Our Core Philosophy: The VMG Protocol</h4>
               <p className="text-muted text-sm leading-relaxed mb-6">
                 We don&apos;t just build software; we build systems designed for human-AI collaboration. By establishing strict &quot;Rules of Engagement&quot; on Day 0, we ensure that every project is scalable, observable, and resilient.
               </p>

@@ -51,16 +51,16 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        <motion.div variants={item} className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <a href="mailto:hello@gilbertopina.com" className="glass-card flex flex-col items-center justify-center text-center group hover:bg-[#111] transition-colors border border-[#1a1a1a] p-12">
+        <motion.div variants={item} className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <a href="mailto:hello@vmg.systems" className="glass-card flex flex-col items-center justify-center text-center group hover:bg-[#111] transition-colors border border-[#1a1a1a] p-12">
             <div className="p-4 border border-[#1a1a1a] mb-6 group-hover:border-[#333] transition-colors">
               <Mail className="text-white" size={24} />
             </div>
             <h3 className="text-xl font-bold mb-2">Direct Email</h3>
-            <p className="text-muted text-xs uppercase tracking-widest font-bold">hello@gilbertopina.com</p>
+            <p className="text-muted text-xs uppercase tracking-widest font-bold">hello@vmg.systems</p>
           </a>
-          
-          <a href="https://linkedin.com/in/gilbertopina" target="_blank" rel="noopener noreferrer" className="glass-card flex flex-col items-center justify-center text-center group hover:bg-[#111] transition-colors border border-[#1a1a1a] p-12">
+
+          <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="glass-card flex flex-col items-center justify-center text-center group hover:bg-[#111] transition-colors border border-[#1a1a1a] p-12">
             <div className="p-4 border border-[#1a1a1a] mb-6 group-hover:border-[#333] transition-colors">
               <Linkedin className="text-white" size={24} />
             </div>
@@ -75,6 +75,27 @@ export default function Contact() {
             <h3 className="text-xl font-bold mb-2">Book a Call</h3>
             <p className="text-muted text-xs uppercase tracking-widest font-bold">Schedule via Calendly</p>
           </a>
+        </motion.div>
+
+        <motion.div variants={item} className="glass-card border border-[#1a1a1a] p-8 md:p-12">
+          <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-muted mb-8">What happens next</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex flex-col gap-3">
+              <div className="text-2xl font-black text-white">01</div>
+              <h4 className="font-bold text-white">Intro Call</h4>
+              <p className="text-muted text-sm leading-relaxed">30 minutes. You walk me through the problem. I ask the hard questions about your stack, timeline, and constraints.</p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <div className="text-2xl font-black text-white">02</div>
+              <h4 className="font-bold text-white">Architecture Audit</h4>
+              <p className="text-muted text-sm leading-relaxed">1–2 week deep dive into your codebase. You get a full remediation roadmap — whether we work together or not.</p>
+            </div>
+            <div className="flex flex-col gap-3">
+              <div className="text-2xl font-black text-white">03</div>
+              <h4 className="font-bold text-white">Canary Launch</h4>
+              <p className="text-muted text-sm leading-relaxed">28-day clean-slate rebuild. IaC from day one, full observability, production-ready on delivery.</p>
+            </div>
+          </div>
         </motion.div>
       </motion.div>
     </main>
