@@ -80,7 +80,7 @@ export default function Home() {
               <span className="text-white">Momentum.</span>
             </h1>
             <p className="text-white/70 text-sm md:text-base lg:text-lg leading-relaxed mb-4 max-w-xl font-medium">
-              AI infrastructure architect shipping production-grade systems in 28 days — IaC-first, zero ClickOps, built to last.
+              AI infrastructure architect shipping production-grade systems in 28 days. IaC-first, zero ClickOps, built to last.
             </p>
             <div className="flex items-center gap-2 text-white/35 text-xs uppercase tracking-widest font-bold mb-8">
               <span>ex-McDonald&apos;s Global Technology</span>
@@ -189,7 +189,7 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-bold mb-2">McDonald&apos;s AOT</h3>
             <p className="text-muted text-sm leading-relaxed">
-              Core contributor to the Automated Order Taker — McDonald&apos;s AI-powered drive-thru voice system, now patent-pending and deployed globally.
+              Core contributor to the Automated Order Taker, McDonald&apos;s AI-powered drive-thru voice system, now patent-pending and deployed globally.
             </p>
           </div>
           <div className="flex gap-6 mt-6">
@@ -231,7 +231,7 @@ export default function Home() {
           <p className="text-xs text-muted uppercase tracking-widest mb-2">The Methodology</p>
           <h3 className="text-lg font-semibold mb-3">What is Clean Slate?</h3>
           <p className="text-muted text-sm leading-relaxed max-w-4xl">
-            Clean Slate is VMG&apos;s engineering methodology: every engagement starts with Infrastructure as Code from day one — no ClickOps, no legacy baggage. A monorepo structure gives AI agents and engineers full context across the stack, and a strict <span className="text-white font-medium">Plan → Act → Validate</span> loop prevents expensive mistakes before they ship. The result: production-ready systems in 28 days, built to last.
+            Clean Slate is VMG&apos;s engineering methodology: every engagement starts with Infrastructure as Code from day one. No ClickOps, no legacy baggage. A monorepo structure gives AI agents and engineers full context across the stack, and a strict <span className="text-white font-medium">Plan → Act → Validate</span> loop prevents expensive mistakes before they ship. The result: production-ready systems in 28 days, built to last.
           </p>
         </motion.div>
 

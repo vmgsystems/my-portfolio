@@ -88,7 +88,7 @@ export default function Contact() {
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">02</div>
               <h4 className="font-bold text-white">Architecture Audit</h4>
-              <p className="text-muted text-sm leading-relaxed">1–2 week deep dive into your codebase. You get a full remediation roadmap — whether we work together or not.</p>
+              <p className="text-muted text-sm leading-relaxed">1 to 2 week deep dive into your codebase. You get a full remediation roadmap, whether we work together or not.</p>
             </div>
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">03</div>

@@ -17,7 +17,7 @@ const experiments = [
     title: "EA Agent System",
     subtitle: "Qdrant · Gemini · Claude CLI",
     icon: <BrainCircuit className="text-white" />,
-    description: "Autonomous morning brief and EOD wrap agents running on a self-hosted LXC. Each run recalls context from a Qdrant vector store (3,072-dim Gemini embeddings), generates a brief via Claude, posts to Slack, then extracts and stores new memories — creating a persistent, self-improving context loop.",
+    description: "Autonomous morning brief and EOD wrap agents running on a self-hosted LXC. Each run recalls context from a Qdrant vector store (3,072-dim Gemini embeddings), generates a brief via Claude, posts to Slack, then extracts and stores new memories, creating a persistent, self-improving context loop.",
     tag: "AI / Memory"
   },
   {
@@ -84,7 +84,7 @@ export default function Lab() {
               <span className="text-white/60">Lab.</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              Production systems built in the open. These are the tools, agents, and infrastructure experiments that run VMG Systems — dogfooding everything we sell.
+              Production systems built in the open. These are the tools, agents, and infrastructure experiments that run VMG Systems. We dogfood everything we sell.
             </p>
           </div>
         </motion.div>
