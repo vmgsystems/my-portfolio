@@ -42,11 +42,11 @@ export default function Contact() {
               <ArrowLeft size={16} /> Back to Architecture
             </Link>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
-              Let’s Architect Your <br/>
-              <span className="text-white/60">Next Phase.</span>
+              Let&apos;s talk about <br/>
+              <span className="text-white/60">what&apos;s broken.</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              Whether you are navigating a complex platform migration, dealing with technical debt, or integrating AI pipelines, the right architecture is the difference between scaling and stalling. Tell me about the bottleneck you are currently facing.
+              Tell me what&apos;s not working. I&apos;ll tell you what it would take to fix it, and whether I&apos;m the right person to do it.
             </p>
           </div>
         </motion.div>
