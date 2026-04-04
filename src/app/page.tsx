@@ -143,29 +143,6 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* Currently Building Card */}
-        <motion.div
-          variants={item}
-          className="glass-card md:col-span-2 group cursor-default relative overflow-hidden !p-0 border border-[#1a1a1a] flex flex-col justify-center min-h-[180px]"
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] to-black" />
-          <div className="relative z-10 p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between w-full h-full gap-4">
-            <div className="relative z-10">
-              <div className="flex items-center gap-2 text-white/50 uppercase tracking-widest text-[10px] font-bold mb-3">
-                <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                Currently Building
-              </div>
-              <h3 className="text-xl sm:text-2xl font-bold mb-2">Homelab AI OS</h3>
-              <p className="text-white/70 text-sm max-w-xs">
-                10 self-hosted services. Proxmox, OPNsense, Qdrant, n8n, Langfuse — zero ClickOps, full IaC.
-              </p>
-            </div>
-            <div className="font-mono text-5xl sm:text-[80px] leading-none font-black opacity-10 select-none pointer-events-none relative z-10 self-end sm:self-auto">
-              IaC
-            </div>
-          </div>
-        </motion.div>
-
         {/* Genubi Highlight Card */}
         <motion.div 
           variants={item}
