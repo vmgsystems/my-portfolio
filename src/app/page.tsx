@@ -78,9 +78,16 @@ export default function Home() {
               Architecture of <br />
               <span className="text-white">Momentum.</span>
             </h1>
-            <p className="text-white/70 text-sm md:text-base lg:text-lg leading-relaxed mb-8 max-w-xl font-medium">
-              Bridging the gap between complex engineering and scalable product strategy. Founder of VMG Systems.
+            <p className="text-white/70 text-sm md:text-base lg:text-lg leading-relaxed mb-4 max-w-xl font-medium">
+              AI infrastructure architect shipping production-grade systems in 28 days — IaC-first, zero ClickOps, built to last.
             </p>
+            <div className="flex items-center gap-2 text-white/35 text-[10px] uppercase tracking-widest font-bold mb-8">
+              <span>ex-McDonald&apos;s Global Technology</span>
+              <span>·</span>
+              <span>14,000+ Locations</span>
+              <span>·</span>
+              <span>Patent-Pending AOT</span>
+            </div>
             <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-6 py-3 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm">
               Explore the Architecture <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
             </Link>
@@ -192,8 +199,36 @@ export default function Home() {
           </div>
         </motion.div>
 
+        {/* McDonald's Credential Card */}
+        <motion.div
+          variants={item}
+          className="glass-card md:col-span-2 flex flex-col justify-between group cursor-default relative overflow-hidden border border-[#1a1a1a] p-6 md:p-8"
+        >
+          <div>
+            <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-[10px] font-bold mb-4">
+              <Cpu size={12} />
+              <span>Past Engagement · Global Technology</span>
+            </div>
+            <h3 className="text-xl font-bold mb-2">McDonald&apos;s AOT</h3>
+            <p className="text-muted text-sm leading-relaxed">
+              Core contributor to the Automated Order Taker — McDonald&apos;s AI-powered drive-thru voice system, now patent-pending and deployed globally.
+            </p>
+          </div>
+          <div className="flex gap-6 mt-6">
+            <div>
+              <div className="text-3xl font-black tabular-nums">82%</div>
+              <div className="text-[10px] text-muted uppercase tracking-widest mt-1">Order Accuracy</div>
+            </div>
+            <div className="w-[1px] bg-[#1a1a1a]" />
+            <div>
+              <div className="text-3xl font-black tabular-nums">14K+</div>
+              <div className="text-[10px] text-muted uppercase tracking-widest mt-1">Locations</div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Tech Stack Card */}
-        <motion.div 
+        <motion.div
           variants={item}
           className="glass-card md:col-span-2 flex flex-col justify-between overflow-hidden p-6 md:p-8"
         >
@@ -202,7 +237,7 @@ export default function Home() {
             <span>Infrastructure Stack</span>
           </div>
           <div className="flex flex-wrap gap-2">
-            {['GCP', 'AWS', 'Python', 'React Native', 'Docker', 'Tailscale', 'Postgres', 'Gemini'].map((tech) => (
+            {['GCP', 'AWS', 'Python', 'React Native', 'Next.js', 'Terraform', 'Docker', 'Tailscale', 'Gemini', 'Claude', 'Langfuse', 'n8n'].map((tech) => (
               <span key={tech} className="px-3 py-1 border border-[#1a1a1a] text-xs font-mono hover:border-[#333] transition-colors">
                 {tech}
               </span>
@@ -213,7 +248,7 @@ export default function Home() {
         {/* Manifesto Preview */}
         <motion.div 
           variants={item}
-          className="glass-card md:col-span-2 hover:scale-[1.01] transition-all relative group/manifesto hover:border-[#333] !p-0 overflow-hidden border border-[#1a1a1a] flex flex-col justify-between min-h-[180px]"
+          className="glass-card md:col-span-4 hover:scale-[1.01] transition-all relative group/manifesto hover:border-[#333] !p-0 overflow-hidden border border-[#1a1a1a] flex flex-col justify-between min-h-[180px]"
         >
           <div className="absolute inset-0 z-0">
             <Image 
