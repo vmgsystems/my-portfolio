@@ -9,30 +9,9 @@ import {
   Clock,
   Code2,
   Terminal,
-  ChevronRight,
-  Star
+  ChevronRight
 } from "lucide-react";
 
-const testimonials = [
-  {
-    quote: "Gil rebuilt our entire data pipeline in under 30 days. What we expected to take a quarter shipped to production on schedule with better observability than anything we'd had before.",
-    name: "LinkedIn Recommendation",
-    title: "Placeholder Title",
-    company: "Placeholder Company",
-  },
-  {
-    quote: "Rare to find someone who can architect a system, write the infrastructure code, and ship a working product — all while keeping the team aligned. Gil does all three.",
-    name: "LinkedIn Recommendation",
-    title: "Placeholder Title",
-    company: "Placeholder Company",
-  },
-  {
-    quote: "The Clean Slate approach eliminated months of technical debt on day one. We went from fighting our stack to shipping features. Night and day difference.",
-    name: "LinkedIn Recommendation",
-    title: "Placeholder Title",
-    company: "Placeholder Company",
-  },
-];
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -256,27 +235,6 @@ export default function Home() {
           </p>
         </motion.div>
 
-        {/* Testimonials */}
-        <motion.div
-          variants={item}
-          className="col-span-1 md:col-span-4 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6"
-        >
-          <p className="col-span-full text-xs text-muted uppercase tracking-widest mb-1">What clients say</p>
-          {testimonials.map((t) => (
-            <div key={t.name + t.quote.slice(0, 20)} className="glass-card flex flex-col gap-3 p-6">
-              <div className="flex gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={12} className="text-white" fill="white" />
-                ))}
-              </div>
-              <p className="text-sm text-muted leading-relaxed italic">&ldquo;{t.quote}&rdquo;</p>
-              <div>
-                <p className="text-sm font-medium">{t.name}</p>
-                <p className="text-xs text-muted">{t.title} · {t.company}</p>
-              </div>
-            </div>
-          ))}
-        </motion.div>
 
         {/* CTA Card */}
         <motion.div
