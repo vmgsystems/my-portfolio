@@ -2,14 +2,15 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { 
-  Briefcase, 
-  Lightbulb, 
-  GraduationCap, 
+import {
+  Briefcase,
+  Lightbulb,
+  GraduationCap,
   ArrowLeft,
   Calendar
 } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 const milestones = [
   {
@@ -72,6 +73,8 @@ const item = {
 };
 
 export default function Timeline() {
+  const [expanded, setExpanded] = useState<Record<number, boolean>>({});
+
   return (
     <main className="min-h-screen p-5 sm:p-8 md:p-12 lg:p-24 max-w-5xl mx-auto pt-36 md:pt-32">
       <motion.div 
@@ -129,13 +132,19 @@ export default function Timeline() {
                   <div className="p-2 border border-[#1a1a1a] group-hover:border-[#333] transition-colors shrink-0">
                     {milestone.icon}
                   </div>
-                  <div>
+                  <div className="flex-1 min-w-0">
                     {milestone.location && (
                       <p className="text-xs font-bold uppercase tracking-widest text-muted mb-2">{milestone.location}</p>
                     )}
-                    <p className="text-muted text-sm leading-relaxed max-w-3xl">
+                    <p className={`text-muted text-sm leading-relaxed max-w-3xl ${!expanded[index] ? "line-clamp-3 md:line-clamp-none" : ""}`}>
                       {milestone.description}
                     </p>
+                    <button
+                      onClick={() => setExpanded(prev => ({ ...prev, [index]: !prev[index] }))}
+                      className="mt-2 text-xs font-bold uppercase tracking-widest text-white/40 hover:text-white transition-colors md:hidden"
+                    >
+                      {expanded[index] ? "Show less" : "Read more"}
+                    </button>
                   </div>
                 </div>
               </div>

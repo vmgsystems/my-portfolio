@@ -82,11 +82,11 @@ export default function Home() {
             <p className="text-white/70 text-sm md:text-base lg:text-lg leading-relaxed mb-4 max-w-xl font-medium">
               AI infrastructure architect shipping production-grade systems in 28 days. IaC-first, zero ClickOps, built to last.
             </p>
-            <div className="flex items-center gap-2 text-white/35 text-xs uppercase tracking-widest font-bold mb-8">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-white/35 text-[10px] md:text-xs uppercase tracking-widest font-bold mb-8">
               <span>ex-McDonald&apos;s Global Technology</span>
-              <span>·</span>
+              <span className="hidden sm:block">·</span>
               <span>14,000+ Locations</span>
-              <span>·</span>
+              <span className="hidden sm:block">·</span>
               <span>Patent-Pending AOT</span>
             </div>
             <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-6 py-3 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm">
