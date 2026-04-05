@@ -73,7 +73,8 @@ export default function Home() {
           <div className="relative z-10 p-6 md:p-10 flex flex-col justify-end h-full pt-32">
             <div className="flex items-center gap-2 text-white/80 mb-4 uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold bg-black w-fit px-3 py-1.5 border border-[#1a1a1a]">
               <Zap size={14} className="text-white" />
-              <span>AI Infrastructure · Clean Slate</span>
+              <span className="sm:hidden">AI Infrastructure</span>
+              <span className="hidden sm:inline">AI Infrastructure · Clean Slate</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4 text-white leading-tight md:leading-tight">
               Architecture of <br />
@@ -89,7 +90,7 @@ export default function Home() {
               <span className="hidden sm:block">·</span>
               <span>Patent-Pending AOT</span>
             </div>
-            <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-6 py-3 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm">
+            <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-6 py-4 md:py-3 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm mb-4 md:mb-0">
               Explore the Architecture <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
             </Link>
           </div>
