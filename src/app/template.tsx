@@ -19,25 +19,31 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <nav className="fixed top-0 left-0 right-0 z-50 p-4 md:p-6 flex flex-col md:flex-row justify-between items-center bg-black/80 backdrop-blur-md border-b border-[#1a1a1a] gap-4 md:gap-0">
-        <Link href="/" className="flex items-center gap-3 font-bold tracking-tighter text-xl shrink-0 group">
-          <div className="relative w-8 h-8 rounded-md overflow-hidden border border-[#1a1a1a] group-hover:border-[#333] transition-colors">
-            <Image src="/vmg-logo-new.png" alt="VMG Systems Logo" fill className="object-cover" />
+      <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-3 md:p-6 flex flex-col md:flex-row justify-between items-center bg-black/80 backdrop-blur-md border-b border-[#1a1a1a] gap-2 md:gap-0">
+        <div className="flex items-center justify-between w-full md:w-auto">
+          <Link href="/" className="flex items-center gap-3 font-bold tracking-tighter text-xl shrink-0 group">
+            <div className="relative w-8 h-8 rounded-md overflow-hidden border border-[#1a1a1a] group-hover:border-[#333] transition-colors">
+              <Image src="/vmg-logo-new.png" alt="VMG Systems Logo" fill className="object-cover" />
+            </div>
+            <div>VMG <span className="text-muted font-normal">Systems</span></div>
+          </Link>
+          <div className="flex items-center gap-4 md:hidden text-muted">
+            <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2"><Github size={14} /></a>
+            <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2"><Linkedin size={14} /></a>
           </div>
-          <div>VMG <span className="text-muted font-normal">Systems</span></div>
-        </Link>
-        <div className="flex gap-6 md:gap-8 text-xs uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-muted overflow-x-auto whitespace-nowrap w-full md:w-auto pb-2 md:pb-0 no-scrollbar justify-start md:justify-end items-center">
+        </div>
+        <div className="flex gap-4 md:gap-8 text-[10px] md:text-xs uppercase tracking-[0.15em] md:tracking-[0.3em] font-bold text-muted w-full md:w-auto justify-between md:justify-end items-center">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`transition-colors relative py-3 md:py-1 ${isActive ? "text-white" : "hover:text-white"}`}
+                className={`transition-colors relative py-2 md:py-1 shrink-0 ${isActive ? "text-white" : "hover:text-white"}`}
               >
                 {link.label}
                 {isActive && (
-                  <motion.div 
+                  <motion.div
                     layoutId="nav-underline"
                     className="absolute -bottom-1 left-0 right-0 h-[1px] bg-white"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
@@ -47,8 +53,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
             );
           })}
           <div className="w-[1px] h-3 bg-[#1a1a1a] mx-2 hidden md:block" />
-          <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-3 -m-3 md:p-0 md:m-0"><Github size={14} /></a>
-          <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-3 -m-3 md:p-0 md:m-0"><Linkedin size={14} /></a>
+          <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hidden md:block"><Github size={14} /></a>
+          <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hidden md:block"><Linkedin size={14} /></a>
         </div>
       </nav>
 

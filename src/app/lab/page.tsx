@@ -58,7 +58,7 @@ const item = {
 
 export default function Lab() {
   return (
-    <main className="min-h-screen p-8 md:p-12 lg:p-24 max-w-7xl mx-auto pt-32">
+    <main className="min-h-screen p-5 sm:p-8 md:p-12 lg:p-24 max-w-7xl mx-auto pt-36 md:pt-32">
       <motion.div 
         variants={container}
         initial="hidden"

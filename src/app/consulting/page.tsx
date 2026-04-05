@@ -62,7 +62,7 @@ const item = {
 
 export default function Consulting() {
   return (
-    <main className="min-h-screen p-8 md:p-12 lg:p-24 max-w-6xl mx-auto pt-32">
+    <main className="min-h-screen p-5 sm:p-8 md:p-12 lg:p-24 max-w-6xl mx-auto pt-36 md:pt-32">
       <motion.div 
         variants={container}
         initial="hidden"
@@ -95,10 +95,10 @@ export default function Consulting() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               variants={item}
-              className="glass-card flex flex-col justify-between group"
+              className={`glass-card flex flex-col justify-between group${index === services.length - 1 && services.length % 2 !== 0 ? " md:col-span-2" : ""}`}
             >
               <div>
                 <div className="p-3 border border-[#1a1a1a] w-fit mb-6 group-hover:bg-[#111] transition-colors">
