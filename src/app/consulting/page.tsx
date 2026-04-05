@@ -84,7 +84,7 @@ export default function Consulting() {
               <ArrowLeft size={16} /> Back to Architecture
             </Link>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
-              VMG Systems | <br/>
+              <span className="hidden sm:inline">VMG Systems | <br/></span>
               <span className="text-white/60 text-3xl md:text-4xl">Technical Consulting & Architecture</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
