@@ -32,7 +32,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2"><Linkedin size={14} /></a>
           </div>
         </div>
-        <div className="flex gap-4 md:gap-8 text-[10px] md:text-xs uppercase tracking-[0.15em] md:tracking-[0.3em] font-bold text-muted w-full md:w-auto justify-between md:justify-end items-center">
+        <div className="flex gap-3 md:gap-8 text-[9px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.3em] font-bold text-muted w-full md:w-auto justify-between md:justify-end items-center">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
