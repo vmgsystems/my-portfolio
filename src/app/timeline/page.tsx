@@ -23,7 +23,7 @@ const milestones = [
     current: true
   },
   {
-    year: "2025-Present",
+    year: "2026-Present",
     title: "Interim Chief of Engineering",
     company: "Genubi",
     description: "Completely rebuilt a legacy mobile data capture platform in 28 days. Engineered native background audio persistence and secure GCP data pipelines, achieving a 4x reduction in end-to-end audio processing latency and 99.5% production uptime from day one.",
