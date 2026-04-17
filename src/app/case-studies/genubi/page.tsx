@@ -46,7 +46,7 @@ export default function GenubiCaseStudy() {
             <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm font-bold tracking-widest uppercase mb-8">
               <ArrowLeft size={16} /> Back to Architecture
             </Link>
-            <div className="text-xs text-muted uppercase tracking-widest font-bold mb-4">Case Study · VMG Engagement · 2026</div>
+            <div className="text-xs text-muted uppercase tracking-widest font-bold mb-4">Case Study · VMG Engagement · Q1 2026</div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
               Genubi: 28 Days<br />
               <span className="text-white/60">to Production.</span>
