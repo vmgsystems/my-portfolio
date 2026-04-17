@@ -155,15 +155,15 @@ export default function Home() {
              <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
              <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/5 blur-[80px] rounded-full group-hover:bg-white/10 transition-colors duration-700" />
           </div>
-          <Link href="/lab" className="absolute inset-0 z-20" aria-label="View Genubi Project" />
+          <Link href="/case-studies/genubi" className="absolute inset-0 z-20" aria-label="View Genubi Case Study" />
           <div className="relative z-10 p-6 md:p-8 flex flex-col justify-between h-full pointer-events-none">
             <div className="flex justify-between items-start">
               <h3 className="text-lg font-bold uppercase tracking-tighter flex items-center gap-2 text-white">
                 Genubi <ArrowUpRight size={16} className="text-white/50 group-hover:text-white transition-colors" />
               </h3>
               <div className="text-right">
-                  <div className="text-xs text-muted uppercase font-bold tracking-widest">Current</div>
-                  <div className="text-xs text-white">Chief of Eng</div>
+                  <div className="text-xs text-muted uppercase font-bold tracking-widest">VMG Engagement</div>
+                  <div className="text-xs text-white">Interim CofE</div>
               </div>
             </div>
             <div className="mt-8">
@@ -237,6 +237,67 @@ export default function Home() {
         </motion.div>
 
 
+        {/* Testimonials */}
+        <motion.div
+          variants={item}
+          className="glass-card col-span-1 md:col-span-4 p-6 md:p-8"
+        >
+          <p className="text-xs text-muted uppercase tracking-widest mb-6">What clients say</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="border border-[#1a1a1a] p-6 flex flex-col justify-between gap-6">
+              <p className="text-sm text-white/70 leading-relaxed italic">
+                &ldquo;[Quote pending approval]&rdquo;
+              </p>
+              <div>
+                <div className="text-xs font-bold text-white">Ted Ganchiff</div>
+                <div className="text-xs text-muted uppercase tracking-widest mt-0.5">CEO · [Company]</div>
+              </div>
+            </div>
+            <div className="border border-[#1a1a1a] p-6 flex flex-col justify-between gap-6 opacity-40">
+              <p className="text-sm text-white/70 leading-relaxed italic">
+                &ldquo;[Client quote pending]&rdquo;
+              </p>
+              <div>
+                <div className="text-xs font-bold text-white">—</div>
+                <div className="text-xs text-muted uppercase tracking-widest mt-0.5">CTO · Series A AI Startup</div>
+              </div>
+            </div>
+            <div className="border border-[#1a1a1a] p-6 flex flex-col justify-between gap-6 opacity-40">
+              <p className="text-sm text-white/70 leading-relaxed italic">
+                &ldquo;[Client quote pending]&rdquo;
+              </p>
+              <div>
+                <div className="text-xs font-bold text-white">—</div>
+                <div className="text-xs text-muted uppercase tracking-widest mt-0.5">Head of Engineering · Fintech</div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Lead Magnet */}
+        <motion.div
+          variants={item}
+          className="glass-card col-span-1 md:col-span-4 border border-[#1a1a1a] p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+        >
+          <div>
+            <p className="text-xs text-muted uppercase tracking-widest mb-2">Free Resource</p>
+            <h3 className="text-xl font-bold mb-2">The Clean Slate Architecture Checklist</h3>
+            <p className="text-white/60 text-sm max-w-lg leading-relaxed">
+              12 questions to ask before rebuilding any production system. The same checklist VMG uses on day one of every engagement.
+            </p>
+          </div>
+          <div className="shrink-0 flex flex-col items-start md:items-end gap-2">
+            <a
+              href="/architecture-checklist.pdf"
+              download
+              className="flex items-center gap-2 border border-white text-white px-6 py-3 font-bold hover:bg-white hover:text-black transition-all duration-300 ease-out text-sm whitespace-nowrap"
+            >
+              Download the Checklist <ArrowUpRight size={14} />
+            </a>
+            <p className="text-white/30 text-xs uppercase tracking-widest">PDF · No email required</p>
+          </div>
+        </motion.div>
+
         {/* CTA Card */}
         <motion.div
           variants={item}
@@ -273,7 +334,7 @@ export default function Home() {
               >
                 Book a Free 30-Min Architecture Call <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
               </a>
-              <p className="text-white/30 text-xs uppercase tracking-widest">Limited availability · 2 engagement slots open Q2 2026</p>
+              <p className="text-white/30 text-xs uppercase tracking-widest">Limited availability · 1 engagement slot open Q3 2026</p>
             </div>
           </div>
         </motion.div>
