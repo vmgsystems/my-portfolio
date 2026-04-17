@@ -88,7 +88,8 @@ export default function Consulting() {
               <span className="text-white/60 text-3xl md:text-4xl">Technical Consulting & Architecture</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              We come in, strip the technical debt, and ship a production system in 28 days. IaC from day one, zero ClickOps, full observability. Most recent engagement: Genubi, 4x latency reduction, 99.5% uptime from launch.
+              We come in, strip the technical debt, and ship a production system in 28 days. IaC from day one, zero ClickOps, full observability. Most recent engagement: Genubi (VMG client, Q1 2026) — 28-day rebuild, 4x latency reduction, 99.5% uptime from launch.{" "}
+              <Link href="/case-studies/genubi" className="underline underline-offset-4 hover:text-white transition-colors">Read the case study →</Link>
             </p>
           </div>
         </motion.div>
