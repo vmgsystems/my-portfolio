@@ -15,7 +15,7 @@ const services = [
   {
     title: "AI Integration & Data Pipelines",
     icon: <BrainCircuit className="text-white" />,
-    description: "Your data is already valuable. We build the pipelines and retrieval layers that make it usable by AI.",
+    description: "Your data is already valuable. I build the pipelines and retrieval layers that make it usable by AI.",
     details: [
       "Vector Database implementation (PostgreSQL/pgvector)",
       "RAG workflows using Gemini Pro and Claude",
@@ -26,7 +26,7 @@ const services = [
   {
     title: "Cloud Infrastructure & Modernization",
     icon: <Cloud className="text-white" />,
-    description: "We replace manual cloud configuration with Terraform-managed, reproducible infrastructure. GCP and AWS, built to last.",
+    description: "I replace manual cloud configuration with Terraform-managed, reproducible infrastructure. GCP and AWS, built to last.",
     details: [
       "Custom GCP and AWS (S3) architecture",
       "Zero-trust infrastructure via Tailscale",
@@ -130,21 +130,21 @@ export default function Consulting() {
         {/* VMG Systems Core Philosophy & Standards */}
         <motion.div variants={item} className="mt-24 glass-card p-8 md:p-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-2">VMG SYSTEMS, LLC</h2>
-          <h3 className="text-xl text-muted mb-6">How we work.</h3>
+          <h3 className="text-xl text-muted mb-6">How I work.</h3>
           <p className="text-muted leading-relaxed mb-12 max-w-3xl">
-            Most engineering failures are architectural, not technical. We fix the foundation first, then build on top of it.
+            Most engineering failures are architectural, not technical. I fix the foundation first, then build on top of it.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div>
-              <h4 className="text-lg font-bold uppercase tracking-widest mb-6">Our Core Philosophy: The VMG Protocol</h4>
+              <h4 className="text-lg font-bold uppercase tracking-widest mb-6">The Clean Slate Methodology</h4>
               <p className="text-muted text-sm leading-relaxed mb-6">
-                Every engagement starts with rules. Before writing a line of code, we define how the system is built, tested, and observed. That upfront work is what makes 28 days possible.
+                Every engagement starts with rules. Before writing a line of code, I define how the system is built, tested, and observed. That upfront work is what makes 28 days possible.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3 text-sm text-muted">
                   <CheckCircle2 size={16} className="text-white mt-1 shrink-0" />
-                  <div><strong className="text-white">Monorepo Architecture:</strong> We start with a unified structure to provide AI agents and human developers full context across the entire stack.</div>
+                  <div><strong className="text-white">Monorepo Architecture:</strong> A unified structure provides AI agents and engineers full context across the entire stack.</div>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-muted">
                   <CheckCircle2 size={16} className="text-white mt-1 shrink-0" />
@@ -152,11 +152,11 @@ export default function Consulting() {
                 </li>
                 <li className="flex items-start gap-3 text-sm text-muted">
                   <CheckCircle2 size={16} className="text-white mt-1 shrink-0" />
-                  <div><strong className="text-white">The &quot;Plan → Act → Validate&quot; Loop:</strong> We never write massive features in one go; we execute via documented specs and rigorous validation.</div>
+                  <div><strong className="text-white">The &quot;Plan → Act → Validate&quot; Loop:</strong> No massive features in one go — every task is a documented spec executed through rigorous validation.</div>
                 </li>
                 <li className="flex items-start gap-3 text-sm text-muted">
                   <CheckCircle2 size={16} className="text-white mt-1 shrink-0" />
-                  <div><strong className="text-white">LLM Output Testing:</strong> AI models drift. We build eval datasets on day one and run regression tests on every deployment to catch accuracy drops before users do.</div>
+                  <div><strong className="text-white">LLM Output Testing:</strong> AI models drift. Eval datasets built on day one; regression tests run on every deployment to catch accuracy drops before users do.</div>
                 </li>
               </ul>
             </div>
@@ -187,7 +187,7 @@ export default function Consulting() {
           <div className="p-6 md:p-8 bg-transparent border border-[#1a1a1a]">
             <h4 className="text-lg font-bold uppercase tracking-widest mb-4">Observability on day one.</h4>
             <p className="text-muted text-sm leading-relaxed">
-              We set up Langfuse before writing the first feature. Every AI call is logged with inputs, outputs, and latency from the first deployment. When something breaks, you know why before your users do.
+              Langfuse is running before the first feature ships. Every AI call is logged with inputs, outputs, and latency. When something breaks, you know why before your users do.
             </p>
           </div>
         </motion.div>
