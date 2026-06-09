@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "AI Infrastructure Consulting | VMG Systems",
-  description: "Clean Slate architecture, AI pipelines, and cloud infrastructure consulting. Production-ready in 28 days. Chicago, IL.",
+  description: "Clean Slate architecture, AI pipelines, and cloud infrastructure consulting. Production-ready deployments. Chicago, IL.",
   openGraph: {
     title: "AI Infrastructure Consulting | VMG Systems",
-    description: "Clean Slate architecture, AI pipelines, and cloud infrastructure consulting. Production-ready in 28 days. Chicago, IL.",
+    description: "Clean Slate architecture, AI pipelines, and cloud infrastructure consulting. Production-ready deployments. Chicago, IL.",
     url: "https://www.vmg.systems/consulting",
     images: [
       {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AI Infrastructure Consulting | VMG Systems",
-    description: "Clean Slate architecture, AI pipelines, and cloud infrastructure consulting. Production-ready in 28 days. Chicago, IL.",
+    description: "Clean Slate architecture, AI pipelines, and cloud infrastructure consulting. Production-ready deployments. Chicago, IL.",
     images: ["/consulting-bg.png"],
   },
 };

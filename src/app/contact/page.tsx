@@ -56,7 +56,7 @@ export default function Contact() {
             <div className="p-4 border border-[#1a1a1a] mb-6 group-hover:border-[#333] transition-colors">
               <Mail className="text-white" size={24} />
             </div>
-            <h3 className="text-xl font-bold mb-2">Direct Email</h3>
+            <h2 className="text-xl font-bold mb-2">Direct Email</h2>
             <p className="text-muted text-xs uppercase tracking-widest font-bold">hello@vmg.systems</p>
           </a>
 
@@ -64,7 +64,7 @@ export default function Contact() {
             <div className="p-4 border border-[#1a1a1a] mb-6 group-hover:border-[#333] transition-colors">
               <Linkedin className="text-white" size={24} />
             </div>
-            <h3 className="text-xl font-bold mb-2">LinkedIn</h3>
+            <h2 className="text-xl font-bold mb-2">LinkedIn</h2>
             <p className="text-muted text-xs uppercase tracking-widest font-bold">Connect & Message</p>
           </a>
 
@@ -72,28 +72,28 @@ export default function Contact() {
             <div className="p-4 border border-[#1a1a1a] mb-6 group-hover:border-[#333] transition-colors">
               <Calendar className="text-white" size={24} />
             </div>
-            <h3 className="text-xl font-bold mb-2">Book a Call</h3>
+            <h2 className="text-xl font-bold mb-2">Book a Call</h2>
             <p className="text-muted text-xs uppercase tracking-widest font-bold">Schedule via Calendly</p>
           </a>
         </motion.div>
 
         <motion.div variants={item} className="glass-card border border-[#1a1a1a] p-8 md:p-12">
-          <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-muted mb-8">What happens next</h3>
+          <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-muted mb-8">What happens next</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">01</div>
-              <h4 className="font-bold text-white">Intro Call</h4>
+              <h3 className="font-bold text-white">Intro Call</h3>
               <p className="text-muted text-sm leading-relaxed">30 minutes. You walk me through the problem. I ask the hard questions about your stack, timeline, and constraints.</p>
             </div>
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">02</div>
-              <h4 className="font-bold text-white">Architecture Audit</h4>
+              <h3 className="font-bold text-white">Architecture Audit</h3>
               <p className="text-muted text-sm leading-relaxed">1 to 2 week deep dive into your codebase. You get a full remediation roadmap, whether we work together or not.</p>
             </div>
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">03</div>
-              <h4 className="font-bold text-white">Canary Launch</h4>
-              <p className="text-muted text-sm leading-relaxed">28-day clean-slate rebuild. IaC from day one, full observability, production-ready on delivery.</p>
+              <h3 className="font-bold text-white">Canary Launch</h3>
+              <p className="text-muted text-sm leading-relaxed">Clean-slate rebuild. IaC from day one, full observability, production-ready on delivery.</p>
             </div>
           </div>
         </motion.div>

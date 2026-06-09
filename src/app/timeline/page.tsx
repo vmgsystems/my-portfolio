@@ -18,7 +18,7 @@ const milestones = [
     title: "Founder & Principal Architect",
     company: "VMG Systems",
     location: "Chicago, IL",
-    description: "Independent AI infrastructure practice built around the Clean Slate methodology, shipping production-grade systems in 28 days. Built and operate a 10-service self-hosted AI OS as a proving ground for every system sold to clients. Current engagement: Interim Chief of Engineering at Genubi, where a 28-day Canary Launch achieved 4x latency reduction and 99.5% uptime from day one.",
+    description: "Independent AI infrastructure practice built around the Clean Slate methodology, shipping robust, production-ready systems. Built and operate a 10-service self-hosted AI OS as a proving ground for every system sold to clients. Current engagement: Principal AI Infrastructure Advisor for an automotive voice AI platform, implementing a Clean Slate architecture, standardizing on Terraform, and deploying comprehensive LLM observability.",
     icon: <Briefcase className="text-white" />,
     current: true
   },
@@ -115,9 +115,9 @@ export default function Timeline() {
                   <Calendar size={12} /> {milestone.year}
                 </span>
                 <span className="hidden md:block text-muted opacity-30">•</span>
-                <h3 className="text-xl font-bold tracking-tight">
+                <h2 className="text-xl font-bold tracking-tight">
                   {milestone.title} <span className="text-muted font-normal">at {milestone.company}</span>
-                </h3>
+                </h2>
               </div>
 
               <div className="glass-card group hover:bg-[#111] transition-colors">

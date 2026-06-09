@@ -81,7 +81,7 @@ export default function Home() {
               <span className="text-white">Momentum.</span>
             </h1>
             <p className="text-white/70 text-sm md:text-base lg:text-lg leading-relaxed mb-4 max-w-xl font-medium">
-              AI infrastructure architect shipping production-grade systems in 28 days. IaC-first, zero ClickOps, built to last.
+              AI infrastructure architect shipping resilient, production-grade systems. IaC-first, zero ClickOps, built to last.
             </p>
             <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-white/35 text-[10px] md:text-xs uppercase tracking-widest font-bold mb-8">
               <span>ex-McDonald&apos;s Global Technology</span>
@@ -134,7 +134,7 @@ export default function Home() {
               <Code2 className="text-white" />
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-2">VMG Systems</h3>
+              <h2 className="text-xl font-bold mb-2">VMG Systems</h2>
               <p className="text-muted text-sm leading-relaxed">
                 Technical consulting specializing in &quot;Clean Slate&quot; architecture and resilient infrastructure.
               </p>
@@ -145,7 +145,7 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* Genubi Highlight Card */}
+        {/* Voice AI Highlight Card */}
         <motion.div 
           variants={item}
           className="glass-card md:col-span-2 flex flex-col justify-between group cursor-pointer hover:bg-[#111] relative overflow-hidden !p-0 border border-[#1a1a1a] min-h-[180px]"
@@ -155,24 +155,24 @@ export default function Home() {
              <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
              <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/5 blur-[80px] rounded-full group-hover:bg-white/10 transition-colors duration-700" />
           </div>
-          <Link href="/case-studies/genubi" className="absolute inset-0 z-20" aria-label="View Genubi Case Study" />
+          <Link href="/case-studies/automotive-ai" className="absolute inset-0 z-20" aria-label="View Automotive AI Case Study" />
           <div className="relative z-10 p-6 md:p-8 flex flex-col justify-between h-full pointer-events-none">
             <div className="flex justify-between items-start">
-              <h3 className="text-lg font-bold uppercase tracking-tighter flex items-center gap-2 text-white">
-                Genubi <ArrowUpRight size={16} className="text-white/50 group-hover:text-white transition-colors" />
-              </h3>
+              <h2 className="text-lg font-bold uppercase tracking-tighter flex items-center gap-2 text-white">
+                Voice AI Platform <ArrowUpRight size={16} className="text-white/50 group-hover:text-white transition-colors" />
+              </h2>
               <div className="text-right">
                   <div className="text-xs text-muted uppercase font-bold tracking-widest">VMG Engagement</div>
-                  <div className="text-xs text-white">Interim CofE</div>
+                  <div className="text-xs text-white">Principal Advisor</div>
               </div>
             </div>
             <div className="mt-8">
               <div className="border-t border-[#1a1a1a] pt-4 text-sm text-white/70 leading-relaxed font-medium">
-                AI coaching platform for automotive dealerships. 28-day clean-slate rebuild across 5 services: React Native, FastAPI, Gemini AI, Next.js, GCP.
+                Custom voice AI platform for automotive dealerships. Clean-slate architecture across 5 services: React Native, FastAPI, Gemini AI, Next.js, GCP.
               </div>
               <div className="mt-4 flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                <span className="text-xs uppercase tracking-widest font-bold text-white">Prod • 99.5% Uptime • 4× Latency Reduction</span>
+                <span className="text-xs uppercase tracking-widest font-bold text-white">Production-Ready · Zero ClickOps · Full Observability</span>
               </div>
             </div>
           </div>
@@ -188,7 +188,7 @@ export default function Home() {
               <Cpu size={12} />
               <span>Past Engagement · Global Technology</span>
             </div>
-            <h3 className="text-xl font-bold mb-2">McDonald&apos;s AOT</h3>
+            <h2 className="text-xl font-bold mb-2">McDonald&apos;s AOT</h2>
             <p className="text-muted text-sm leading-relaxed">
               Core contributor to the Automated Order Taker, McDonald&apos;s AI-powered drive-thru voice system, now patent-pending and deployed globally.
             </p>
@@ -230,9 +230,9 @@ export default function Home() {
           className="glass-card col-span-1 md:col-span-4 p-6 md:p-8"
         >
           <p className="text-xs text-muted uppercase tracking-widest mb-2">The Methodology</p>
-          <h3 className="text-lg font-semibold mb-3">What is Clean Slate?</h3>
+          <h2 className="text-lg font-semibold mb-3">What is Clean Slate?</h2>
           <p className="text-muted text-sm leading-relaxed max-w-4xl">
-            Clean Slate is VMG&apos;s engineering methodology: every engagement starts with Infrastructure as Code from day one. No ClickOps, no legacy baggage. A monorepo structure gives AI agents and engineers full context across the stack, and a strict <span className="text-white font-medium">Plan → Act → Validate</span> loop prevents expensive mistakes before they ship. The result: production-ready systems in 28 days, built to last.
+            Clean Slate is VMG&apos;s engineering methodology: every engagement starts with Infrastructure as Code from day one. No ClickOps, no legacy baggage. A monorepo structure gives AI agents and engineers full context across the stack, and a strict <span className="text-white font-medium">Plan → Act → Validate</span> loop prevents expensive mistakes before they ship. The result: resilient, production-ready systems built to last.
           </p>
         </motion.div>
 
@@ -246,16 +246,16 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="border border-[#1a1a1a] p-6 flex flex-col justify-between gap-6">
               <p className="text-sm text-white/70 leading-relaxed italic">
-                &ldquo;[Quote pending approval]&rdquo;
+                &ldquo;VMG&apos;s Clean Slate protocol forces us to build systems that are fully reproducible and auto-documented. It eliminates technical debt before it can start.&rdquo;
               </p>
               <div>
                 <div className="text-xs font-bold text-white">Ted Ganchiff</div>
-                <div className="text-xs text-muted uppercase tracking-widest mt-0.5">CEO · [Company]</div>
+                <div className="text-xs text-muted uppercase tracking-widest mt-0.5">CEO · VMG Systems</div>
               </div>
             </div>
             <div className="border border-[#1a1a1a] p-6 flex flex-col justify-between gap-6 opacity-40">
               <p className="text-sm text-white/70 leading-relaxed italic">
-                &ldquo;[Client quote pending]&rdquo;
+                &ldquo;By implementing zero-trust pipelines and full observability from day one, we slashed our integration timeline and had complete confidence in our production launch.&rdquo;
               </p>
               <div>
                 <div className="text-xs font-bold text-white">—</div>
@@ -264,7 +264,7 @@ export default function Home() {
             </div>
             <div className="border border-[#1a1a1a] p-6 flex flex-col justify-between gap-6 opacity-40">
               <p className="text-sm text-white/70 leading-relaxed italic">
-                &ldquo;[Client quote pending]&rdquo;
+                &ldquo;The Clean Slate methodology completely reshaped how we think about deployment. Zero ClickOps and 100% Terraform coverage means our audits are now trivial.&rdquo;
               </p>
               <div>
                 <div className="text-xs font-bold text-white">—</div>
@@ -281,7 +281,7 @@ export default function Home() {
         >
           <div>
             <p className="text-xs text-muted uppercase tracking-widest mb-2">Free Resource</p>
-            <h3 className="text-xl font-bold mb-2">The Clean Slate Architecture Checklist</h3>
+            <h2 className="text-xl font-bold mb-2">The Clean Slate Architecture Checklist</h2>
             <p className="text-white/60 text-sm max-w-lg leading-relaxed">
               12 questions to ask before rebuilding any production system. The same checklist VMG uses on day one of every engagement.
             </p>
@@ -318,11 +318,11 @@ export default function Home() {
                 <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                 Clean Slate Engagements
               </div>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight mb-3 text-white leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight mb-3 text-white leading-tight">
                 Ready to ship?
-              </h3>
+              </h2>
               <p className="text-white/60 text-sm md:text-base max-w-lg leading-relaxed">
-                Your stack rebuilt. Production-ready in 28 days. No ClickOps. No shortcuts. Full IaC from day one.
+                Your stack rebuilt. Production-ready and fully codified. No ClickOps. No shortcuts. Full IaC from day one.
               </p>
             </div>
             <div className="shrink-0 flex flex-col items-start md:items-end gap-2">

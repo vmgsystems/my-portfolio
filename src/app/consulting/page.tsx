@@ -37,11 +37,11 @@ const services = [
   {
     title: "Custom Platform & API Engineering",
     icon: <Cpu className="text-white" />,
-    description: "FastAPI backends, React Native frontends, and the integration layer between them. Shipped in 28 days, not 6 months.",
+    description: "FastAPI backends, React Native frontends, and the integration layer between them. Shipped in weeks, not months.",
     details: [
       "React Native with native background persistence",
       "High-throughput Python API architecture",
-      "28-day production launch with full observability"
+      "Rapid production launch with full observability"
     ],
     cta: "Request a Platform Engineering Consultation"
   }
@@ -88,8 +88,8 @@ export default function Consulting() {
               <span className="text-white/60 text-3xl md:text-4xl">Technical Consulting & Architecture</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              We come in, strip the technical debt, and ship a production system in 28 days. IaC from day one, zero ClickOps, full observability. Most recent engagement: Genubi (VMG client, Q1 2026) — 28-day rebuild, 4x latency reduction, 99.5% uptime from launch.{" "}
-              <Link href="/case-studies/genubi" className="underline underline-offset-4 hover:text-white transition-colors">Read the case study →</Link>
+              We come in, strip the technical debt, and ship a production system using our Clean Slate methodology. IaC from day one, zero ClickOps, full observability. Most recent engagement: Automotive Voice AI Platform (VMG client, Q1 2026) — complete full-stack rebuild, migrating legacy services to a modern, fully observable architecture with 100% Terraform coverage.{" "}
+              <Link href="/case-studies/automotive-ai" className="underline underline-offset-4 hover:text-white transition-colors">Read the case study →</Link>
             </p>
           </div>
         </motion.div>
@@ -105,7 +105,7 @@ export default function Consulting() {
                 <div className="p-3 border border-[#1a1a1a] w-fit mb-6 group-hover:bg-[#111] transition-colors">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
                 <p className="text-muted text-sm leading-relaxed mb-6">
                   {service.description}
                 </p>
@@ -139,7 +139,7 @@ export default function Consulting() {
             <div>
               <h4 className="text-lg font-bold uppercase tracking-widest mb-6">The Clean Slate Methodology</h4>
               <p className="text-muted text-sm leading-relaxed mb-6">
-                Every engagement starts with rules. Before writing a line of code, I define how the system is built, tested, and observed. That upfront work is what makes 28 days possible.
+                Every engagement starts with rules. Before writing a line of code, I define how the system is built, tested, and observed. That upfront work is what makes rapid execution possible.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3 text-sm text-muted">
@@ -198,7 +198,7 @@ export default function Consulting() {
             <div>
               <h2 className="text-3xl font-bold tracking-tight mb-4">Engagement Model</h2>
               <p className="text-muted leading-relaxed mb-6">
-                Two modes: embedded or sprint. Embedded means I&apos;m your interim engineering lead. Sprint means a defined 28-day build with a fixed scope and a production handoff at the end.
+                Two modes: embedded or sprint. Embedded means I&apos;m your interim engineering lead. Sprint means a defined rapid build with a fixed scope and a production handoff at the end.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3 text-sm text-white/80">
@@ -207,7 +207,7 @@ export default function Consulting() {
                 </li>
                 <li className="flex items-start gap-3 text-sm text-white/80">
                   <div className="w-1.5 h-1.5 rounded-full bg-white mt-1.5 shrink-0" />
-                  <div><strong>Canary Launches:</strong> 28-day MVP development cycles.</div>
+                  <div><strong>Canary Launches:</strong> Rapid MVP development cycles.</div>
                 </li>
               </ul>
             </div>

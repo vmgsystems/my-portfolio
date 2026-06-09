@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.vmg.systems"),
   title: "VMG Systems | AI Infrastructure Consulting, Chicago",
-  description: "VMG Systems ships production-grade AI infrastructure in 28 days. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
+  description: "VMG Systems ships production-grade AI infrastructure. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
   openGraph: {
     title: "VMG Systems | AI Infrastructure Consulting, Chicago",
-    description: "VMG Systems ships production-grade AI infrastructure in 28 days. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
+    description: "VMG Systems ships production-grade AI infrastructure. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
     url: "https://www.vmg.systems",
     siteName: "VMG Systems",
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "VMG Systems | AI Infrastructure Consulting, Chicago",
-    description: "VMG Systems ships production-grade AI infrastructure in 28 days. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
+    description: "VMG Systems ships production-grade AI infrastructure. Clean Slate architecture, IaC-first, zero ClickOps. ex-McDonald's AOT. Chicago, IL.",
     images: ["/hero.png"],
   },
 };
@@ -47,7 +47,7 @@ const jsonLd = {
       "@type": "LocalBusiness",
       "name": "VMG Systems",
       "url": "https://www.vmg.systems",
-      "description": "AI infrastructure consulting. Production-grade systems in 28 days.",
+      "description": "AI infrastructure consulting. Production-grade systems engineered with a Clean Slate methodology.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Chicago",

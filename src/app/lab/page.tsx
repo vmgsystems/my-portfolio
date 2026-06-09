@@ -38,7 +38,7 @@ const experiments = [
     title: "Langfuse Observability",
     subtitle: "Gemini · FastAPI · pgvector",
     icon: <LineChart className="text-white" />,
-    description: "Full LLM observability layer wrapping every Gemini call in Genubi's FastAPI pipeline. Traces inputs, outputs, latency, and token cost per request. Feeds a pgvector store for RAG workflows and enables 'Golden Dataset' regression testing against eval accuracy baselines.",
+    description: "Full LLM observability layer wrapping every Gemini call in a high-performance FastAPI pipeline. Traces inputs, outputs, latency, and token cost per request. Feeds a pgvector store for RAG workflows and enables 'Golden Dataset' regression testing against eval accuracy baselines.",
     tag: "Observability"
   }
 ];
@@ -105,7 +105,7 @@ export default function Lab() {
                     {exp.tag}
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold mb-1">{exp.title}</h3>
+                <h2 className="text-2xl font-bold mb-1">{exp.title}</h2>
                 <p className="text-sm text-muted font-bold uppercase tracking-widest mb-4">{exp.subtitle}</p>
                 <p className="text-muted text-sm leading-relaxed">
                   {exp.description}
@@ -118,16 +118,16 @@ export default function Lab() {
               </div>
 
               {/* Decorative Background Element */}
-              <div className="absolute -right-8 -bottom-8 font-mono text-[120px] font-black opacity-[0.02] select-none pointer-events-none group-hover:opacity-[0.04] transition-opacity">
-                0{index + 1}
-              </div>
+              <svg aria-hidden="true" role="img" className="absolute -right-8 -bottom-12 w-48 h-32 select-none pointer-events-none opacity-[0.02] group-hover:opacity-[0.04] transition-opacity">
+                <text x="0" y="110" className="font-mono text-[120px] font-black fill-white">0{index + 1}</text>
+              </svg>
             </motion.div>
           ))}
         </div>
         <motion.div variants={item} className="glass-card border border-[#1a1a1a] p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted mb-3">Everything here runs in production</p>
-            <h3 className="text-2xl md:text-3xl font-black text-white">We dogfood what we sell.</h3>
+            <h2 className="text-2xl md:text-3xl font-black text-white">We dogfood what we sell.</h2>
             <p className="text-muted text-sm mt-2 max-w-lg">Every system above runs live. If it works for VMG, it ships to clients.</p>
           </div>
           <Link
