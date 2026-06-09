@@ -236,24 +236,6 @@ export default function Home() {
           </p>
         </motion.div>
 
-
-        {/* Testimonials */}
-        <motion.div
-          variants={item}
-          className="glass-card col-span-1 md:col-span-4 p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8"
-        >
-          <div className="max-w-3xl">
-            <p className="text-xs text-muted uppercase tracking-widest mb-4">Core Principles</p>
-            <p className="text-base md:text-lg text-white/80 leading-relaxed italic font-medium">
-              &ldquo;VMG&apos;s Clean Slate protocol forces us to build systems that are fully reproducible and auto-documented. It eliminates technical debt before it can start.&rdquo;
-            </p>
-          </div>
-          <div className="shrink-0 flex flex-col items-start md:items-end mt-2 md:mt-0">
-            <div className="text-sm font-bold text-white">Ted Ganchiff</div>
-            <div className="text-xs text-muted uppercase tracking-widest mt-1">CEO · VMG Systems</div>
-          </div>
-        </motion.div>
-
         {/* Lead Magnet */}
         <motion.div
           variants={item}
