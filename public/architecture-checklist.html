@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Clean Slate Architecture Checklist — VMG Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #020617;
+      --card-bg: #0b0f19;
+      --card-border: rgba(6, 182, 212, 0.15);
+      --card-border-hover: rgba(6, 182, 212, 0.4);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent-cyan: #06b6d4;
+      --accent-dim: rgba(6, 182, 212, 0.3);
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* A4 Container */
+    .a4-page {
+      width: 210mm;
+      height: 297mm;
+      padding: 18mm 16mm 14mm 16mm;
+      position: relative;
+      background-color: var(--bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    /* Subtle background grid effect */
+    .a4-page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(6, 182, 212, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(6, 182, 212, 0.03) 1px, transparent 1px);
+      background-size: 10mm 10mm;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .header-section {
+      position: relative;
+      z-index: 10;
+      margin-bottom: 7mm;
+    }
+
+    .top-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6mm;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 3mm;
+    }
+
+    .brand-logo {
+      font-family: var(--font-sans);
+      font-weight: 900;
+      font-size: 4.8mm;
+      letter-spacing: -0.05em;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 1.5mm;
+    }
+
+    .brand-logo span {
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    .brand-logo .dot {
+      color: var(--accent-cyan);
+    }
+
+    .protocol-badge {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 2.6mm;
+      letter-spacing: 0.15em;
+      color: var(--accent-cyan);
+      border: 1px solid var(--accent-dim);
+      padding: 1mm 3mm;
+      border-radius: 100px;
+      background: rgba(6, 182, 212, 0.05);
+      text-transform: uppercase;
+    }
+
+    .main-title {
+      font-size: 8.8mm;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 3mm;
+      background: linear-gradient(135deg, #ffffff 60%, var(--accent-cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 3.4mm;
+      color: var(--text-secondary);
+      line-height: 1.45;
+      max-w: 165mm;
+    }
+
+    /* 12-Card Grid */
+    .checklist-grid {
+      position: relative;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 4mm;
+      height: 216mm;
+      margin-bottom: 4mm;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 3.8mm 4.2mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    /* Subtle card accent bar */
+    .card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      background: var(--accent-cyan);
+      opacity: 0.4;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 3mm;
+      margin-bottom: 2mm;
+    }
+
+    .card-number {
+      font-family: var(--font-mono);
+      font-size: 2.8mm;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      border-radius: 4px;
+      width: 6mm;
+      height: 6mm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(6, 182, 212, 0.05);
+      flex-shrink: 0;
+    }
+
+    .card-title {
+      font-size: 3.5mm;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text-primary);
+      line-height: 1.25;
+      padding-top: 0.5mm;
+    }
+
+    .card-description {
+      font-size: 2.75mm;
+      color: var(--text-secondary);
+      line-height: 1.4;
+      margin-bottom: 2mm;
+      flex-grow: 1;
+    }
+
+    .card-tech {
+      font-family: var(--font-mono);
+      font-size: 2.1mm;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text-secondary);
+      opacity: 0.6;
+      text-transform: uppercase;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 1.5mm;
+      margin-top: auto;
+    }
+
+    .footer-section {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 3.5mm;
+    }
+
+    .footer-text {
+      font-size: 2.6mm;
+      color: var(--text-secondary);
+      opacity: 0.7;
+    }
+
+    .footer-link {
+      font-family: var(--font-mono);
+      font-size: 2.8mm;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+
+    /* Print Optimization Rules */
+    @media print {
+      body {
+        background-color: var(--bg);
+      }
+      .a4-page {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="a4-page">
+    <!-- Header Section -->
+    <header class="header-section">
+      <div class="top-meta">
+        <div class="brand-logo">VMG<span class="dot">.</span><span>SYSTEMS</span></div>
+        <div class="protocol-badge">CLEAN SLATE PROTOCOL V2.2</div>
+      </div>
+      <h1 class="main-title">The Clean Slate Architecture Checklist</h1>
+      <p class="subtitle">12 questions to ask before rebuilding any production system. Use this framework on day one of an engagement to establish a scalable, self-healing, agent-ready stack.</p>
+    </header>
+
+    <!-- 12 checklist cards -->
+    <main class="checklist-grid">
+      <!-- Card 01 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">01</span>
+            <h2 class="card-title">Zero ClickOps Infrastructure</h2>
+          </div>
+          <p class="card-description">Is 100% of your cloud infrastructure defined as declarative code, with manual cloud console modifications completely disabled to prevent system drift?</p>
+        </div>
+        <div class="card-tech">TERRAFORM / OPENTOFU / AWS CLOUDFORMATION</div>
+      </div>
+
+      <!-- Card 02 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">02</span>
+            <h2 class="card-title">Unified Monorepo Context</h2>
+          </div>
+          <p class="card-description">Are application, database, and infrastructure configurations co-located, giving development teams and AI agents absolute system context?</p>
+        </div>
+        <div class="card-tech">TURBOREPO / PNPM / GIT WORKTREE</div>
+      </div>
+
+      <!-- Card 03 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">03</span>
+            <h2 class="card-title">Hermetic Local Sandbox</h2>
+          </div>
+          <p class="card-description">Can any new engineer spin up a complete, identical, self-contained local environment in under 15 minutes with a single terminal command?</p>
+        </div>
+        <div class="card-tech">DOCKER COMPOSE / DEVCONTAINERS / NIX</div>
+      </div>
+
+      <!-- Card 04 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">04</span>
+            <h2 class="card-title">Strict Validation Gate</h2>
+          </div>
+          <p class="card-description">Is every pull request guarded by an automated pre-merge pipeline that blocks code integration unless lints, type checks, and full regression tests pass cleanly?</p>
+        </div>
+        <div class="card-tech">GITHUB ACTIONS / CI/CD / PRE-COMMIT</div>
+      </div>
+
+      <!-- Card 05 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">05</span>
+            <h2 class="card-title">Continuous Observability</h2>
+          </div>
+          <p class="card-description">Do you have structured, distributed log tracing and prompt metrics wrapping every core model call and backend API entry point from day one?</p>
+        </div>
+        <div class="card-tech">LANGFUSE / GRAFANA / OPENTELEMETRY</div>
+      </div>
+
+      <!-- Card 06 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">06</span>
+            <h2 class="card-title">Zero-Trust Secret Vaulting</h2>
+          </div>
+          <p class="card-description">Are environment credentials and API keys stored in a centralized, secure vault rather than distributed inside volatile local .env files or source code?</p>
+        </div>
+        <div class="card-tech">VAULTWARDEN / DOPPLER / CLOUD IAM</div>
+      </div>
+
+      <!-- Card 07 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">07</span>
+            <h2 class="card-title">Declarative Schema Migrations</h2>
+          </div>
+          <p class="card-description">Are database schema modifications versioned, automated, and architected with backward compatibility to guarantee zero-downtime rolling upgrades?</p>
+        </div>
+        <div class="card-tech">PRISMA / LIQUIBASE / FLYWAY / ATLAS</div>
+      </div>
+
+      <!-- Card 08 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">08</span>
+            <h2 class="card-title">Canary & Progressive Rollouts</h2>
+          </div>
+          <p class="card-description">Can you direct a fractional slice of production traffic (e.g., 2%) to a new version, monitoring health metrics to trigger automatic rollbacks on failure?</p>
+        </div>
+        <div class="card-tech">ARGOCD / CLOUD RUN TRAFFIC SPLIT / ISTIO</div>
+      </div>
+
+      <!-- Card 09 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">09</span>
+            <h2 class="card-title">Absolute Environment Parity</h2>
+          </div>
+          <p class="card-description">Are development, staging, and production environments structurally identical, differing only by hardware capacity and security boundaries?</p>
+        </div>
+        <div class="card-tech">KUBERNETES / HELM / DOCKERIZATION</div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">10</span>
+            <h2 class="card-title">Immutable Build Artifacts</h2>
+          </div>
+          <p class="card-description">Are compilation outputs packaged into cryptographically signed, immutable containers, guaranteeing what ran in QA is exactly what runs in prod?</p>
+        </div>
+        <div class="card-tech">OCI CONTAINERS / GOOGLE ARTIFACT REGISTRY / COSIGN</div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">11</span>
+            <h2 class="card-title">Active Configuration Auditing</h2>
+          </div>
+          <p class="card-description">Is there an automated synchronization engine running to actively detect, alert, and auto-correct any uncodified infrastructure configuration drift?</p>
+        </div>
+        <div class="card-tech">GITOPS / ARGOCD / TERRAFORM STATE WATCHDOG</div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <span class="card-number">12</span>
+            <h2 class="card-title">Agentic Readiness Standard</h2>
+          </div>
+          <p class="card-description">Is your codebase modular, documented, and declarative enough for autonomous AI coding agents to safely analyze, run, and test code sections in isolation?</p>
+        </div>
+        <div class="card-tech">SELF-DOCUMENTING CODE / SANDBOX TESTING / AI CONTEXT</div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-text">Designed by VMG Systems for high-growth tech platforms.</div>
+      <a href="https://vmg.systems" class="footer-link">vmg.systems</a>
+    </footer>
+  </div>
+
+</body>
+</html>
