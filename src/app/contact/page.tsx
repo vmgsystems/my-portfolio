@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowLeft, Mail, Linkedin, Calendar } from "lucide-react";
+import { ArrowLeft, Mail, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 const container = {
@@ -51,7 +51,7 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        <motion.div variants={item} className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <motion.div variants={item} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           <a href="mailto:hello@vmg.systems" className="glass-card flex flex-col items-center justify-center text-center group hover:bg-[#111] transition-colors border border-[#1a1a1a] p-12">
             <div className="p-4 border border-[#1a1a1a] mb-6 group-hover:border-[#333] transition-colors">
               <Mail className="text-white" size={24} />
@@ -67,14 +67,6 @@ export default function Contact() {
             <h2 className="text-xl font-bold mb-2">LinkedIn</h2>
             <p className="text-muted text-xs uppercase tracking-widest font-bold">Connect & Message</p>
           </a>
-
-          <a href="https://calendly.com/gilpina/30min" target="_blank" rel="noopener noreferrer" className="glass-card flex flex-col items-center justify-center text-center group hover:bg-[#111] transition-colors border border-[#1a1a1a] p-12">
-            <div className="p-4 border border-[#1a1a1a] mb-6 group-hover:border-[#333] transition-colors">
-              <Calendar className="text-white" size={24} />
-            </div>
-            <h2 className="text-xl font-bold mb-2">Book a Call</h2>
-            <p className="text-muted text-xs uppercase tracking-widest font-bold">Schedule via Calendly</p>
-          </a>
         </motion.div>
 
         <motion.div variants={item} className="glass-card border border-[#1a1a1a] p-8 md:p-12">
@@ -82,8 +74,8 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">01</div>
-              <h3 className="font-bold text-white">Intro Call</h3>
-              <p className="text-muted text-sm leading-relaxed">30 minutes. You walk me through the problem. I ask the hard questions about your stack, timeline, and constraints.</p>
+              <h3 className="font-bold text-white">Alignment Call</h3>
+              <p className="text-muted text-sm leading-relaxed">Brief diagnostic session. You walk me through the problem. I ask the hard questions about your stack, timeline, and constraints.</p>
             </div>
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">02</div>

@@ -132,16 +132,14 @@ export default function AutomotiveAICaseStudy() {
         <motion.div variants={item} className="glass-card p-8 md:p-12 border border-[#1a1a1a] bg-[#050505] flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-2">Your infrastructure. Same standard.</h3>
-            <p className="text-muted text-sm">Tell me what&apos;s broken.</p>
+            <p className="text-muted text-sm">Let&apos;s talk about what&apos;s broken.</p>
           </div>
           <div className="shrink-0 flex flex-col items-start md:items-end gap-2">
             <a
-              href="https://calendly.com/gilpina/30min"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/contact"
               className="flex items-center gap-2 bg-white text-black px-8 py-4 font-bold hover:bg-gray-200 transition-all duration-300 ease-out text-sm whitespace-nowrap"
             >
-              Book a Free Architecture Call <ArrowUpRight size={16} />
+              Inquire About an Audit <ArrowUpRight size={16} />
             </a>
             <p className="text-white/30 text-xs uppercase tracking-widest">Or email hello@vmg.systems</p>
           </div>

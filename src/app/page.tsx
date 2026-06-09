@@ -307,12 +307,10 @@ export default function Home() {
             </div>
             <div className="shrink-0 flex flex-col items-start md:items-end gap-2">
               <a
-                href="https://calendly.com/gilpina/30min"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/contact"
                 className="flex items-center gap-2 bg-white text-black px-8 py-4 min-h-[44px] font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm whitespace-nowrap"
               >
-                Book a Free 30-Min Architecture Call <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                Inquire About an Audit <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
               </a>
               <p className="text-white/30 text-xs uppercase tracking-widest">Limited availability · 1 engagement slot open Q3 2026</p>
             </div>
