@@ -240,37 +240,17 @@ export default function Home() {
         {/* Testimonials */}
         <motion.div
           variants={item}
-          className="glass-card col-span-1 md:col-span-4 p-6 md:p-8"
+          className="glass-card col-span-1 md:col-span-4 p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8"
         >
-          <p className="text-xs text-muted uppercase tracking-widest mb-6">What clients say</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="border border-[#1a1a1a] p-6 flex flex-col justify-between gap-6">
-              <p className="text-sm text-white/70 leading-relaxed italic">
-                &ldquo;VMG&apos;s Clean Slate protocol forces us to build systems that are fully reproducible and auto-documented. It eliminates technical debt before it can start.&rdquo;
-              </p>
-              <div>
-                <div className="text-xs font-bold text-white">Ted Ganchiff</div>
-                <div className="text-xs text-muted uppercase tracking-widest mt-0.5">CEO · VMG Systems</div>
-              </div>
-            </div>
-            <div className="border border-[#1a1a1a] p-6 flex flex-col justify-between gap-6 opacity-40">
-              <p className="text-sm text-white/70 leading-relaxed italic">
-                &ldquo;By implementing zero-trust pipelines and full observability from day one, we slashed our integration timeline and had complete confidence in our production launch.&rdquo;
-              </p>
-              <div>
-                <div className="text-xs font-bold text-white">—</div>
-                <div className="text-xs text-muted uppercase tracking-widest mt-0.5">CTO · Series A AI Startup</div>
-              </div>
-            </div>
-            <div className="border border-[#1a1a1a] p-6 flex flex-col justify-between gap-6 opacity-40">
-              <p className="text-sm text-white/70 leading-relaxed italic">
-                &ldquo;The Clean Slate methodology completely reshaped how we think about deployment. Zero ClickOps and 100% Terraform coverage means our audits are now trivial.&rdquo;
-              </p>
-              <div>
-                <div className="text-xs font-bold text-white">—</div>
-                <div className="text-xs text-muted uppercase tracking-widest mt-0.5">Head of Engineering · Fintech</div>
-              </div>
-            </div>
+          <div className="max-w-3xl">
+            <p className="text-xs text-muted uppercase tracking-widest mb-4">Core Principles</p>
+            <p className="text-base md:text-lg text-white/80 leading-relaxed italic font-medium">
+              &ldquo;VMG&apos;s Clean Slate protocol forces us to build systems that are fully reproducible and auto-documented. It eliminates technical debt before it can start.&rdquo;
+            </p>
+          </div>
+          <div className="shrink-0 flex flex-col items-start md:items-end mt-2 md:mt-0">
+            <div className="text-sm font-bold text-white">Ted Ganchiff</div>
+            <div className="text-xs text-muted uppercase tracking-widest mt-1">CEO · VMG Systems</div>
           </div>
         </motion.div>
 
