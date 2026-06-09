@@ -28,8 +28,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
             <div>VMG <span className="text-muted font-normal">Systems</span></div>
           </Link>
           <div className="flex items-center gap-4 md:hidden text-muted">
-            <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2"><Github size={14} /></a>
-            <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2"><Linkedin size={14} /></a>
+            <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2" aria-label="GitHub Profile"><Github size={14} /></a>
+            <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2" aria-label="LinkedIn Profile"><Linkedin size={14} /></a>
           </div>
         </div>
         <div className="flex gap-3 md:gap-8 text-[9px] md:text-xs uppercase tracking-[0.1em] md:tracking-[0.3em] font-bold text-muted w-full md:w-auto justify-between md:justify-end items-center">
@@ -53,8 +53,8 @@ export default function Template({ children }: { children: React.ReactNode }) {
             );
           })}
           <div className="w-[1px] h-3 bg-[#1a1a1a] mx-2 hidden md:block" />
-          <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hidden md:block"><Github size={14} /></a>
-          <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hidden md:block"><Linkedin size={14} /></a>
+          <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hidden md:block" aria-label="GitHub Profile"><Github size={14} /></a>
+          <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hidden md:block" aria-label="LinkedIn Profile"><Linkedin size={14} /></a>
         </div>
       </nav>
 

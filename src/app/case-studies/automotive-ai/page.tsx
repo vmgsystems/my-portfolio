@@ -22,7 +22,7 @@ const item = {
   show: { y: 0, opacity: 1 }
 };
 
-export default function GenubiCaseStudy() {
+export default function AutomotiveAICaseStudy() {
   return (
     <main className="min-h-screen p-5 sm:p-8 md:p-12 lg:p-24 max-w-6xl mx-auto pt-36 md:pt-32">
       <motion.div
@@ -35,7 +35,7 @@ export default function GenubiCaseStudy() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/timeline-bg.png"
-              alt="Genubi Case Study"
+              alt="Automotive Voice AI Case Study"
               fill
               className="object-cover opacity-30 grayscale"
               priority
@@ -48,11 +48,11 @@ export default function GenubiCaseStudy() {
             </Link>
             <div className="text-xs text-muted uppercase tracking-widest font-bold mb-4">Case Study · VMG Engagement · Q1 2026</div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
-              Genubi: 28 Days<br />
+              Voice AI: Rebuilt<br />
               <span className="text-white/60">to Production.</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              A legacy mobile platform rebuilt from scratch. 4x faster. 99.5% uptime from launch.
+              A legacy voice AI platform rebuilt from scratch, establishing high-speed sub-second performance and enterprise-grade reliability from day one.
             </p>
           </div>
         </motion.div>
@@ -61,10 +61,10 @@ export default function GenubiCaseStudy() {
         <motion.div variants={item} className="glass-card p-8 md:p-12 mb-8 border border-[#1a1a1a]">
           <p className="text-xs text-muted uppercase tracking-widest font-bold mb-4">The Brief</p>
           <p className="text-white/70 text-sm leading-relaxed max-w-3xl mb-4">
-            Genubi&apos;s existing platform was a duct-tape stack: fragile data capture, unreliable audio pipelines, and no observability. The founding team needed a production-grade rebuild — fast — without disrupting the live product.
+            The client&apos;s existing voice platform was a duct-tape stack: fragile data capture, unreliable audio pipelines, and no observability. The founding team needed a production-grade rebuild — fast — without disrupting the live product.
           </p>
           <p className="text-white/70 text-sm leading-relaxed max-w-3xl">
-            VMG Systems came in as Interim Chief of Engineering. The mandate: strip it down and ship something that lasts.
+            VMG Systems came in as a Principal AI Infrastructure Advisor. The mandate: strip it down and ship something that lasts.
           </p>
         </motion.div>
 
@@ -72,7 +72,7 @@ export default function GenubiCaseStudy() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <motion.div variants={item} className="glass-card p-8 md:p-10 border border-[#1a1a1a]">
             <p className="text-xs text-muted uppercase tracking-widest font-bold mb-4">The Scope</p>
-            <h3 className="text-xl font-bold mb-6">5 services. 28 days. Zero ClickOps.</h3>
+            <h2 className="text-xl font-bold mb-6">5 services. Zero ClickOps.</h2>
             <ul className="space-y-3">
               {[
                 "React Native with native background audio persistence",
@@ -109,22 +109,22 @@ export default function GenubiCaseStudy() {
           <p className="text-xs text-muted uppercase tracking-widest font-bold mb-8">What Shipped</p>
           <div className="flex gap-8 md:gap-16 mb-8 flex-wrap">
             <div>
-              <div className="text-4xl font-black tabular-nums">4×</div>
-              <div className="text-xs text-muted uppercase tracking-widest mt-1">Latency Reduction</div>
+              <div className="text-4xl font-black tabular-nums">Sub-Sec</div>
+              <div className="text-xs text-muted uppercase tracking-widest mt-1">API Latency</div>
             </div>
             <div className="w-[1px] bg-[#1a1a1a] hidden md:block" />
             <div>
-              <div className="text-4xl font-black tabular-nums">99.5%</div>
-              <div className="text-xs text-muted uppercase tracking-widest mt-1">Production Uptime (Day 1)</div>
+              <div className="text-4xl font-black tabular-nums">High</div>
+              <div className="text-xs text-muted uppercase tracking-widest mt-1">Availability (Day 1)</div>
             </div>
             <div className="w-[1px] bg-[#1a1a1a] hidden md:block" />
             <div>
-              <div className="text-4xl font-black tabular-nums">28d</div>
-              <div className="text-xs text-muted uppercase tracking-widest mt-1">Zero to Launch</div>
+              <div className="text-4xl font-black tabular-nums">100%</div>
+              <div className="text-xs text-muted uppercase tracking-widest mt-1">Terraform Codified</div>
             </div>
           </div>
           <p className="text-white/70 text-sm leading-relaxed max-w-3xl">
-            The rebuilt platform shipped a Canary Launch in 28 days. Background audio persistence — previously unreliable — runs natively. Every AI call is logged with inputs, outputs, and latency. The stack is fully reproducible: any engineer can tear it down and redeploy from Terraform.
+            The rebuilt platform shipped as a resilient Canary Launch. Background audio persistence — previously unreliable — runs natively. Every AI call is logged with inputs, outputs, and latency. The stack is fully reproducible: any engineer can tear it down and redeploy from Terraform.
           </p>
         </motion.div>
 
