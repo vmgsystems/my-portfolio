@@ -188,6 +188,7 @@ export default function Home() {
   const [auditState, setAuditState] = useState<"idle" | "running" | "completed">("idle");
   const [auditLogs, setAuditLogs] = useState<string[]>([]);
   const [selectedCodeFile, setSelectedCodeFile] = useState<"terraform" | "fastapi" | "n8n">("terraform");
+  const [auditInterval, setAuditInterval] = useState<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -202,7 +203,22 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
 
+  // Clean up running interval on unmount
+  useEffect(() => {
+    return () => {
+      if (auditInterval) {
+        clearInterval(auditInterval);
+      }
+    };
+  }, [auditInterval]);
+
   const runAudit = () => {
+    // Clear any previously running audit interval
+    if (auditInterval) {
+      clearInterval(auditInterval);
+      setAuditInterval(null);
+    }
+
     setAuditState("running");
     setAuditLogs([]);
     const logs = auditProfiles[selectedAuditProfile].logs;
@@ -210,13 +226,17 @@ export default function Home() {
     
     const interval = setInterval(() => {
       if (currentLogIndex < logs.length) {
-        setAuditLogs(prev => [...prev, logs[currentLogIndex]]);
+        const logToAppend = logs[currentLogIndex]; // Closure fix: capture index-specific string immediately
+        setAuditLogs(prev => [...prev, logToAppend]);
         currentLogIndex++;
       } else {
         clearInterval(interval);
         setAuditState("completed");
+        setAuditInterval(null);
       }
     }, 450);
+
+    setAuditInterval(interval);
   };
 
   return (
@@ -440,6 +460,10 @@ export default function Home() {
                           setSelectedAuditProfile(i);
                           setAuditState("idle");
                           setAuditLogs([]);
+                          if (auditInterval) {
+                            clearInterval(auditInterval);
+                            setAuditInterval(null);
+                          }
                         }}
                         className={`w-full text-left p-4 border transition-all flex flex-col justify-between ${selectedAuditProfile === i ? "border-white bg-[#080808]" : "border-[#1a1a1a] hover:border-[#333] hover:bg-[#040404]"}`}
                       >
