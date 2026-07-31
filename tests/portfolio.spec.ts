@@ -36,9 +36,9 @@ test.describe("VMG Systems Portfolio Audit", () => {
     await expect(page.locator("text=Uptime")).toHaveCount(4); // Verify our 4 telemetry cards have Uptime metrics!
   });
 
-  test("Contact page highlights booking channels", async ({ page }) => {
+  test("Contact page highlights direct channels", async ({ page }) => {
     await page.goto("/contact");
-    await expect(page.locator("text=Schedule diagnostic")).toBeVisible();
     await expect(page.locator("text=Direct Email")).toBeVisible();
+    await expect(page.locator("text=LinkedIn Profile")).toBeVisible();
   });
 });

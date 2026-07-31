@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowLeft, Mail, Linkedin, Calendar, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, Mail, Linkedin, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 const container = {
@@ -51,8 +51,8 @@ export default function Contact() {
           </div>
         </motion.div>
 
-        {/* Direct Channels (3-Column Layout) */}
-        <motion.div variants={item} className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        {/* Direct Channels (2-Column Layout) */}
+        <motion.div variants={item} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {/* Channel 1: Email */}
           <a href="mailto:hello@vmg.systems" className="glass-card flex flex-col items-center justify-between text-center group hover:bg-[#080808] transition-colors border border-[#1a1a1a] p-10 min-h-[240px]">
             <div className="p-4 border border-[#1a1a1a] bg-black group-hover:border-[#333] transition-colors">
@@ -67,25 +67,7 @@ export default function Contact() {
             </div>
           </a>
 
-          {/* Channel 2: Calendly Booking */}
-          <a href="https://calendly.com/vmg-systems/diagnostic" target="_blank" rel="noopener noreferrer" className="glass-card flex flex-col items-center justify-between text-center group hover:bg-[#080808] transition-colors border border-white p-10 min-h-[240px] bg-[#030303]">
-            <div className="p-4 border border-white bg-black group-hover:border-white transition-colors relative">
-              <Calendar className="text-white" size={24} />
-              <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
-              </span>
-            </div>
-            <div>
-              <h2 className="text-lg font-bold text-white mb-2">Schedule diagnostic</h2>
-              <p className="text-muted text-[10px] uppercase tracking-widest font-bold">Book a 15-Min video Session</p>
-            </div>
-            <div className="mt-4 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white group-hover:underline">
-              Secure Onboarding Slot <ArrowUpRight size={12} />
-            </div>
-          </a>
-
-          {/* Channel 3: LinkedIn */}
+          {/* Channel 2: LinkedIn */}
           <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="glass-card flex flex-col items-center justify-between text-center group hover:bg-[#080808] transition-colors border border-[#1a1a1a] p-10 min-h-[240px]">
             <div className="p-4 border border-[#1a1a1a] bg-black group-hover:border-[#333] transition-colors">
               <Linkedin className="text-white" size={24} />
@@ -106,8 +88,8 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">01</div>
-              <h3 className="font-bold text-white">Alignment Call</h3>
-              <p className="text-muted text-xs leading-relaxed">Brief diagnostic session. You walk me through the problem. I ask the hard questions about your stack, timeline, and constraints.</p>
+              <h3 className="font-bold text-white">Alignment Inquiry</h3>
+              <p className="text-muted text-xs leading-relaxed">Send an email or message detailing your current systems bottleneck. We review it and establish alignment on feasibility.</p>
             </div>
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">02</div>
