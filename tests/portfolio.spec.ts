@@ -5,8 +5,13 @@ test.describe("VMG Systems Portfolio Audit", () => {
     await page.goto("/");
     await expect(page).toHaveTitle(/VMG Systems/);
     
-    // Check main navigation indicator
-    await expect(page.locator("text=Node Operational")).toBeVisible();
+    // Check main navigation indicator (hidden on mobile devices, visible on desktop)
+    const isMobile = page.viewportSize()?.width && page.viewportSize()!.width < 640;
+    if (!isMobile) {
+      await expect(page.locator("text=Node Operational")).toBeVisible();
+    } else {
+      await expect(page.locator("text=Node Operational")).toBeHidden();
+    }
     
     // Check Operations Console
     await expect(page.locator("text=VMG Operations Console")).toBeVisible();
@@ -33,7 +38,8 @@ test.describe("VMG Systems Portfolio Audit", () => {
   test("The Lab page features telemetry monitors", async ({ page }) => {
     await page.goto("/lab");
     await expect(page.locator("text=The Builder’s Lab")).toBeVisible();
-    await expect(page.locator("text=Uptime")).toHaveCount(4); // Verify our 4 telemetry cards have Uptime metrics!
+    // 3 of our telemetry cards contain Uptime metrics (EA Agent, n8n, Langfuse). The Proxmox card tracks hardware-level metrics.
+    await expect(page.locator("text=Uptime")).toHaveCount(3);
   });
 
   test("Contact page highlights direct channels", async ({ page }) => {
