@@ -96,7 +96,7 @@ const item = { hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1 } };
 ## Who is Gilberto Piña
 
 **Current role**: Lead Architect & Head of Technology at Genubi, Inc. (Chicago, IL)
-**Company**: VMG Systems, LLC — his technical consulting firm
+**Company**: VMG Systems — his technical consulting firm
 
 ### Professional Identity
 - Senior Full-Stack Engineer + Solutions Architect

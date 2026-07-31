@@ -54,3 +54,29 @@ body {
     border-color: #333333;
   }
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+/* Monochromatic Text Selection */
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
+::-moz-selection {
+  background: #ffffff;
+  color: #000000;
+}
