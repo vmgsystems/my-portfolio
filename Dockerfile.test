@@ -1,0 +1,23 @@
+# Use official Microsoft Playwright image
+FROM mcr.microsoft.com/playwright:v1.45.0-jammy
+
+# Set working directory
+WORKDIR /app
+
+# Copy package lockfiles
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Install Playwright browsers (in case local lockfile didn't compile them)
+RUN npx playwright install chromium firefox webkit
+
+# Copy remaining source code
+COPY . .
+
+# Build the Next.js production server
+RUN npm run build
+
+# Run Playwright test suite
+CMD ["npx", "playwright", "test"]

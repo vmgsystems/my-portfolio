@@ -25,7 +25,13 @@ export default function Template({ children }: { children: React.ReactNode }) {
             <div className="relative w-8 h-8 rounded-md overflow-hidden border border-[#1a1a1a] group-hover:border-[#333] transition-colors">
               <Image src="/vmg-logo-new.png" alt="VMG Systems Logo" fill className="object-cover" />
             </div>
-            <div>VMG <span className="text-muted font-normal">Systems</span></div>
+            <div className="flex items-center gap-3">
+              <div>VMG <span className="text-muted font-normal">Systems</span></div>
+              <span className="hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 border border-[#1a1a1a] bg-[#020202] text-[8px] font-mono tracking-widest text-white/50 uppercase rounded-sm">
+                <span className="w-1 h-1 rounded-full bg-white animate-pulse" />
+                Node Operational
+              </span>
+            </div>
           </Link>
           <div className="flex items-center gap-4 md:hidden text-muted">
             <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2" aria-label="GitHub Profile"><Github size={14} /></a>

@@ -7,47 +7,71 @@ import {
   Lightbulb,
   GraduationCap,
   ArrowLeft,
-  Calendar
+  Calendar,
+  ShieldAlert,
+  Terminal,
+  Layers
 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
 const milestones = [
   {
+    year: "2024-Present",
+    title: "Lead Architect & Head of Technology",
+    company: "Automotive AI Platform Venture",
+    location: "Chicago, IL",
+    description: "Architecting and spearheading development of the flagship AI coaching, analysis, and evaluation platform for automotive dealerships. Engineered a 5-service monorepo leveraging React Native with native audio background persistence, async FastAPI backends, Next.js dashboards, and Gemini AI. Successfully managed 165+ commits and 40+ automated CI/CD pipelines, establishing a robust system live on GCP Cloud Run under a strict 99.5% uptime SLA and sub-second endpoint responses.",
+    icon: <Layers className="text-white" />,
+    current: true
+  },
+  {
     year: "2022-Present",
     title: "Founder & Principal Architect",
     company: "VMG Systems",
     location: "Chicago, IL",
-    description: "Independent AI infrastructure practice built around the Clean Slate methodology, shipping robust, production-ready systems. Built and operate a 10-service self-hosted AI OS as a proving ground for every system sold to clients. Current engagement: Principal AI Infrastructure Advisor for an automotive voice AI platform, implementing a Clean Slate architecture, standardizing on Terraform, and deploying comprehensive LLM observability.",
+    description: "Formulated and operate an elite technical consulting practice built around the 'Clean Slate' methodology: 100% Terraform-codified infrastructure, zero ClickOps, async Python services, and comprehensive observability. Built and dogfood a 10-service self-hosted AI operating system as an experimental proving ground for client builds. Advising multiple startups and growth-stage enterprises on migrating high-cost unmanaged SaaS stacks to modular, async, fully observable cloud-native platforms.",
     icon: <Briefcase className="text-white" />,
     current: true
   },
   {
     year: "2018-2022",
-    title: "Technology Advisor",
-    company: "McDonald’s Corporation",
-    description: "Core contributor to the Automated Order Taker (AOT), McDonald’s AI-powered drive-thru voice system, now patent-pending and deployed across 14,000+ locations globally. Led development contributing to an 82% improvement in order accuracy. Engineered edge-to-cloud pipelines allowing localized hardware to communicate instantly with centralized AI models.",
+    title: "Enterprise IAM Solutions Architect",
+    company: "Leading Enterprise Identity Platforms (IAM)",
+    location: "Remote / Chicago, IL",
+    description: "Designed, federated, and audited high-scale secure authentication systems and user-identity lifecycles for fortune-level enterprises. Configured complex custom OAuth 2.0 / OIDC flows, SAML federation hubs, and fine-grained API authorization tokens. This deep security background is the foundation of the strict 'Security on Day 1' protocol built into every single VMG Systems engagement today.",
     icon: <Briefcase className="text-white" />
+  },
+  {
+    year: "2018-2022",
+    title: "Core Technology Advisor",
+    company: "Fortune 100 Global QSR Brand",
+    location: "Chicago, IL",
+    description: "Pioneered architectural contributions to the Automated Order Taker (AOT), a flagship AI-powered drive-thru voice recognition platform. Deployed across 14,000+ locations globally and patent-pending. Directed video ethnography research pipelines, edge-to-cloud analytics integrations, and optimized real-time speech processing topologies that improved automated order accuracy to 82%.",
+    icon: <Terminal className="text-white" />
+  },
+  {
+    year: "2017",
+    title: "Patent Filed: Voice recognized data analysis",
+    company: "USPTO Patent Core",
+    location: "Chicago, IL",
+    description: "Filed core utility patent outlining a proprietary, low-latency framework for processing voice-recognized real-time audio inputs to trigger automatic corrective systems in business execution pipelines. Deployed aspects of this core IP in both drive-thru AI structures and active venture backends.",
+    icon: <Lightbulb className="text-white" />
   },
   {
     year: "2008-2018",
     title: "Director of Technology",
-    company: "Halverson Group, Inc.",
-    description: "Led technology strategy for a firm specializing in video analytics and ethnographic research systems for Fortune 500 clients including McDonald’s and Timberland. Architected and deployed video ethnography systems for McDonald’s Innovation Center Laboratory. Directed international deployments in Singapore and Hong Kong.",
+    company: "Specialized Research & Video Analytics Firm",
+    location: "Chicago, IL · Singapore · Hong Kong",
+    description: "Directed full-scale technical design and operations for a specialized video analytics and ethnographic research firm servicing high-profile Fortune 500 accounts. Spearheaded video collection pipelines for a Global QSR Brand's Innovation Center Laboratory, supervising deployments across key markets in South-East Asia.",
     icon: <Briefcase className="text-white" />
-  },
-  {
-    year: "2017",
-    title: "Inventor (Patent Pending)",
-    company: "Voice Recognized Data Analysis",
-    description: "Filed core patent for ‘Voice Recognized Data Analysis and Corrective Action System,’ outlining a proprietary framework for processing real-time audio input to trigger automated corrective actions.",
-    icon: <Lightbulb className="text-white" />
   },
   {
     year: "Education",
     title: "B.S. Electrical Engineering",
     company: "University of Illinois at Chicago (UIC)",
-    description: "First Place at the UIC Engineering EXPO for ‘Wireless Price Tag Display.’",
+    location: "Chicago, IL",
+    description: "Awarded First Place at the UIC Engineering EXPO for the design and firmware implementation of an innovative 'Wireless Price Tag Display' system.",
     icon: <GraduationCap className="text-white" />
   }
 ];
@@ -90,12 +114,12 @@ export default function Timeline() {
             <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm font-bold tracking-widest uppercase mb-8">
               <ArrowLeft size={16} /> Back to Architecture
             </Link>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
+            <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-4 text-white">
               Experience & <br/>
               <span className="text-white/60">Milestones.</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              From McDonald&apos;s drive-thrus to early-stage startups. Same standard either way.
+              From enterprise AI drive-thrus and security architectures to early-stage SaaS ventures. Fully codified from day one.
             </p>
           </div>
         </motion.div>
@@ -115,19 +139,19 @@ export default function Timeline() {
                   <Calendar size={12} /> {milestone.year}
                 </span>
                 <span className="hidden md:block text-muted opacity-30">•</span>
-                <h2 className="text-xl font-bold tracking-tight">
+                <h2 className="text-xl font-bold tracking-tight text-white">
                   {milestone.title} <span className="text-muted font-normal">at {milestone.company}</span>
                 </h2>
               </div>
 
-              <div className="glass-card group hover:bg-[#111] transition-colors">
+              <div className="glass-card group hover:bg-[#111] transition-colors border border-[#1a1a1a]">
                 <div className="flex items-start gap-4">
-                  <div className="p-2 border border-[#1a1a1a] group-hover:border-[#333] transition-colors shrink-0">
+                  <div className="p-2 border border-[#1a1a1a] group-hover:border-[#333] transition-colors shrink-0 bg-black">
                     {milestone.icon}
                   </div>
                   <div className="flex-1 min-w-0">
                     {milestone.location && (
-                      <p className="text-xs font-bold uppercase tracking-widest text-muted mb-2">{milestone.location}</p>
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-muted mb-2">{milestone.location}</p>
                     )}
                     <p className={`text-muted text-sm leading-relaxed max-w-3xl ${!expanded[index] ? "line-clamp-3 md:line-clamp-none" : ""}`}>
                       {milestone.description}
@@ -147,7 +171,7 @@ export default function Timeline() {
 
         <motion.div variants={item} className="mt-24 text-center">
             <p className="text-muted text-sm mb-6 uppercase tracking-[0.3em] font-bold">End of chronological log</p>
-            <Link href="/contact" className="inline-block border border-white px-8 py-4 hover:bg-white hover:text-black transition-all font-bold">
+            <Link href="/contact" className="inline-block border border-white px-8 py-4 hover:bg-white hover:text-black text-black bg-white transition-all font-bold text-xs uppercase tracking-widest">
               Discuss Your Architecture
             </Link>
         </motion.div>

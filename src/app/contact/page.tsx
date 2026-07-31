@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ArrowLeft, Mail, Linkedin } from "lucide-react";
+import { ArrowLeft, Mail, Linkedin, Calendar, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 const container = {
@@ -20,7 +20,7 @@ const item = {
 
 export default function Contact() {
   return (
-    <main className="min-h-screen p-5 sm:p-8 md:p-12 lg:p-24 max-w-5xl mx-auto pt-36 md:pt-32">
+    <main className="min-h-screen p-5 sm:p-8 md:p-12 lg:p-24 max-w-6xl mx-auto pt-36 md:pt-32">
       <motion.div 
         variants={container}
         initial="hidden"
@@ -41,51 +41,83 @@ export default function Contact() {
             <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-white transition-colors text-sm font-bold tracking-widest uppercase mb-8">
               <ArrowLeft size={16} /> Back to Architecture
             </Link>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-white">
+            <h1 className="text-4xl md:text-6xl font-black tracking-tight mb-4 text-white leading-tight">
               Let&apos;s talk about <br/>
               <span className="text-white/60">what&apos;s broken.</span>
             </h1>
-            <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              Tell me what&apos;s not working. I&apos;ll tell you what it would take to fix it, and whether I&apos;m the right person to do it.
+            <p className="text-white/70 text-base md:text-lg leading-relaxed max-w-2xl">
+              Describe your current cloud setups, database sync delays, or high-cost AI prompt chains. We will assess the root cause and advise if a clean-slate rebuild is your fastest path forward.
             </p>
           </div>
         </motion.div>
 
-        <motion.div variants={item} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-          <a href="mailto:hello@vmg.systems" className="glass-card flex flex-col items-center justify-center text-center group hover:bg-[#111] transition-colors border border-[#1a1a1a] p-12">
-            <div className="p-4 border border-[#1a1a1a] mb-6 group-hover:border-[#333] transition-colors">
+        {/* Direct Channels (3-Column Layout) */}
+        <motion.div variants={item} className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          {/* Channel 1: Email */}
+          <a href="mailto:hello@vmg.systems" className="glass-card flex flex-col items-center justify-between text-center group hover:bg-[#080808] transition-colors border border-[#1a1a1a] p-10 min-h-[240px]">
+            <div className="p-4 border border-[#1a1a1a] bg-black group-hover:border-[#333] transition-colors">
               <Mail className="text-white" size={24} />
             </div>
-            <h2 className="text-xl font-bold mb-2">Direct Email</h2>
-            <p className="text-muted text-xs uppercase tracking-widest font-bold">hello@vmg.systems</p>
+            <div>
+              <h2 className="text-lg font-bold text-white mb-2">Direct Email</h2>
+              <p className="text-muted text-[10px] uppercase tracking-widest font-bold">hello@vmg.systems</p>
+            </div>
+            <div className="mt-4 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/50 group-hover:text-white transition-colors">
+              Send Email <ArrowUpRight size={12} />
+            </div>
           </a>
 
-          <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="glass-card flex flex-col items-center justify-center text-center group hover:bg-[#111] transition-colors border border-[#1a1a1a] p-12">
-            <div className="p-4 border border-[#1a1a1a] mb-6 group-hover:border-[#333] transition-colors">
+          {/* Channel 2: Calendly Booking */}
+          <a href="https://calendly.com/vmg-systems/diagnostic" target="_blank" rel="noopener noreferrer" className="glass-card flex flex-col items-center justify-between text-center group hover:bg-[#080808] transition-colors border border-white p-10 min-h-[240px] bg-[#030303]">
+            <div className="p-4 border border-white bg-black group-hover:border-white transition-colors relative">
+              <Calendar className="text-white" size={24} />
+              <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
+              </span>
+            </div>
+            <div>
+              <h2 className="text-lg font-bold text-white mb-2">Schedule diagnostic</h2>
+              <p className="text-muted text-[10px] uppercase tracking-widest font-bold">Book a 15-Min video Session</p>
+            </div>
+            <div className="mt-4 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white group-hover:underline">
+              Secure Onboarding Slot <ArrowUpRight size={12} />
+            </div>
+          </a>
+
+          {/* Channel 3: LinkedIn */}
+          <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="glass-card flex flex-col items-center justify-between text-center group hover:bg-[#080808] transition-colors border border-[#1a1a1a] p-10 min-h-[240px]">
+            <div className="p-4 border border-[#1a1a1a] bg-black group-hover:border-[#333] transition-colors">
               <Linkedin className="text-white" size={24} />
             </div>
-            <h2 className="text-xl font-bold mb-2">LinkedIn</h2>
-            <p className="text-muted text-xs uppercase tracking-widest font-bold">Connect & Message</p>
+            <div>
+              <h2 className="text-lg font-bold text-white mb-2">LinkedIn Profile</h2>
+              <p className="text-muted text-[10px] uppercase tracking-widest font-bold">Direct Messaging</p>
+            </div>
+            <div className="mt-4 flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-white/50 group-hover:text-white transition-colors">
+              Connect on LinkedIn <ArrowUpRight size={12} />
+            </div>
           </a>
         </motion.div>
 
+        {/* Process Roadmap Card */}
         <motion.div variants={item} className="glass-card border border-[#1a1a1a] p-8 md:p-12">
           <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-muted mb-8">What happens next</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">01</div>
               <h3 className="font-bold text-white">Alignment Call</h3>
-              <p className="text-muted text-sm leading-relaxed">Brief diagnostic session. You walk me through the problem. I ask the hard questions about your stack, timeline, and constraints.</p>
+              <p className="text-muted text-xs leading-relaxed">Brief diagnostic session. You walk me through the problem. I ask the hard questions about your stack, timeline, and constraints.</p>
             </div>
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">02</div>
               <h3 className="font-bold text-white">Architecture Audit</h3>
-              <p className="text-muted text-sm leading-relaxed">1 to 2 week deep dive into your codebase. You get a full remediation roadmap, whether we work together or not.</p>
+              <p className="text-muted text-xs leading-relaxed">1 to 2 week deep dive into your codebase. You get a full remediation roadmap, whether we work together or not.</p>
             </div>
             <div className="flex flex-col gap-3">
               <div className="text-2xl font-black text-white">03</div>
               <h3 className="font-bold text-white">Canary Launch</h3>
-              <p className="text-muted text-sm leading-relaxed">Clean-slate rebuild. IaC from day one, full observability, production-ready on delivery.</p>
+              <p className="text-muted text-xs leading-relaxed">Clean-slate rebuild. IaC from day one, full observability, production-ready on delivery.</p>
             </div>
           </div>
         </motion.div>
