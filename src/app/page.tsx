@@ -104,20 +104,30 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* Chicago Clock Card */}
+        {/* Chicago Clock / Sailing Card */}
         <motion.div 
           variants={item}
-          className="glass-card flex flex-col justify-between items-center text-center group cursor-default overflow-hidden p-6 md:p-8"
+          className="glass-card flex flex-col justify-between items-center text-center group cursor-default overflow-hidden p-6 md:p-8 relative border border-[#1a1a1a]"
         >
-          <div className="flex items-center gap-2 text-muted uppercase tracking-widest text-xs font-bold mb-4 md:mb-0">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/sailing.png"
+              alt="Velocity Made Good J/99 Rambler"
+              fill
+              className="object-cover opacity-20 group-hover:scale-105 group-hover:opacity-40 transition-all duration-1000 ease-out grayscale"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+          </div>
+
+          <div className="relative z-10 flex items-center gap-2 text-muted uppercase tracking-widest text-xs font-bold mb-4 md:mb-0">
             <Clock size={12} />
             <span>Chicago, IL</span>
           </div>
-          <div className="text-3xl sm:text-4xl font-mono font-bold tracking-tighter tabular-nums my-4 md:my-0">
+          <div className="relative z-10 text-3xl sm:text-4xl font-mono font-bold tracking-tighter tabular-nums my-4 md:my-0 text-white">
             {time || "00:00:00"}
           </div>
-          <div className="text-xs text-muted uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">
-            Velocity Made Good
+          <div className="relative z-10 text-[10px] text-white/70 uppercase tracking-widest font-bold">
+            Velocity Made Good · J/99
           </div>
         </motion.div>
 
