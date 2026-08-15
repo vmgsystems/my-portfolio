@@ -95,18 +95,18 @@ const item = { hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1 } };
 
 ## Who is Gilberto Piña
 
-**Current role**: Lead Architect & Head of Technology at Genubi, Inc. (Chicago, IL)
+**Current role**: Part Owner & Architectural Advisor at Genubi, Inc. (Chicago, IL) · Principal at VMG Systems
 **Company**: VMG Systems — his technical consulting firm
 
 ### Professional Identity
 - Senior Full-Stack Engineer + Solutions Architect
 - AI/ML pipeline specialist (Gemini, Vertex AI, Google Cloud)
 - Background: McDonald's Global Technology (AI-Enhanced Drive-Thru initiative), Ping Identity, Okta, ForgeRock IAM
-- Currently building Genubi — AI coaching platform for automotive dealerships (165 commits, 40+ CI/CD workflows, production on Cloud Run)
+- Delivered V1 of Genubi — AI coaching platform for automotive dealerships (165 commits, 40+ CI/CD workflows, production on Cloud Run). Now Part Owner under a 12-month maintenance & advisory agreement.
 - Races sailboats — active crew on a J/99 named Rambler
 
 ### Key Projects to Highlight
-1. **Genubi Platform** — Clean-slate rebuild: React Native + FastAPI + Gemini AI + Next.js dashboard. Live on Cloud Run, 99.5% uptime SLA.
+1. **Genubi Platform** — Clean-slate rebuild: React Native + FastAPI + Gemini AI + Next.js dashboard. Live on Cloud Run, 99.5% uptime SLA. V1 delivered; currently in 12-month maintenance & equity phase.
 2. **McDonald's AI Drive-Thru** — Pioneered video ethnography + AI order architecture for the Global Technology Division. Scaled globally.
 3. **VMG Systems** — Technical consulting: "Clean Slate" architecture methodology. Specializes in greenfield rebuilds, AI pipeline integration, cloud infrastructure.
 
