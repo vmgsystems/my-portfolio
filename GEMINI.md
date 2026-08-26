@@ -95,18 +95,18 @@ const item = { hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1 } };
 
 ## Who is Gilberto Piña
 
-**Current role**: Part Owner & Architectural Advisor at Genubi, Inc. (Chicago, IL) · Principal at VMG Systems
+**Current role**: Part Owner & Architectural Advisor at Automotive AI Platform (Chicago, IL) · Principal at VMG Systems
 **Company**: VMG Systems — his technical consulting firm
 
 ### Professional Identity
 - Senior Full-Stack Engineer + Solutions Architect
 - AI/ML pipeline specialist (Gemini, Vertex AI, Google Cloud)
 - Background: McDonald's Global Technology (AI-Enhanced Drive-Thru initiative), Ping Identity, Okta, ForgeRock IAM
-- Delivered V1 of Genubi — AI coaching platform for automotive dealerships (165 commits, 40+ CI/CD workflows, production on Cloud Run). Now Part Owner under a 12-month maintenance & advisory agreement.
+- Delivered V1 of Automotive AI Platform — AI coaching platform for automotive dealerships (165 commits, 40+ CI/CD workflows, production on Cloud Run). Now Part Owner under a 12-month maintenance & advisory agreement.
 - Races sailboats — active crew on a J/99 named Rambler
 
 ### Key Projects to Highlight
-1. **Genubi Platform** — Clean-slate rebuild: React Native + FastAPI + Gemini AI + Next.js dashboard. Live on Cloud Run, 99.5% uptime SLA. V1 delivered; currently in 12-month maintenance & equity phase.
+1. **Automotive AI Platform Platform** — Clean-slate rebuild: React Native + FastAPI + Gemini AI + Next.js dashboard. Live on Cloud Run, 99.5% uptime SLA. V1 delivered; currently in 12-month maintenance & equity phase.
 2. **McDonald's AI Drive-Thru** — Pioneered video ethnography + AI order architecture for the Global Technology Division. Scaled globally.
 3. **VMG Systems** — Technical consulting: "Clean Slate" architecture methodology. Specializes in greenfield rebuilds, AI pipeline integration, cloud infrastructure.
 
@@ -128,7 +128,7 @@ const item = { hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1 } };
 **Goal**: Services overview, methodology, how to engage, CTA to contact
 
 ### `/timeline` — Career Timeline
-**Goal**: Visual timeline of McDonald's → IAM work → VMG Systems → Genubi
+**Goal**: Visual timeline of McDonald's → IAM work → VMG Systems → Automotive AI Platform
 
 ### `/lab` — The Lab
 **Goal**: Side experiments, tools built, AI projects, interesting technical artifacts
@@ -184,9 +184,9 @@ npx playwright show-report
 
 ## What to Improve Next (Priority Order)
 
-1. **Add Genubi to homepage** — the Milestones card should link to Genubi with a brief description. This is the most impressive current work.
+1. **Add Automotive AI Platform to homepage** — the Milestones card should link to Automotive AI Platform with a brief description. This is the most impressive current work.
 2. **Consulting page** — needs full content: VMG methodology, services, engagement model, CTA
-3. **Timeline page** — build out the visual career timeline with McDonald's, IAM, VMG, Genubi milestones
+3. **Timeline page** — build out the visual career timeline with McDonald's, IAM, VMG, Automotive AI Platform milestones
 4. **Add social links to nav/footer** — LinkedIn, GitHub
 5. **SEO metadata** — each page needs title/description/OG image
 6. **Contact page** — replace any form with direct links: email, LinkedIn, Calendly
