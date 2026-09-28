@@ -69,11 +69,11 @@ const experiments = [
     }
   },
   {
-    title: "Homelab AI OS",
-    subtitle: "Talos K8s · Proxmox · FluxCD · Tailscale",
+    title: "VMG AI OS",
+    subtitle: "Sovereign Cloud · Talos K8s · FluxCD GitOps · Tailscale",
     icon: <Server className="text-white" />,
-    description: "Converged HA Talos Kubernetes & Proxmox private cloud managed via declarative FluxCD GitOps. Features 10-service self-hosted stack with full VLAN isolation (OPNsense), zero-trust remote access (Tailscale), wildcard HTTPS, and automated secrets management via Vaultwarden. Every cluster resource IaC-codified.",
-    tag: "Infrastructure",
+    description: "Air-gapped, sovereign private cloud runtime running declarative Talos Linux Kubernetes & Proxmox VE. Reconciled via automated FluxCD GitOps with zero manual drift. Features 10-service self-hosted stack with OPNsense VLAN micro-segmentation, Tailscale zero-trust overlay mesh, and automated secrets governance via Vaultwarden.",
+    tag: "Sovereign Cloud",
     telemetry: {
       cpuLoad: "<15%",
       memory: "24GB/64GB",
