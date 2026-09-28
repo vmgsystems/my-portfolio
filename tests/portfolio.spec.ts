@@ -38,6 +38,7 @@ test.describe("VMG Systems Portfolio Audit", () => {
     await expect(page.locator("text=The Builder’s Lab")).toBeVisible();
     await expect(page.locator("text=PD3board Terminal")).toBeVisible();
     await expect(page.locator("text=Rambler Smart Bridge")).toBeVisible();
+    await expect(page.locator("text=VMG AI OS")).toBeVisible();
     // 5 telemetry cards track Uptime metrics (EA Agent, PD3board, Rambler, n8n, Langfuse)
     await expect(page.locator("text=Uptime")).toHaveCount(5);
   });
