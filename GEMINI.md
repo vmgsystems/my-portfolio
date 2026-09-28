@@ -99,16 +99,22 @@ const item = { hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1 } };
 **Company**: VMG Systems — his technical consulting firm
 
 ### Professional Identity
-- Senior Full-Stack Engineer + Solutions Architect
-- AI/ML pipeline specialist (Gemini, Vertex AI, Google Cloud)
+- Senior Full-Stack Engineer + Solutions Architect & Founder at VMG Systems
+- AI/ML pipeline specialist (Gemini, Vertex AI, Google Cloud, Langfuse)
+- Issued Patent: WO2017177203A1 (*Voice Recognized Data Analysis and Corrective Action Systems*)
 - Background: McDonald's Global Technology (AI-Enhanced Drive-Thru initiative), Ping Identity, Okta, ForgeRock IAM
 - Delivered V1 of Automotive AI Platform — AI coaching platform for automotive dealerships (165 commits, 40+ CI/CD workflows, production on Cloud Run). Now Part Owner under a 12-month maintenance & advisory agreement.
-- Races sailboats — active crew on a J/99 named Rambler
+- Races sailboats — active tactician and navigator on a J/99 named Rambler (USA 99)
+- Contact Emails: `gilberto.pina@vmg.systems` · `hello@vmg.systems` · `gilpina@gmail.com`
+- Live Domains: `https://www.vmg.systems` · `https://gilbertopina.com`
 
 ### Key Projects to Highlight
-1. **Automotive AI Platform Platform** — Clean-slate rebuild: React Native + FastAPI + Gemini AI + Next.js dashboard. Live on Cloud Run, 99.5% uptime SLA. V1 delivered; currently in 12-month maintenance & equity phase.
-2. **McDonald's AI Drive-Thru** — Pioneered video ethnography + AI order architecture for the Global Technology Division. Scaled globally.
-3. **VMG Systems** — Technical consulting: "Clean Slate" architecture methodology. Specializes in greenfield rebuilds, AI pipeline integration, cloud infrastructure.
+1. **Automotive AI Platform** — Clean-slate rebuild: React Native + FastAPI + Gemini AI + Next.js dashboard. Live on Cloud Run, 99.5% uptime SLA. V1 delivered; currently in 12-month maintenance & equity phase.
+2. **VMG AI OS** — Air-gapped, sovereign private cloud runtime running declarative Talos Linux Kubernetes & Proxmox VE via automated FluxCD GitOps with zero manual drift. Features OPNsense VLAN micro-segmentation, Tailscale zero-trust overlay mesh, and Vaultwarden secret governance.
+3. **PD3board Terminal** — Open-source real-time financial workstation and Bloomberg Terminal emulator (FastAPI, WebSockets/SSE streaming, 60 FPS HTML5 Canvas). Public on GitHub: `guarox/PD3board`.
+4. **McDonald's AI Drive-Thru** — Pioneered video ethnography + AI order architecture for the Global Technology Division. Scaled globally across 14,000+ stores (WO2017177203A1).
+5. **Rambler Smart Bridge** — High-frequency NMEA 2000 CAN bus marine telemetry, NOAA HRRR 1km weather modeling, and live polar target velocity calculations.
+6. **VMG Systems** — Technical consulting: "Clean Slate" architecture methodology. Specializes in greenfield rebuilds, AI pipeline integration, cloud infrastructure.
 
 ### Tone & Voice
 - Confident but not arrogant — lets the work speak
@@ -182,14 +188,19 @@ npx playwright show-report
 
 ---
 
-## What to Improve Next (Priority Order)
+## Project Status & Roadmap
 
-1. **Add Automotive AI Platform to homepage** — the Milestones card should link to Automotive AI Platform with a brief description. This is the most impressive current work.
-2. **Consulting page** — needs full content: VMG methodology, services, engagement model, CTA
-3. **Timeline page** — build out the visual career timeline with McDonald's, IAM, VMG, Automotive AI Platform milestones
-4. **Add social links to nav/footer** — LinkedIn, GitHub
-5. **SEO metadata** — each page needs title/description/OG image
-6. **Contact page** — replace any form with direct links: email, LinkedIn, Calendly
+### Completed
+- [x] **Automotive AI Platform on Homepage & Milestones** — Full case study, metrics (60% latency cut, 40% cost reduction, 99.5% uptime).
+- [x] **Consulting Page** — VMG methodology, Clean Slate protocol, engagement tiers, direct booking CTAs.
+- [x] **Timeline Page** — Complete career timeline from McDonald's Voice AI patent to IAM and Automotive AI Platform.
+- [x] **The Lab** — Live showcases for VMG AI OS (sovereign cloud/Talos/FluxCD), PD3board (Bloomberg emulator), Rambler Smart Bridge, n8n flywheel, Langfuse observability.
+- [x] **Sanitization & Public GitHub Audit** — Cleaned sensitive client names, made PD3board public, polished `guarox/guarox` README architecture matrix.
+
+### What to Improve Next
+1. **Interactive Demo / Video embedding on Lab** — Add short video demos or interactive terminal replay for PD3board.
+2. **Blog / Engineering Notes section** — Technical write-ups on Talos K8s, GitOps, and real-time audio pipelines.
+3. **Automated Lighthouse / Core Web Vitals CI** — Ensure 100/100 performance and SEO score benchmarks.
 
 ---
 
