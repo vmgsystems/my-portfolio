@@ -13,13 +13,10 @@ test.describe("VMG Systems Portfolio Audit", () => {
       await expect(page.locator("text=Node Operational")).toBeHidden();
     }
     
-    // Check Operations Console
-    await expect(page.locator("text=VMG Operations Console")).toBeVisible();
-    await expect(page.locator("text=Interactive Infrastructure Hub")).toBeVisible();
-    
-    // Trigger simulated diagnostic audit
-    await page.click("text=Run AI Diagnostic Audit");
-    await page.waitForTimeout(2000); // Allow scan logs to stream
+    // Check Core Capabilities
+    await expect(page.locator("text=Core Consulting Capabilities")).toBeVisible();
+    await expect(page.locator("text=Clean Slate Infrastructure & AI Engineering")).toBeVisible();
+    await expect(page.locator("text=Infrastructure Stack")).toBeVisible();
   });
 
   test("Consulting page has pricing and methodology", async ({ page }) => {
@@ -32,14 +29,17 @@ test.describe("VMG Systems Portfolio Audit", () => {
   test("Timeline has milestones", async ({ page }) => {
     await page.goto("/timeline");
     await expect(page.locator("text=Automotive AI Platform Venture")).toBeVisible();
+    await expect(page.locator("text=WO2017177203A1").first()).toBeVisible();
     await expect(page.locator("text=B.S. Electrical Engineering")).toBeVisible();
   });
 
   test("The Lab page features telemetry monitors", async ({ page }) => {
     await page.goto("/lab");
     await expect(page.locator("text=The Builder’s Lab")).toBeVisible();
-    // 3 of our telemetry cards contain Uptime metrics (EA Agent, n8n, Langfuse). The Proxmox card tracks hardware-level metrics.
-    await expect(page.locator("text=Uptime")).toHaveCount(3);
+    await expect(page.locator("text=PD3board Terminal")).toBeVisible();
+    await expect(page.locator("text=Rambler Smart Bridge")).toBeVisible();
+    // 5 telemetry cards track Uptime metrics (EA Agent, PD3board, Rambler, n8n, Langfuse)
+    await expect(page.locator("text=Uptime")).toHaveCount(5);
   });
 
   test("Contact page highlights direct channels", async ({ page }) => {
