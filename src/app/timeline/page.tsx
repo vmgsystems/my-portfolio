@@ -10,7 +10,8 @@ import {
   Calendar,
   ShieldAlert,
   Terminal,
-  Layers
+  Layers,
+  ArrowUpRight
 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -52,11 +53,13 @@ const milestones = [
   },
   {
     year: "2017",
-    title: "Patent Filed: Voice recognized data analysis",
-    company: "USPTO Patent Core",
+    title: "Issued Patent: Voice Analysis & Action Systems",
+    company: "WIPO / USPTO (WO2017177203A1)",
     location: "Chicago, IL",
-    description: "Filed core utility patent outlining a proprietary, low-latency framework for processing voice-recognized real-time audio inputs to trigger automatic corrective systems in business execution pipelines. Deployed aspects of this core IP in both drive-thru AI structures and active venture backends.",
-    icon: <Lightbulb className="text-white" />
+    description: "Issued patent (WO2017177203A1: 'System and Method for Analyzing a Voice of a Subject and Generating Corrective Action'). Formulated proprietary acoustic frequency analysis algorithms and real-time audio processing topologies to trigger automated corrective workflows in mission-critical execution pipelines. Architectures derived from this IP power both enterprise drive-thru AI deployments and modern high-throughput voice platforms.",
+    icon: <Lightbulb className="text-white" />,
+    link: "https://patents.google.com/patent/WO2017177203A1/en",
+    linkText: "View Patent WO2017177203A1"
   },
   {
     year: "2008-2018",
@@ -162,6 +165,18 @@ export default function Timeline() {
                     >
                       {expanded[index] ? "Show less" : "Read more"}
                     </button>
+                    {milestone.link && (
+                      <div className="mt-3">
+                        <a
+                          href={milestone.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs font-mono font-bold uppercase tracking-widest text-white/70 hover:text-white transition-colors"
+                        >
+                          {milestone.linkText || "View Official Record"} <ArrowUpRight size={13} />
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

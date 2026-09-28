@@ -9,7 +9,9 @@ import {
   LineChart,
   ArrowLeft,
   Gauge,
-  Activity
+  Activity,
+  Terminal,
+  Radio
 } from "lucide-react";
 import Link from "next/link";
 
@@ -28,6 +30,32 @@ const experiments = [
     }
   },
   {
+    title: "PD3board Terminal",
+    subtitle: "FastAPI · WebSockets · Canvas/WebGL · SSE",
+    icon: <Terminal className="text-white" />,
+    description: "High-throughput financial workstation and Bloomberg Terminal emulator. Features sub-50ms streaming ingestion pipelines, in-memory circular order book (L1/L2 reconstruction), F1-F12 keyboard command dispatch, and 60 FPS hardware-accelerated Canvas/WebGL tick charts in phosphor amber.",
+    tag: "FinTech / Systems",
+    telemetry: {
+      feedLatency: "<50ms",
+      renderRate: "60 FPS",
+      depth: "L1/L2 Book",
+      uptime: "99.99%"
+    }
+  },
+  {
+    title: "Rambler Smart Bridge",
+    subtitle: "NMEA 2000 · Python · Edge Telemetry · HRRR",
+    icon: <Radio className="text-white" />,
+    description: "Real-time marine tactical intelligence and sensor computing bridge deployed aboard Rambler (J/99 USA 99). Ingests 10Hz CAN bus / NMEA 2000 telemetry, computes live polar target velocities, and synthesizes high-resolution NOAA HRRR wind models for offshore race routing.",
+    tag: "Edge / Marine",
+    telemetry: {
+      sampleRate: "10 Hz",
+      polarCalc: "<10ms",
+      weatherSync: "HRRR 1km",
+      uptime: "100% Race"
+    }
+  },
+  {
     title: "n8n Automation Layer",
     subtitle: "GCP · Linear · Slack · Firestore",
     icon: <Workflow className="text-white" />,
@@ -42,15 +70,15 @@ const experiments = [
   },
   {
     title: "Homelab AI OS",
-    subtitle: "Proxmox · OPNsense · Tailscale",
+    subtitle: "Talos K8s · Proxmox · FluxCD · Tailscale",
     icon: <Server className="text-white" />,
-    description: "10-service self-hosted stack running across two Proxmox nodes with full VLAN isolation (OPNsense), zero-trust remote access (Tailscale), wildcard HTTPS via mkcert, and secrets management through a self-hosted Vaultwarden instance. Every service IaC-managed, zero ClickOps.",
+    description: "Converged HA Talos Kubernetes & Proxmox private cloud managed via declarative FluxCD GitOps. Features 10-service self-hosted stack with full VLAN isolation (OPNsense), zero-trust remote access (Tailscale), wildcard HTTPS, and automated secrets management via Vaultwarden. Every cluster resource IaC-codified.",
     tag: "Infrastructure",
     telemetry: {
       cpuLoad: "<15%",
       memory: "24GB/64GB",
-      nodes: "2 Cluster",
-      bandwidth: "1.2 Gbps"
+      nodes: "Talos + PVE",
+      gitOpsSync: "100% Flux"
     }
   },
   {

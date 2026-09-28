@@ -228,7 +228,7 @@ export default function Home() {
             <span>Infrastructure Stack</span>
           </div>
           <div className="flex flex-wrap gap-2">
-            {['GCP', 'AWS', 'Python', 'React Native', 'Next.js', 'Terraform', 'Docker', 'Tailscale', 'Gemini', 'Claude', 'Langfuse', 'n8n'].map((tech) => (
+            {['GCP', 'AWS', 'Kubernetes', 'Terraform', 'Docker', 'Python', 'FastAPI', 'TypeScript', 'React Native', 'Next.js', 'pgvector', 'Qdrant', 'Redis', 'Langfuse', 'Tailscale', 'Gemini', 'Claude', 'n8n'].map((tech) => (
               <span key={tech} className="px-3 py-1 border border-[#1a1a1a] text-xs font-mono hover:border-[#333] transition-colors">
                 {tech}
               </span>
