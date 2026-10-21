@@ -17,16 +17,16 @@ import Link from "next/link";
 
 const experiments = [
   {
-    title: "EA Agent System",
-    subtitle: "Qdrant · Gemini · Claude CLI",
+    title: "Alfred (Hermes) SRE Agent",
+    subtitle: "Talos K8s · Qdrant · Ollama · Gemini",
     icon: <BrainCircuit className="text-white" />,
-    description: "Autonomous morning brief and EOD wrap agents running on a self-hosted LXC. Each run recalls context from a Qdrant vector store (3,072-dim Gemini embeddings), generates a brief via Claude, posts to Slack, then extracts and stores new memories, creating a persistent, self-improving context loop.",
-    tag: "AI / Memory",
+    description: "Autonomous SRE & incident-response agent running on Talos Kubernetes with a read-only root filesystem. Recalls runbooks and episodic memory via 768-dim local Ollama (nomic-embed-text) embeddings stored in Qdrant (2,148 vectors), executes deterministic remediation tools, and auto-archives verified resolutions.",
+    tag: "AI / Autonomous SRE",
     telemetry: {
       uptime: "100%",
-      runs: "2 / Day",
-      latency: "4.2s Avg",
-      accuracy: "98.4%"
+      vectors: "2,148 Pts",
+      ragLatency: "41ms Avg",
+      evalScore: "92.04%"
     }
   },
   {
@@ -70,28 +70,28 @@ const experiments = [
   },
   {
     title: "VMG AI OS",
-    subtitle: "Sovereign Cloud · Talos K8s · FluxCD GitOps · Tailscale",
+    subtitle: "Talos K8s · FluxCD · VMG Viento v0.3.0 · E2EE Vaultwarden",
     icon: <Server className="text-white" />,
-    description: "Air-gapped, sovereign private cloud runtime running declarative Talos Linux Kubernetes & Proxmox VE. Reconciled via automated FluxCD GitOps with zero manual drift. Features 10-service self-hosted stack with OPNsense VLAN micro-segmentation, Tailscale zero-trust overlay mesh, and automated secrets governance via Vaultwarden.",
+    description: "Sovereign private cloud runtime running declarative Talos Linux Kubernetes & Proxmox VE via FluxCD GitOps and SOPS/Age encryption. Governed pre-commit by VMG Viento v0.3.0 (16 static zero-trust invariants + SARIF 2.1.0), 3-way E2EE Vaultwarden secret sync (PBKDF2 600k + AES-256-CBC-HMAC + SHA-256 K8s parity), and weekly 14/14 DR restore drills.",
     tag: "Sovereign Cloud",
     telemetry: {
-      cpuLoad: "<15%",
-      memory: "24GB/64GB",
-      nodes: "Talos + PVE",
+      invariants: "16 Rules",
+      drTargets: "14 / 14 OK",
+      e2eeSecrets: "69 Synced",
       gitOpsSync: "100% Flux"
     }
   },
   {
     title: "Langfuse Observability",
-    subtitle: "Gemini · FastAPI · pgvector",
+    subtitle: "Langfuse v2 · Zero-Dep REST · Qdrant RAG · Nightly Evals",
     icon: <LineChart className="text-white" />,
-    description: "Full LLM observability layer wrapping every Gemini call in a high-performance FastAPI pipeline. Traces inputs, outputs, latency, and token cost per request. Feeds a pgvector store for RAG workflows and enables 'Golden Dataset' regression testing against eval accuracy baselines.",
+    description: "Full-fleet LLM observability pipeline ingesting traces, generations, token usage, and declarative frontier model costs across 6 microservices via a zero-dependency REST client. Paired with a nightly Kubernetes CronJob running golden SRE & Qdrant RAG benchmarks against accuracy baselines.",
     tag: "Observability",
     telemetry: {
-      traces: "1.2M+",
-      traceLatency: "12ms",
-      apiUptime: "99.98%",
-      datasets: "4 Active"
+      evalAccuracy: "92.04%",
+      traceLatency: "<12ms",
+      apiUptime: "99.99%",
+      servicesWired: "6 / 6 Live"
     }
   }
 ];

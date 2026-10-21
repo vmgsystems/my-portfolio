@@ -20,7 +20,7 @@ const milestones = [
   {
     year: "2024-Present",
     title: "Part Owner & V1 Lead Architect",
-    company: "Automotive AI Platform Venture (Genubi)",
+    company: "Automotive AI Platform Venture",
     location: "Chicago, IL",
     description: "Spearheaded and delivered the production-ready V1 rebuild of the flagship AI coaching, analysis, and evaluation platform for automotive dealerships. Engineered a 5-service monorepo leveraging React Native with native audio background persistence, async FastAPI backends, Next.js dashboards, and Gemini AI (165+ commits, 40+ automated CI/CD pipelines live on GCP Cloud Run under a 99.5% uptime SLA). Upon successful V1 delivery, transitioned from active lead software engineer to Part Owner operating under a 12-month maintenance & advisory agreement.",
     icon: <Layers className="text-white" />,

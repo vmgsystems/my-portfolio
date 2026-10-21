@@ -45,3 +45,4 @@ firebase-debug.log
 next-env.d.ts
 .env
 .env*.local
+/homepage*.png

@@ -68,7 +68,7 @@ const jsonLd = {
       "worksFor": { "@type": "Organization", "name": "VMG Systems" },
       "sameAs": [
         "https://linkedin.com/in/gilpina",
-        "https://github.com/guarox"
+        "https://github.com/vmgsystems"
       ]
     }
   ]

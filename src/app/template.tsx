@@ -23,7 +23,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         <div className="flex items-center justify-between w-full md:w-auto">
           <Link href="/" className="flex items-center gap-3 font-bold tracking-tighter text-xl shrink-0 group">
             <div className="relative w-8 h-8 rounded-md overflow-hidden border border-[#1a1a1a] group-hover:border-[#333] transition-colors">
-              <Image src="/vmg-logo-new.png" alt="VMG Systems Logo" fill className="object-cover" />
+              <Image src="/vmg-logo-new.png" alt="VMG Systems Logo" fill sizes="32px" className="object-cover" />
             </div>
             <div className="flex items-center gap-3">
               <div>VMG <span className="text-muted font-normal">Systems</span></div>
@@ -34,7 +34,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             </div>
           </Link>
           <div className="flex items-center gap-4 md:hidden text-muted">
-            <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2" aria-label="GitHub Profile"><Github size={14} /></a>
+            <a href="https://github.com/vmgsystems" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2" aria-label="GitHub Profile"><Github size={14} /></a>
             <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 -m-2" aria-label="LinkedIn Profile"><Linkedin size={14} /></a>
           </div>
         </div>
@@ -59,7 +59,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             );
           })}
           <div className="w-[1px] h-3 bg-[#1a1a1a] mx-2 hidden md:block" />
-          <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hidden md:block" aria-label="GitHub Profile"><Github size={14} /></a>
+          <a href="https://github.com/vmgsystems" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hidden md:block" aria-label="GitHub Profile"><Github size={14} /></a>
           <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors hidden md:block" aria-label="LinkedIn Profile"><Linkedin size={14} /></a>
         </div>
       </nav>
@@ -79,7 +79,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
       <footer className="p-8 flex flex-col items-center justify-center gap-4 text-xs text-muted uppercase tracking-widest border-t border-[#1a1a1a] mt-24">
         <div className="flex gap-6">
-          <a href="https://github.com/guarox" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><Github size={12} /> GitHub</a>
+          <a href="https://github.com/vmgsystems" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><Github size={12} /> GitHub</a>
           <a href="https://linkedin.com/in/gilpina" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center gap-2"><Linkedin size={12} /> LinkedIn</a>
         </div>
         <div>© 2026 VMG Systems</div>
