@@ -28,7 +28,7 @@ test.describe("VMG Systems Portfolio Audit", () => {
 
   test("Timeline has milestones", async ({ page }) => {
     await page.goto("/timeline");
-    await expect(page.locator("text=Automotive AI Platform Venture")).toBeVisible();
+    await expect(page.locator("text=Automotive Voice AI Platform (Genubi.ai)")).toBeVisible();
     await expect(page.locator("text=WO2017177203A1").first()).toBeVisible();
     await expect(page.locator("text=B.S. Electrical Engineering")).toBeVisible();
   });

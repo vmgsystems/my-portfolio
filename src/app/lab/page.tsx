@@ -18,15 +18,15 @@ import Link from "next/link";
 const experiments = [
   {
     title: "Alfred (Hermes) SRE Agent",
-    subtitle: "Talos K8s · Qdrant · Ollama · Gemini",
+    subtitle: "Talos K8s · Qdrant · Ollama · Gemini · MCP / A2A",
     icon: <BrainCircuit className="text-white" />,
-    description: "Autonomous SRE & incident-response agent running on Talos Kubernetes with a read-only root filesystem. Recalls runbooks and episodic memory via 768-dim local Ollama (nomic-embed-text) embeddings stored in Qdrant (2,148 vectors), executes deterministic remediation tools, and auto-archives verified resolutions.",
+    description: "Autonomous SRE & incident-response agent running on Talos Kubernetes with a read-only root filesystem. Orchestrates Hub-and-Spoke JSON-RPC 2.0 / MCP & A2A task envelopes with out-of-band Policy/Security Critic validation inside isolated agent-sandbox namespaces, recalling runbooks via 768-dim local Ollama (nomic-embed-text) embeddings in Qdrant (2,148 vectors).",
     tag: "AI / Autonomous SRE",
     telemetry: {
       uptime: "100%",
       vectors: "2,148 Pts",
       ragLatency: "41ms Avg",
-      evalScore: "92.04%"
+      evalScore: "95.4%"
     }
   },
   {
@@ -72,7 +72,7 @@ const experiments = [
     title: "VMG AI OS",
     subtitle: "Talos K8s · FluxCD · VMG Viento v0.3.0 · E2EE Vaultwarden",
     icon: <Server className="text-white" />,
-    description: "Sovereign private cloud runtime running declarative Talos Linux Kubernetes & Proxmox VE via FluxCD GitOps and SOPS/Age encryption. Governed pre-commit by VMG Viento v0.3.0 (16 static zero-trust invariants + SARIF 2.1.0), 3-way E2EE Vaultwarden secret sync (PBKDF2 600k + AES-256-CBC-HMAC + SHA-256 K8s parity), and weekly 14/14 DR restore drills.",
+    description: "Sovereign private cloud runtime running declarative Talos Linux Kubernetes & Proxmox VE via FluxCD GitOps and SOPS/Age encryption. Executes Hub-and-Spoke JSON-RPC 2.0 / MCP & A2A task envelopes with out-of-band Policy/Security Critic validation inside isolated agent-sandbox namespaces, governed by VMG Viento v0.3.0 (16 static zero-trust invariants + SARIF 2.1.0), 3-way E2EE Vaultwarden secret sync, and weekly 14/14 DR restore drills.",
     tag: "Sovereign Cloud",
     telemetry: {
       invariants: "16 Rules",
@@ -85,10 +85,10 @@ const experiments = [
     title: "Langfuse Observability",
     subtitle: "Langfuse v2 · Zero-Dep REST · Qdrant RAG · Nightly Evals",
     icon: <LineChart className="text-white" />,
-    description: "Full-fleet LLM observability pipeline ingesting traces, generations, token usage, and declarative frontier model costs across 6 microservices via a zero-dependency REST client. Paired with a nightly Kubernetes CronJob running golden SRE & Qdrant RAG benchmarks against accuracy baselines.",
+    description: "Full-fleet LLM observability pipeline ingesting traces, generations, token usage, and declarative frontier model costs across 6 microservices via a zero-dependency REST client. Paired with a nightly Kubernetes CronJob running golden SRE & Qdrant RAG benchmarks against 95%+ accuracy baselines.",
     tag: "Observability",
     telemetry: {
-      evalAccuracy: "92.04%",
+      evalAccuracy: "95.4%",
       traceLatency: "<12ms",
       apiUptime: "99.99%",
       servicesWired: "6 / 6 Live"

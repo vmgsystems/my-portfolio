@@ -92,11 +92,11 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-white/35 text-[10px] md:text-xs uppercase tracking-widest font-bold mb-8">
-              <span>ex-Fortune 100 Voice AI Division</span>
+              <span>McDonald&apos;s Global Tech Alum</span>
               <span className="hidden sm:block">·</span>
               <span>14,000+ Locations</span>
               <span className="hidden sm:block">·</span>
-              <span>Patent-Pending AOT</span>
+              <span>Patent WO2017177203A1</span>
             </div>
             <Link href="/consulting" className="w-fit flex items-center gap-2 bg-white text-black px-6 py-4 md:py-3 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/btn text-sm mb-4 md:mb-0">
               Explore the Architecture <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
@@ -174,17 +174,17 @@ export default function Home() {
                 Automotive Voice AI <ArrowUpRight size={16} className="text-white/50 group-hover:text-white transition-colors" />
               </h2>
               <div className="text-right">
-                  <div className="text-xs text-muted uppercase font-bold tracking-widest">Part Owner</div>
-                  <div className="text-xs text-white">V1 Delivered · 12-Mo SLA</div>
+                  <div className="text-xs text-muted uppercase font-bold tracking-widest">Principal Architect</div>
+                  <div className="text-xs text-white">V1 Delivered · 90-Day Build · 12-Mo Maintenance SLA</div>
               </div>
             </div>
             <div className="mt-8">
               <div className="border-t border-[#1a1a1a] pt-4 text-sm text-white/70 leading-relaxed font-medium">
-                V1 delivered &amp; shipped to production. Complete clean-slate rebuild of the flagship AI coaching platform for automotive dealerships — 165+ commits, 40+ automated CI/CD pipelines, and 5 core services running on GCP Cloud Run under 99.5% uptime SLA. Transitioned to Part Owner with a 12-month maintenance &amp; advisory agreement.
+                V1 delivered &amp; shipped to production in a 90-day clean-slate rebuild tracked end-to-end in Linear. Complete architecture of the flagship AI coaching platform for automotive dealerships — 165+ commits, 40+ automated CI/CD pipelines, and 5 core services running on GCP Cloud Run under a 99.5% uptime SLA, cutting API latency by 60% and reducing Day-1 cloud infrastructure spend by 40%.
               </div>
               <div className="mt-4 flex items-center gap-2 flex-wrap">
                 <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
-                <span className="text-[10px] uppercase tracking-widest font-bold text-white">V1 Delivered · Part Owner · 12-Mo Maintenance SLA</span>
+                <span className="text-[10px] uppercase tracking-widest font-bold text-white">Principal Architect · V1 Delivered · 90-Day Build · 12-Mo Maintenance SLA</span>
               </div>
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function Home() {
             </div>
             <h2 className="text-xl font-bold mb-2">Drive-Thru Voice AI</h2>
             <p className="text-muted text-sm leading-relaxed">
-              Core contributor to the Automated Order Taker (AOT), a flagship AI-powered drive-thru voice system, now patent-pending and deployed globally.
+              Core contributor to the Automated Order Taker (AOT), a flagship AI-powered drive-thru voice system, co-invented under Patent WO2017177203A1, piloted across Chicagoland, and architected for 14,000+ locations.
             </p>
           </div>
           <div className="flex gap-6 mt-6">
@@ -228,7 +228,7 @@ export default function Home() {
             <span>Infrastructure Stack</span>
           </div>
           <div className="flex flex-wrap gap-2">
-            {['GCP', 'AWS', 'Kubernetes', 'Terraform', 'Docker', 'Python', 'FastAPI', 'TypeScript', 'React Native', 'Next.js', 'pgvector', 'Qdrant', 'Redis', 'Langfuse', 'Tailscale', 'Gemini', 'Claude', 'n8n'].map((tech) => (
+            {['GCP', 'AWS', 'Vertex AI', 'Talos Linux K8s', 'FluxCD GitOps', 'Kyverno Zero-Trust', 'MCP / A2A Protocols', 'Kubernetes', 'Terraform', 'Docker', 'Python', 'FastAPI', 'TypeScript', 'React Native', 'Next.js', 'pgvector', 'Qdrant', 'Redis', 'Langfuse', 'Promptfoo', 'Linear', 'Tailscale', 'Gemini', 'Claude', 'n8n'].map((tech) => (
               <span key={tech} className="px-3 py-1 border border-[#1a1a1a] text-xs font-mono hover:border-[#333] transition-colors">
                 {tech}
               </span>
@@ -374,7 +374,7 @@ export default function Home() {
               >
                 Inquire About an Audit <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
               </Link>
-              <p className="text-white/30 text-xs uppercase tracking-widest">Limited availability · 1 engagement slot open Q3 2026</p>
+              <p className="text-white/30 text-xs uppercase tracking-widest">Limited availability · Now booking Q4 2026 / Q1 2027 engagements</p>
             </div>
           </div>
         </motion.div>

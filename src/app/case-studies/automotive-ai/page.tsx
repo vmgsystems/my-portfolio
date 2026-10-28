@@ -94,7 +94,7 @@ export default function AutomotiveAICaseStudy() {
             <h3 className="text-xl font-bold mb-6">Clean Slate Protocol</h3>
             <p className="text-white/70 text-sm leading-relaxed">
               Every service started from a codified spec. IaC before any feature code. A{" "}
-              <span className="text-white font-medium">Plan → Act → Validate</span> loop on every task. AI eval datasets built on day one so accuracy regressions surface before users do.
+              <span className="text-white font-medium">Plan → Act → Validate</span> loop on every task. AI eval datasets built on day one so accuracy regressions surface before users do. The engagement was executed end-to-end in 90 days from executive discovery and SOW to production launch, tracked sprint-by-sprint in Linear with automated Promptfoo &amp; Langfuse evaluation gates.
             </p>
             <div className="mt-6 pt-6 border-t border-[#1a1a1a]">
               <p className="text-white/70 text-sm leading-relaxed">
@@ -109,13 +109,18 @@ export default function AutomotiveAICaseStudy() {
           <p className="text-xs text-muted uppercase tracking-widest font-bold mb-8">What Shipped</p>
           <div className="flex gap-8 md:gap-16 mb-8 flex-wrap">
             <div>
-              <div className="text-4xl font-black tabular-nums">Sub-Sec</div>
-              <div className="text-xs text-muted uppercase tracking-widest mt-1">API Latency</div>
+              <div className="text-4xl font-black tabular-nums">-60%</div>
+              <div className="text-xs text-muted uppercase tracking-widest mt-1">API Latency (Sub-Second P95)</div>
             </div>
             <div className="w-[1px] bg-[#1a1a1a] hidden md:block" />
             <div>
-              <div className="text-4xl font-black tabular-nums">High</div>
-              <div className="text-xs text-muted uppercase tracking-widest mt-1">Availability (Day 1)</div>
+              <div className="text-4xl font-black tabular-nums">-40%</div>
+              <div className="text-xs text-muted uppercase tracking-widest mt-1">Day-1 Cloud Spend</div>
+            </div>
+            <div className="w-[1px] bg-[#1a1a1a] hidden md:block" />
+            <div>
+              <div className="text-4xl font-black tabular-nums">99.5%</div>
+              <div className="text-xs text-muted uppercase tracking-widest mt-1">Production Uptime SLA</div>
             </div>
             <div className="w-[1px] bg-[#1a1a1a] hidden md:block" />
             <div>

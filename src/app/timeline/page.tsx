@@ -18,63 +18,63 @@ import { useState } from "react";
 
 const milestones = [
   {
-    year: "2024-Present",
-    title: "Part Owner & V1 Lead Architect",
-    company: "Automotive AI Platform Venture",
+    year: "2025–2026",
+    title: "Principal AI & Cloud Architect (V1 Delivered · 12-Mo Maintenance SLA)",
+    company: "Automotive Voice AI Platform (Genubi.ai)",
     location: "Chicago, IL",
-    description: "Spearheaded and delivered the production-ready V1 rebuild of the flagship AI coaching, analysis, and evaluation platform for automotive dealerships. Engineered a 5-service monorepo leveraging React Native with native audio background persistence, async FastAPI backends, Next.js dashboards, and Gemini AI (165+ commits, 40+ automated CI/CD pipelines live on GCP Cloud Run under a 99.5% uptime SLA). Upon successful V1 delivery, transitioned from active lead software engineer to Part Owner operating under a 12-month maintenance & advisory agreement.",
+    description: "Spearheaded and delivered the 90-day clean-slate production rebuild of an enterprise AI coaching, audio ingestion, and evaluation platform for automotive dealerships. Engineered a 5-service monorepo leveraging React Native with native background audio persistence, async FastAPI backends, Next.js dashboards, and Vertex AI / Gemini (165+ commits, 40+ automated CI/CD pipelines live on GCP Cloud Run under a 99.5% uptime SLA, tracked end-to-end in Linear). Cut API latency by 60% and reduced Day-1 cloud infrastructure spend by 40%.",
     icon: <Layers className="text-white" />,
     current: true
   },
   {
-    year: "2022-Present",
+    year: "2022–Present",
     title: "Founder & Principal Architect",
-    company: "VMG Systems",
+    company: "VMG Systems (Clients: Genubi.ai, Spacebot.ai, 1871 Mentorship)",
     location: "Chicago, IL",
-    description: "Formulated and operate an elite technical consulting practice built around the 'Clean Slate' methodology: 100% Terraform-codified infrastructure, zero ClickOps, async Python services, and comprehensive observability. Built and dogfood a 10-service self-hosted AI operating system as an experimental proving ground for client builds. Advising multiple startups and growth-stage enterprises on migrating high-cost unmanaged SaaS stacks to modular, async, fully observable cloud-native platforms.",
+    description: "Lead an enterprise AI and cloud architecture practice built around the 'Clean Slate' methodology: 100% Terraform-codified infrastructure across GCP, AWS, and bare-metal Talos Linux Kubernetes, zero ClickOps, Hub-and-Spoke Model Context Protocol (MCP) & Agent-to-Agent (A2A) orchestration, and full Langfuse/Prometheus observability. Served as Startup Mentor & Technical Advisor at 1871 (2023–2025), advising growth-stage ventures on migrating unmanaged SaaS stacks to deterministic, zero-trust cloud-native platforms.",
     icon: <Briefcase className="text-white" />,
     current: true
   },
   {
-    year: "2018-2022",
-    title: "Enterprise IAM Solutions Architect",
-    company: "Leading Enterprise Identity Platforms (IAM)",
-    location: "Remote / Chicago, IL",
-    description: "Designed, federated, and audited high-scale secure authentication systems and user-identity lifecycles for fortune-level enterprises. Configured complex custom OAuth 2.0 / OIDC flows, SAML federation hubs, and fine-grained API authorization tokens. This deep security background is the foundation of the strict 'Security on Day 1' protocol built into every single VMG Systems engagement today.",
-    icon: <Briefcase className="text-white" />
-  },
-  {
-    year: "2018-2022",
-    title: "Core Technology Advisor",
-    company: "Fortune 100 Global QSR Brand",
+    year: "2018–2022",
+    title: "Core Solutions Architect & Technology Advisor",
+    company: "McDonald's Corporation (Global Technology — Fortune 100 Global QSR)",
     location: "Chicago, IL",
-    description: "Pioneered architectural contributions to the Automated Order Taker (AOT), a flagship AI-powered drive-thru voice recognition platform. Deployed across 14,000+ locations globally and patent-pending. Directed video ethnography research pipelines, edge-to-cloud analytics integrations, and optimized real-time speech processing topologies that improved automated order accuracy to 82%.",
+    description: "Led core architecture and the 10-store Chicagoland live pilot for the Automated Order Taker (AOT) drive-thru Voice AI platform, engineered to scale across 14,000+ restaurants and achieving 82%+ automated order accuracy before transitioning to Google Cloud. Architected zero-trust identity federation (OAuth 2.0 / OIDC / SAML), edge-to-cloud telemetry pipelines, and real-time speech processing topologies across global restaurant technology.",
     icon: <Terminal className="text-white" />
   },
   {
     year: "2017",
-    title: "Issued Patent: Voice Analysis & Action Systems",
+    title: "Co-Inventor, U.S. / WIPO Patent WO2017177203A1",
     company: "WIPO / USPTO (WO2017177203A1)",
     location: "Chicago, IL",
-    description: "Issued patent (WO2017177203A1: 'System and Method for Analyzing a Voice of a Subject and Generating Corrective Action'). Formulated proprietary acoustic frequency analysis algorithms and real-time audio processing topologies to trigger automated corrective workflows in mission-critical execution pipelines. Architectures derived from this IP power both enterprise drive-thru AI deployments and modern high-throughput voice platforms.",
+    description: "Co-invented Patent WO2017177203A1 ('Voice Recognized Real-Time Audio Decision and Corrective Action Systems and Methods'). Formulated acoustic frequency analysis algorithms, confidence-scoring gates, and real-time audio processing topologies to trigger automated corrective workflows in mission-critical enterprise voice pipelines.",
     icon: <Lightbulb className="text-white" />,
     link: "https://patents.google.com/patent/WO2017177203A1/en",
     linkText: "View Patent WO2017177203A1"
   },
   {
-    year: "2008-2018",
-    title: "Director of Technology",
-    company: "Specialized Research & Video Analytics Firm",
+    year: "2008–2018",
+    title: "Technology Director & Systems Engineering Lead",
+    company: "Halverson Group",
     location: "Chicago, IL · Singapore · Hong Kong",
-    description: "Directed full-scale technical design and operations for a specialized video analytics and ethnographic research firm servicing high-profile Fortune 500 accounts. Spearheaded video collection pipelines for a Global QSR Brand's Innovation Center Laboratory, supervising deployments across key markets in South-East Asia.",
+    description: "Directed global technology operations and systems engineering across North America, Europe, and Asia-Pacific (Oak Park, Singapore, Hong Kong) for a specialized retail behavioral analytics and video ethnography firm servicing Fortune 500 accounts including McDonald's Innovation Center Labs. Engineered multi-site video ingestion pipelines, VMware/SAN virtualization, and high-availability network infrastructure.",
+    icon: <Briefcase className="text-white" />
+  },
+  {
+    year: "2000–2004",
+    title: "Senior Network Engineer",
+    company: "United Parcel Service (UPS)",
+    location: "Chicago, IL",
+    description: "Engineered and maintained mission-critical Cisco routing/switching, LAN/WAN infrastructure, and high-availability warehouse telemetry networks supporting 24x7 logistics operations.",
     icon: <Briefcase className="text-white" />
   },
   {
     year: "Education",
-    title: "B.S. Electrical Engineering",
+    title: "B.S. Electrical Engineering (BSEE)",
     company: "University of Illinois at Chicago (UIC)",
     location: "Chicago, IL",
-    description: "Awarded First Place at the UIC Engineering EXPO for the design and firmware implementation of an innovative 'Wireless Price Tag Display' system.",
+    description: "Awarded 1st Place at the UIC Engineering EXPO for the hardware and embedded firmware design of an innovative Wireless Price Tag Display system.",
     icon: <GraduationCap className="text-white" />
   }
 ];

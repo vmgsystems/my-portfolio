@@ -23,7 +23,7 @@ const services = [
     description: "Your data is already valuable. I build the highly resilient pipelines, retrieval layers, and semantic storage engines that make it useful to Large Language Models in production.",
     details: [
       "Vector Database implementation (PostgreSQL/pgvector, Qdrant)",
-      "Structured output workflows via Gemini Pro, Claude 3.5, and OpenAI",
+      "Structured output & multi-agent workflows via Vertex AI (Gemini 2.5 / 3.x), Claude 4.x, OpenAI, and Hub-and-Spoke MCP / A2A protocols",
       "High-speed semantic caching (Redis) and embedding generation",
       "Automated prompt evaluation (Evals) and Golden Dataset benchmarking"
     ],
@@ -35,6 +35,7 @@ const services = [
     description: "I replace manual cloud configuration and fragile infrastructure with robust, Terraform-managed, reproducible deployments. GCP and AWS engineered to standard, with zero ClickOps allowed.",
     details: [
       "100% Terraform-codified GCP and AWS infrastructure",
+      "Immutable Talos Linux Kubernetes, FluxCD GitOps, SOPS/Age secret encryption, and Kyverno admission policy gatekeeping",
       "Secure zero-trust site-to-site networking via Tailscale",
       "VPC Service Controls and Workload Identity Federation",
       "Multi-environment deployment workflows (Dev/Staging/Prod)"
@@ -331,7 +332,7 @@ export default function Consulting() {
             <div className="flex flex-col justify-center items-start md:items-end md:text-right border-t md:border-t-0 md:border-l border-[#1a1a1a] pt-8 md:pt-0 md:pl-12">
               <h3 className="text-xl font-bold mb-2 text-white">Initiate Consultation</h3>
               <p className="text-muted text-xs mb-8 max-w-sm">
-                Diagnostic audits have limited availability. Secure your Q3 2026 onboarding slot.
+                Diagnostic audits have limited availability. Secure your Q4 2026 / Q1 2027 onboarding slot.
               </p>
               <Link href="/contact" className="w-fit flex items-center gap-2 bg-white text-black px-8 py-4 font-bold hover:bg-gray-200 transition-all duration-300 ease-out group/cta text-xs uppercase tracking-widest">
                 Get In Touch <Cloud size={14} className="group-hover/cta:translate-y-[-2px] transition-transform" />

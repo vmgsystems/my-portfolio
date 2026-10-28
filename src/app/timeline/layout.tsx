@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Track Record | VMG Systems | Enterprise Voice AI, Patent-Pending AOT",
-  description: "Engineering milestones: Enterprise Voice AI (14K+ locations), Voice AI Advisor, patent-pending automated speech recognition system.",
+  title: "Track Record | VMG Systems | Enterprise Voice AI, Co-Inventor Patent WO2017177203A1",
+  description: "Engineering milestones: Enterprise Voice AI (14K+ locations), Voice AI Advisor, Co-Inventor Patent WO2017177203A1 automated speech recognition system.",
   openGraph: {
-    title: "Track Record | VMG Systems | Enterprise Voice AI, Patent-Pending AOT",
-    description: "Engineering milestones: Enterprise Voice AI (14K+ locations), Voice AI Advisor, patent-pending automated speech recognition system.",
+    title: "Track Record | VMG Systems | Enterprise Voice AI, Co-Inventor Patent WO2017177203A1",
+    description: "Engineering milestones: Enterprise Voice AI (14K+ locations), Voice AI Advisor, Co-Inventor Patent WO2017177203A1 automated speech recognition system.",
     url: "https://www.vmg.systems/timeline",
     images: [
       {
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Track Record | VMG Systems | Enterprise Voice AI, Patent-Pending AOT",
-    description: "Engineering milestones: Enterprise Voice AI (14K+ locations), Voice AI Advisor, patent-pending automated speech recognition system.",
+    title: "Track Record | VMG Systems | Enterprise Voice AI, Co-Inventor Patent WO2017177203A1",
+    description: "Engineering milestones: Enterprise Voice AI (14K+ locations), Voice AI Advisor, Co-Inventor Patent WO2017177203A1 automated speech recognition system.",
     images: ["/timeline-bg.png"],
   },
 };
