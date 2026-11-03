@@ -45,9 +45,9 @@ const services = [
   {
     title: "Custom Platform & API Engineering",
     icon: <Cpu className="text-white" />,
-    description: "High-throughput asynchronous Python (FastAPI) backends and accessible Next.js dashboards / React Native frontends built around strict typed standards.",
+    description: "High-throughput asynchronous Python (FastAPI) and low-latency Rust (Tokio/Axum) backends paired with accessible Next.js dashboards and React Native frontends built around strict typed standards.",
     details: [
-      "Async FastAPI backends with Pydantic structured schemas",
+      "Async FastAPI & sub-millisecond Rust (Tokio/Axum) backends with strict typed schemas",
       "React Native mobile apps with native offline/background persistence",
       "High-performance Next.js admin & telemetry web dashboards",
       "Full end-to-end type safety across the entire engineering stack"

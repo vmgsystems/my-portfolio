@@ -1,11 +1,11 @@
 # Context: lab
 
 ## Overview
-Next.js App Router segment for `/lab` (`The Builder's Lab`) showcasing 6 live dogfooded production systems (`EA Agent System`, `PD3board Terminal`, `Rambler Smart Bridge`, `n8n Automation Layer`, `VMG AI OS`, and `Langfuse Observability`).
+Next.js App Router segment for `/lab` (`The Builder's Lab`) showcasing 7 live dogfooded production systems (`Pythia CLOB & HFT Engine`, `Alfred (Hermes) SRE Agent`, `PD3board Terminal`, `Rambler Smart Bridge`, `n8n Automation Layer`, `VMG AI OS`, and `Langfuse Observability`).
 
 ## Key Files & Modules
 - `layout.tsx`: Route segment layout for `src/app/lab` exporting segment-specific `Metadata` (OpenGraph, Twitter cards, canonical URL) and layout wrapper (`metadata`, `LabLayout`).
-- `page.tsx`: The Builder's Lab route (`/lab`) showcasing 6 live production systems (`EA Agent System`, `PD3board Terminal`, `Rambler Smart Bridge`, `n8n Automation Layer`, `VMG AI OS`, `Langfuse Observability`) with real-time telemetry indicators. Symbols: `Lab`, `experiments`, `container`, `item`.
+- `page.tsx`: The Builder's Lab route (`/lab`) showcasing 7 live production systems (`Pythia CLOB & HFT Engine`, `Alfred (Hermes) SRE Agent`, `PD3board Terminal`, `Rambler Smart Bridge`, `n8n Automation Layer`, `VMG AI OS`, `Langfuse Observability`) with real-time telemetry indicators. Symbols: `Lab`, `experiments`, `container`, `item`.
 
 ## Architectural Role & Dependencies
 - **Layer**: UI

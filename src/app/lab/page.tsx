@@ -17,10 +17,23 @@ import Link from "next/link";
 
 const experiments = [
   {
+    title: "Pythia CLOB & HFT Engine",
+    subtitle: "Rust (Tokio/Axum) · Python 3.11 · Polymarket CLOB · SQLite WAL",
+    icon: <Gauge className="text-white" />,
+    description: "Quantitative prediction market & Level-2 CLOB execution engine (v3.0.0) paired with a native #![forbid(unsafe_code)] Rust HFT reactor (pythia-rust). Executes 6 quantitative strategies (NegRisk combinatorial ARB, Logit Avellaneda-Stoikov MM_SPREAD, OFI, QUANT, MEAN_REV, AI-ALPHA) with L2-Ridge markout calibration, Quarter-Kelly (0.25x) risk gates, EIP-712 shadow signing, and a SHA-256 hash-chained SQLite WAL forensic ledger.",
+    tag: "Quant / Rust HFT",
+    telemetry: {
+      tickToTrade: "13.9us p50",
+      rustRss: "11.8 MiB",
+      strategies: "6 Active",
+      forensicWal: "SHA-256 OK"
+    }
+  },
+  {
     title: "Alfred (Hermes) SRE Agent",
-    subtitle: "Talos K8s · Qdrant · Ollama · Gemini · MCP / A2A",
+    subtitle: "Gemini 4 Argon + 3.8 Flash · Talos K8s · Qdrant · MCP / A2A",
     icon: <BrainCircuit className="text-white" />,
-    description: "Autonomous SRE & incident-response agent running on Talos Kubernetes with a read-only root filesystem. Orchestrates Hub-and-Spoke JSON-RPC 2.0 / MCP & A2A task envelopes with out-of-band Policy/Security Critic validation inside isolated agent-sandbox namespaces, recalling runbooks via 768-dim local Ollama (nomic-embed-text) embeddings in Qdrant (2,148 vectors).",
+    description: "Autonomous AIOps & incident-response agent (v1.2.0) running on Talos Kubernetes with a read-only root filesystem. Features a 3-Model Panel of Experts, Interactions API Long Decode (262K-1M context), Qdrant multi-collection RAG, and a closed-loop K8s Sentinel that autonomously remediates failed CronJobs and rebalances CPU-congested pods inside isolated agent-sandbox namespaces.",
     tag: "AI / Autonomous SRE",
     telemetry: {
       uptime: "100%",
@@ -31,14 +44,14 @@ const experiments = [
   },
   {
     title: "PD3board Terminal",
-    subtitle: "FastAPI · WebSockets · Canvas/WebGL · SSE",
+    subtitle: "FastAPI · WebSockets · TradingView v4 · 22 Mnemonics",
     icon: <Terminal className="text-white" />,
-    description: "High-throughput financial workstation and Bloomberg Terminal emulator. Features sub-50ms streaming ingestion pipelines, in-memory circular order book (L1/L2 reconstruction), F1-F12 keyboard command dispatch, and 60 FPS hardware-accelerated Canvas/WebGL tick charts in phosphor amber.",
+    description: "High-throughput financial workstation and Bloomberg Terminal emulator (v1.2.0). Features sub-50ms streaming ingestion across Equities, Crypto L2, FRED Treasury yield curves, and live Polymarket CLOB feeds, 22 function mnemonics (F1-F12 hotkeys), 60 FPS TradingView Lightweight Charts in phosphor amber, RFC 4180 CSV export, and Langfuse LLM trace inspection (LANG <GO>).",
     tag: "FinTech / Systems",
     telemetry: {
       feedLatency: "<50ms",
       renderRate: "60 FPS",
-      depth: "L1/L2 Book",
+      functions: "22 Active",
       uptime: "99.99%"
     }
   },
@@ -70,9 +83,9 @@ const experiments = [
   },
   {
     title: "VMG AI OS",
-    subtitle: "Talos K8s · FluxCD · VMG Viento v0.3.0 · E2EE Vaultwarden",
+    subtitle: "Talos K8s · FluxCD · VMG Viento v0.3.0 · NVMe SQLite WAL",
     icon: <Server className="text-white" />,
-    description: "Sovereign private cloud runtime running declarative Talos Linux Kubernetes & Proxmox VE via FluxCD GitOps and SOPS/Age encryption. Executes Hub-and-Spoke JSON-RPC 2.0 / MCP & A2A task envelopes with out-of-band Policy/Security Critic validation inside isolated agent-sandbox namespaces, governed by VMG Viento v0.3.0 (16 static zero-trust invariants + SARIF 2.1.0), 3-way E2EE Vaultwarden secret sync, and weekly 14/14 DR restore drills.",
+    description: "Sovereign private cloud runtime running declarative Talos Linux Kubernetes (v1.30.1) & Proxmox VE via FluxCD GitOps and SOPS/Age encryption. Governed by VMG Viento v0.3.0 (16 static zero-trust invariants + SARIF 2.1.0), cross-node podAffinity SQLite WAL backup co-location with in-loop PRAGMA integrity verification, autonomous BigQuery FinOps telemetry, 3-way E2EE Vaultwarden sync, and weekly 14/14 DR restore drills.",
     tag: "Sovereign Cloud",
     telemetry: {
       invariants: "16 Rules",
@@ -83,15 +96,15 @@ const experiments = [
   },
   {
     title: "Langfuse Observability",
-    subtitle: "Langfuse v2 · Zero-Dep REST · Qdrant RAG · Nightly Evals",
+    subtitle: "Langfuse v2.95 · Zero-Dep REST · 7 Workloads · Nightly Evals",
     icon: <LineChart className="text-white" />,
-    description: "Full-fleet LLM observability pipeline ingesting traces, generations, token usage, and declarative frontier model costs across 6 microservices via a zero-dependency REST client. Paired with a nightly Kubernetes CronJob running golden SRE & Qdrant RAG benchmarks against 95%+ accuracy baselines.",
+    description: "Full-fleet LLM observability pipeline ingesting real-time traces, generations, realized-PnL score feedback, and declarative frontier model costs (Gemini 4 Argon / 3.8 Flash / 2.5 Flash) across 7 production workloads (Hermes, Pythia, PD3board, OpenWebUI, Deal Sniper, FinOps Exporter, Recruiter Monitor). Paired with a nightly Kubernetes CronJob running golden SRE & Qdrant RAG benchmarks against 95%+ accuracy baselines.",
     tag: "Observability",
     telemetry: {
       evalAccuracy: "95.4%",
       traceLatency: "<12ms",
       apiUptime: "99.99%",
-      servicesWired: "6 / 6 Live"
+      servicesWired: "7 / 7 Live"
     }
   }
 ];
@@ -147,7 +160,9 @@ export default function Lab() {
             <motion.div 
               key={index}
               variants={item}
-              className="glass-card flex flex-col justify-between group overflow-hidden relative border border-[#1a1a1a] hover:bg-[#030303] transition-all p-8"
+              className={`glass-card flex flex-col justify-between group overflow-hidden relative border border-[#1a1a1a] hover:bg-[#030303] transition-all p-8 ${
+                experiments.length % 2 === 1 && index === 0 ? "md:col-span-2" : ""
+              }`}
             >
               <div className="relative z-10">
                 <div className="flex justify-between items-start mb-6">

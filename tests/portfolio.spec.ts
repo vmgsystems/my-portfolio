@@ -35,12 +35,14 @@ test.describe("VMG Systems Portfolio Audit", () => {
 
   test("The Lab page features telemetry monitors", async ({ page }) => {
     await page.goto("/lab");
-    await expect(page.locator("text=The Builder’s Lab")).toBeVisible();
-    await expect(page.locator("text=PD3board Terminal")).toBeVisible();
-    await expect(page.locator("text=Rambler Smart Bridge")).toBeVisible();
-    await expect(page.locator("text=VMG AI OS")).toBeVisible();
-    // 5 telemetry cards track Uptime metrics (EA Agent, PD3board, Rambler, n8n, Langfuse)
-    await expect(page.locator("text=Uptime")).toHaveCount(5);
+     await expect(page.locator("text=The Builder’s Lab")).toBeVisible();
+     await expect(page.locator("text=Pythia CLOB & HFT Engine")).toBeVisible();
+     await expect(page.locator("text=Alfred (Hermes) SRE Agent")).toBeVisible();
+     await expect(page.locator("text=PD3board Terminal")).toBeVisible();
+     await expect(page.locator("text=Rambler Smart Bridge")).toBeVisible();
+     await expect(page.locator("text=VMG AI OS")).toBeVisible();
+     // 5 telemetry cards track Uptime metrics (Alfred, PD3board, Rambler, n8n, Langfuse)
+     await expect(page.locator("text=Uptime")).toHaveCount(5);
   });
 
   test("Contact page highlights direct channels", async ({ page }) => {

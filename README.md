@@ -10,14 +10,15 @@ Production web platform and technical consulting portfolio for **Gilberto Pina**
 
 - `/` (`src/app/page.tsx`): 4-column interactive bento grid featuring the Hero manifesto ("Architecture of Momentum"), live `America/Chicago` clock and J/99 *Rambler* card, VMG Systems overview, Automotive Voice AI case study card, Global QSR Drive-Thru Voice AI metrics (`82%` accuracy across `14K+` locations), Infrastructure Stack tags, Core Consulting Capabilities, Clean Slate methodology explainer, and diagnostic CTAs.
 - `/consulting` (`src/app/consulting/page.tsx`): VMG Systems service pillars (`AI Integration & Data Pipelines`, `Cloud Infrastructure & Modernization`, `Custom Platform & API Engineering`), **The Clean Slate Protocol**, Technical Standards, and Flexible Engagement Tiers (`Fixed-Scope Audits`, `Custom Product Sprints`, `Fractional AI/Data Lead`).
-- `/timeline` (`src/app/timeline/page.tsx`): Chronological engineering track record covering the Automotive AI Platform Venture (Part Owner & V1 Lead Architect), VMG Systems (Founder & Principal Architect), Enterprise IAM Solutions Architecture, Fortune 100 Global QSR Voice AI Advisor, Issued Patent `WO2017177203A1`, Video Analytics leadership, and `B.S. Electrical Engineering` (UIC).
-- `/lab` (`src/app/lab/page.tsx`): **The Builder's Lab** showcasing 6 live dogfooded production systems with real-time telemetry indicators:
-  1. `EA Agent System` (Qdrant, Gemini, Claude CLI)
-  2. `PD3board Terminal` (FastAPI, WebSockets, 60 FPS Canvas/WebGL Bloomberg emulator)
-  3. `Rambler Smart Bridge` (10Hz NMEA 2000 CAN bus marine telemetry & NOAA HRRR routing)
-  4. `n8n Automation Layer` (GCP, Linear, Slack, Firestore workflows)
-  5. `VMG AI OS` (Sovereign cloud on Talos Linux Kubernetes, Proxmox VE, FluxCD GitOps, OPNsense, Tailscale)
-  6. `Langfuse Observability` (Gemini, FastAPI, pgvector LLM trace gateway)
+ - `/timeline` (`src/app/timeline/page.tsx`): Chronological engineering track record covering the Automotive Voice AI Platform (Principal AI & Cloud Architect — V1 Delivered · 12-Mo Maintenance SLA), VMG Systems (Founder & Principal Architect), Fortune 100 Global QSR Voice AI Architecture (McDonald's Corporation), Issued Patent `WO2017177203A1`, Global Technology Leadership (Halverson Group), Senior Network Engineering (UPS), and `B.S. Electrical Engineering` (UIC).
+ - `/lab` (`src/app/lab/page.tsx`): **The Builder's Lab** showcasing 7 live dogfooded production systems with real-time telemetry indicators:
+   1. `Pythia CLOB & HFT Engine` (`v3.0.0` — Rust Tokio/Axum `#![forbid(unsafe_code)]` HFT reactor, `13.9us` p50 tick-to-trade, 6 quantitative strategies, Quarter-Kelly risk gates, SHA-256 SQLite WAL forensic ledger)
+   2. `Alfred (Hermes) SRE Agent` (`v1.2.0` — Gemini 4 Argon + 3.8 Flash Hybrid, 3-Model Panel of Experts, Qdrant multi-collection RAG, closed-loop K8s Sentinel)
+   3. `PD3board Terminal` (`v1.2.0` — FastAPI, WebSockets, 60 FPS TradingView v4 charts, 22 Bloomberg mnemonics, Polymarket CLOB & FRED feeds)
+   4. `Rambler Smart Bridge` (10Hz NMEA 2000 CAN bus marine telemetry & NOAA HRRR 1km routing)
+   5. `n8n Automation Layer` (GCP, Linear, Slack, Firestore workflows)
+   6. `VMG AI OS` (Sovereign cloud on Talos Linux Kubernetes v1.30.1, Proxmox VE, FluxCD GitOps, VMG Viento v0.3.0, NVMe SQLite WAL)
+   7. `Langfuse Observability` (`v2.95.11` — Full-fleet LLM trace, cost, & realized-PnL evaluation gateway across 7 workloads)
 - `/contact` (`src/app/contact/page.tsx`): Direct, frictionless engagement channels (`Direct Email` at `mailto:hello@vmg.systems` and `LinkedIn Profile` at `https://linkedin.com/in/gilpina`) plus a 3-step architectural diagnostic roadmap.
 - `/case-studies/automotive-ai` (`src/app/case-studies/automotive-ai/page.tsx`): Deep-dive engineering case study detailing the clean-slate V1 rebuild of a flagship Automotive Voice AI coaching platform (5-service monorepo, 100% Terraform IaC, 60% API latency reduction, 40% cost reduction, 99.5% uptime SLA on GCP Cloud Run).
 

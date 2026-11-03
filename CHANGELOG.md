@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+ ### [0.1.8](https://github.com/vmgsystems/my-portfolio/compare/v0.1.7...HEAD) (2026-11-03)
+ 
+ 
+ ### Features
+ 
+ * integrate Pythia CLOB & HFT Engine (`v3.0.0`, native Rust `tokio`/`axum` HFT reactor at `13.9us` p50 tick-to-trade, 6 strategies, SHA-256 SQLite WAL ledger) into `/lab`
+ * upgrade Alfred (Hermes `v1.2.0`), PD3board (`v1.2.0`), VMG AI OS, and Langfuse (`v2.95.11`, 7 wired workloads) telemetry in `/lab`
+ * expand Infrastructure Stack and Consulting API capabilities with Rust (`Tokio / Axum`) and `SQLite WAL`
+ * synchronize `README.md` and `CONTEXT.md` documentation with Candidate SSOT and mirror repository to `git.home.gilbertopina.com`
+ 
 ### [0.1.7](https://github.com/guarox/my-portfolio/compare/v0.1.6...HEAD) (2026-10-28)
 
 
