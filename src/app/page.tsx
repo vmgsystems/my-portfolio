@@ -202,7 +202,7 @@ export default function Home() {
             </div>
             <h2 className="text-xl font-bold mb-2">Drive-Thru Voice AI</h2>
             <p className="text-muted text-sm leading-relaxed">
-              Core contributor to the Automated Order Taker (AOT), a flagship AI-powered drive-thru voice system, co-invented under Patent WO2017177203A1, piloted across Chicagoland, and architected for 14,000+ locations.
+              Drive-Thru Systems SME &amp; Co-Inventor (Patent WO2017177203A1) for the Automated Order Taker (AOT). Led the SPT ML vendor RFI (Omilia &amp; Apprente) and integrated a 3-node Intel NUC Kubernetes edge cluster (AWS orchestrated), custom Signal Essence DSP Audio Board, HME comm systems, and the NewPOS API across the 10-store Chicagoland pilot for 14,000+ locations.
             </p>
           </div>
           <div className="flex gap-6 mt-6">
