@@ -1,11 +1,11 @@
 # Context: timeline
 
 ## Overview
-Next.js App Router segment for `/timeline` displaying Gilberto Pina's chronological engineering track record, issued patent (`WO2017177203A1`), enterprise QSR Voice AI and IAM architecture leadership, and current venture roles.
+Next.js App Router segment for `/timeline` displaying Gilberto Pina's chronological engineering track record, issued patent (`WO2017177203A1`), enterprise QSR Drive-Thru Voice AI and edge Kubernetes architecture leadership, and current venture roles.
 
 ## Key Files & Modules
 - `layout.tsx`: Route segment layout for `src/app/timeline` exporting segment-specific `Metadata` (OpenGraph, Twitter cards, canonical URL) and layout wrapper (`metadata`, `TimelineLayout`).
-- `page.tsx`: Career timeline route (`/timeline`) rendering expandable chronological engineering milestones from UIC Electrical Engineering and Patent `WO2017177203A1` to Fortune 100 QSR Drive-Thru Voice AI, Enterprise IAM, VMG Systems, and Automotive AI Platform Venture. Symbols: `Timeline`, `milestones`, `container`, `item`.
+- `page.tsx`: Career timeline route (`/timeline`) rendering expandable chronological engineering milestones from UIC Electrical Engineering and Patent `WO2017177203A1` to Fortune 100 QSR Drive-Thru Voice AI (McDonald's Corporation), VMG Systems, and Automotive AI Platform Venture. Symbols: `Timeline`, `milestones`, `container`, `item`.
 
 ## Architectural Role & Dependencies
 - **Layer**: UI

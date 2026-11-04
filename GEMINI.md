@@ -115,7 +115,7 @@ const item = { hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1 } };
 - Senior Full-Stack Engineer + Solutions Architect & Founder at VMG Systems
 - AI/ML pipeline specialist (Gemini, Vertex AI, Google Cloud, Langfuse)
 - Issued Patent: WO2017177203A1 (*Voice Recognized Data Analysis and Corrective Action Systems*)
-- Background: McDonald's Global Technology (AI-Enhanced Drive-Thru initiative), Ping Identity, Okta, ForgeRock IAM
+- Background: McDonald's Global Technology (Drive-Thru Systems SME, SPT ML Vendor RFI for Omilia & Apprente, 3-node Intel NUC K8s edge inference orchestrated via AWS, Signal Essence custom DSP Audio Board, HME testing, NewPOS API integration)
 - Delivered V1 of Automotive AI Platform — AI coaching platform for automotive dealerships (165 commits, 40+ CI/CD workflows, production on Cloud Run). Now Part Owner under a 12-month maintenance & advisory agreement.
 - Races sailboats — active tactician and navigator on a J/99 named Rambler (USA 99)
 - Contact Emails: `gilberto.pina@vmg.systems` · `hello@vmg.systems` · `gilpina@gmail.com`

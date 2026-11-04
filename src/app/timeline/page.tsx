@@ -37,10 +37,10 @@ const milestones = [
   },
   {
     year: "2018–2022",
-    title: "Core Solutions Architect & Technology Advisor",
+    title: "Core Solutions Architect & Drive-Thru Systems SME",
     company: "McDonald's Corporation (Global Technology — Fortune 100 Global QSR)",
     location: "Chicago, IL",
-    description: "Led core architecture and the 10-store Chicagoland live pilot for the Automated Order Taker (AOT) drive-thru Voice AI platform, engineered to scale across 14,000+ restaurants and achieving 82%+ automated order accuracy before transitioning to Google Cloud. Architected zero-trust identity federation (OAuth 2.0 / OIDC / SAML), edge-to-cloud telemetry pipelines, and real-time speech processing topologies across global restaurant technology.",
+    description: "Served as Drive-Thru Systems SME on the Global Technology team, leading the Speech Processing Technology (SPT) ML vendor RFI (evaluating Omilia and Apprente) and engineering the physical-to-digital drive-thru integration across the 10-store Chicagoland live pilot (82%+ order accuracy, architected for 14,000+ locations) after McDonald's acquired Apprente. Co-engineered a custom DSP Audio Board with Signal Essence, collaborated with HME across all lane audio testing, and connected the in-restaurant edge compute stack—3 Intel NUCs running Kubernetes (K8s) orchestrated via AWS—directly into the NewPOS (NP6) API for real-time automated order injection.",
     icon: <Terminal className="text-white" />
   },
   {
@@ -48,7 +48,7 @@ const milestones = [
     title: "Co-Inventor, U.S. / WIPO Patent WO2017177203A1",
     company: "WIPO / USPTO (WO2017177203A1)",
     location: "Chicago, IL",
-    description: "Co-invented Patent WO2017177203A1 ('Voice Recognized Real-Time Audio Decision and Corrective Action Systems and Methods'). Formulated acoustic frequency analysis algorithms, confidence-scoring gates, and real-time audio processing topologies to trigger automated corrective workflows in mission-critical enterprise voice pipelines.",
+    description: "Co-invented Patent WO2017177203A1 ('Voice Recognized Real-Time Audio Decision and Corrective Action Systems and Methods') prior to the Apprente acquisition alongside co-engineer Booker as Hardware & Audio Systems Specialist. Engineered the custom acoustic signal capture, hardware interfacing, and real-time voice decisioning workflows that proved automated drive-thru order taking was viable.",
     icon: <Lightbulb className="text-white" />,
     link: "https://patents.google.com/patent/WO2017177203A1/en",
     linkText: "View Patent WO2017177203A1"
