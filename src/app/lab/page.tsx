@@ -20,7 +20,7 @@ const experiments = [
     title: "Pythia CLOB & HFT Engine",
     subtitle: "Rust (Tokio/Axum) · Python 3.11 · Polymarket CLOB · SQLite WAL",
     icon: <Gauge className="text-white" />,
-    description: "Quantitative prediction market & Level-2 CLOB execution engine (v3.0.0) paired with a native #![forbid(unsafe_code)] Rust HFT reactor (pythia-rust). Executes 6 quantitative strategies (NegRisk combinatorial ARB, Logit Avellaneda-Stoikov MM_SPREAD, OFI, QUANT, MEAN_REV, AI-ALPHA) with L2-Ridge markout calibration, Quarter-Kelly (0.25x) risk gates, EIP-712 shadow signing, and a SHA-256 hash-chained SQLite WAL forensic ledger.",
+    description: "Quantitative prediction market & Level-2 CLOB execution engine (v3.0.1) paired with a native #![forbid(unsafe_code)] Rust HFT reactor (pythia-rust). Executes 6 quantitative strategies (NegRisk combinatorial ARB, Logit Avellaneda-Stoikov MM_SPREAD, OFI, QUANT, MEAN_REV, AI-ALPHA) with L2-Ridge markout calibration, Quarter-Kelly (0.25x) risk gates, EIP-712 shadow signing, and a SHA-256 hash-chained SQLite WAL forensic ledger.",
     tag: "Quant / Rust HFT",
     telemetry: {
       tickToTrade: "13.9us p50",
@@ -83,9 +83,9 @@ const experiments = [
   },
   {
     title: "VMG AI OS",
-    subtitle: "Talos K8s · FluxCD · VMG Viento v0.3.0 · NVMe SQLite WAL",
+    subtitle: "Talos K8s · FluxCD · VMG Viento v0.4.0 · NVMe SQLite WAL",
     icon: <Server className="text-white" />,
-    description: "Sovereign private cloud runtime running declarative Talos Linux Kubernetes (v1.30.1) & Proxmox VE via FluxCD GitOps and SOPS/Age encryption. Governed by VMG Viento v0.3.0 (16 static zero-trust invariants + SARIF 2.1.0), cross-node podAffinity SQLite WAL backup co-location with in-loop PRAGMA integrity verification, autonomous BigQuery FinOps telemetry, 3-way E2EE Vaultwarden sync, and weekly 14/14 DR restore drills.",
+    description: "Sovereign private cloud runtime running declarative Talos Linux Kubernetes (v1.30.1) & Proxmox VE via FluxCD GitOps and SOPS/Age encryption. Governed by VMG Viento v0.4.0 (16 static zero-trust invariants + SARIF 2.1.0), cross-node podAffinity SQLite WAL backup co-location with in-loop PRAGMA integrity verification, autonomous BigQuery FinOps telemetry, 3-way E2EE Vaultwarden sync, and weekly 14/14 DR restore drills.",
     tag: "Sovereign Cloud",
     telemetry: {
       invariants: "16 Rules",
