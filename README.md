@@ -17,7 +17,7 @@ Production web platform and technical consulting portfolio for **Gilberto Pina**
    3. `PD3board Terminal` (`v1.2.0` — FastAPI, WebSockets, 60 FPS TradingView v4 charts, 22 Bloomberg mnemonics, Polymarket CLOB & FRED feeds)
    4. `Rambler Smart Bridge` (10Hz NMEA 2000 CAN bus marine telemetry & NOAA HRRR 1km routing)
    5. `n8n Automation Layer` (GCP, Linear, Slack, Firestore workflows)
-   6. `VMG AI OS` (Sovereign cloud on Talos Linux Kubernetes v1.30.1, Proxmox VE, FluxCD GitOps, VMG Viento v0.4.0, NVMe SQLite WAL)
+   6. `VMG AI OS` (Sovereign cloud on Talos Linux Kubernetes v1.30.1, Proxmox VE, FluxCD GitOps, VMG Viento v0.4.2, NVMe SQLite WAL)
    7. `Langfuse Observability` (`v2.95.11` — Full-fleet LLM trace, cost, & realized-PnL evaluation gateway across 7 workloads)
 - `/contact` (`src/app/contact/page.tsx`): Direct, frictionless engagement channels (`Direct Email` at `mailto:hello@vmg.systems` and `LinkedIn Profile` at `https://linkedin.com/in/gilpina`) plus a 3-step architectural diagnostic roadmap.
 - `/case-studies/automotive-ai` (`src/app/case-studies/automotive-ai/page.tsx`): Deep-dive engineering case study detailing the clean-slate V1 rebuild of a flagship Automotive Voice AI coaching platform (5-service monorepo, 100% Terraform IaC, 60% API latency reduction, 40% cost reduction, 99.5% uptime SLA on GCP Cloud Run).

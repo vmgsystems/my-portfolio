@@ -83,9 +83,9 @@ const experiments = [
   },
   {
     title: "VMG AI OS",
-    subtitle: "Talos K8s · FluxCD · VMG Viento v0.4.0 · NVMe SQLite WAL",
+    subtitle: "Talos K8s · FluxCD · VMG Viento v0.4.2 · NVMe SQLite WAL",
     icon: <Server className="text-white" />,
-    description: "Sovereign private cloud runtime running declarative Talos Linux Kubernetes (v1.30.1) & Proxmox VE via FluxCD GitOps and SOPS/Age encryption. Governed by VMG Viento v0.4.0 (16 static zero-trust invariants + SARIF 2.1.0), cross-node podAffinity SQLite WAL backup co-location with in-loop PRAGMA integrity verification, autonomous BigQuery FinOps telemetry, 3-way E2EE Vaultwarden sync, and weekly 14/14 DR restore drills.",
+    description: "Sovereign private cloud runtime running declarative Talos Linux Kubernetes (v1.30.1) & Proxmox VE via FluxCD GitOps and SOPS/Age encryption. Governed by VMG Viento v0.4.2 (16 static zero-trust invariants + SARIF 2.1.0), cross-node podAffinity SQLite WAL backup co-location with in-loop PRAGMA integrity verification, autonomous BigQuery FinOps telemetry, 3-way E2EE Vaultwarden sync, and weekly 14/14 DR restore drills.",
     tag: "Sovereign Cloud",
     telemetry: {
       invariants: "16 Rules",
