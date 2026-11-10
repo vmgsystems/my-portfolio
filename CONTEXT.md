@@ -4,7 +4,7 @@
 Root workspace directory for the VMG Systems portfolio and technical consulting platform (`vmg.systems` / `gilbertopina.com`). Coordinates Next.js 16 App Router configuration, TypeScript compilation, Tailwind CSS v4 PostCSS pipelines, and Playwright multi-viewport E2E verification.
 
 ## Key Files & Modules
-- `CHANGELOG.md`: Documentation module 'Changelog' covering [0.1.7](https://github.com/guarox/my-portfolio/compare/v0.1.6...HEAD) (2026-10-28), Features, Bug Fixes.
+- `CHANGELOG.md`: Documentation module 'Changelog' covering [0.1.8](https://github.com/vmgsystems/my-portfolio/compare/v0.1.7...HEAD) (2026-11-03), Features, [0.1.7](https://github.com/guarox/my-portfolio/compare/v0.1.6...HEAD) (2026-10-28).
 - `Dockerfile.test`: Containerized E2E test environment definition (`mcr.microsoft.com/playwright:v1.45.0-jammy`) that installs dependencies, builds the Next.js production app, and executes `npx playwright test`.
 - `GEMINI.md`: Documentation module 'GEMINI.md -- Web Designer Context for gilbertopina.com / VMG Systems Portfolio' covering Your Role, Project Structure, Tech Stack.
 - `README.md`: Documentation module 'VMG Systems Portfolio (vmg.systems / gilbertopina.com)' covering Overview, Architecture & Route Map, Tech Stack.

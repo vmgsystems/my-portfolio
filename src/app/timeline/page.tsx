@@ -8,7 +8,6 @@ import {
   GraduationCap,
   ArrowLeft,
   Calendar,
-  ShieldAlert,
   Terminal,
   Layers,
   ArrowUpRight
@@ -122,7 +121,7 @@ export default function Timeline() {
               <span className="text-white/60">Milestones.</span>
             </h1>
             <p className="text-white/70 text-lg leading-relaxed max-w-2xl">
-              From enterprise AI drive-thrus and security architectures to early-stage SaaS ventures. Fully codified from day one.
+              From enterprise AI drive-thrus and edge Kubernetes architectures to early-stage SaaS ventures. Fully codified from day one.
             </p>
           </div>
         </motion.div>
@@ -160,6 +159,8 @@ export default function Timeline() {
                       {milestone.description}
                     </p>
                     <button
+                      type="button"
+                      aria-expanded={!!expanded[index]}
                       onClick={() => setExpanded(prev => ({ ...prev, [index]: !prev[index] }))}
                       className="mt-2 text-xs font-bold uppercase tracking-widest text-white/40 hover:text-white transition-colors md:hidden"
                     >

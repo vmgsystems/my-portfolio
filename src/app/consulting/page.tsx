@@ -9,9 +9,7 @@ import {
   CheckCircle2,
   ArrowLeft,
   ArrowUpRight,
-  HelpCircle,
   Clock,
-  Layers,
   Sparkles
 } from "lucide-react";
 import Link from "next/link";
@@ -93,7 +91,7 @@ const engagementTiers = [
       "Prompt caching, evaluation datasets, and semantic caching optimization",
       "Continuous optimization of infrastructure costs and platform reliability"
     ],
-    cta: "Inquire About Fractional retainers",
+    cta: "Inquire About Fractional Retainers",
     tierType: "Advisory"
   }
 ];
@@ -258,7 +256,7 @@ export default function Consulting() {
             <div>
               <h4 className="text-xs font-bold uppercase tracking-widest text-white mb-1">Production Observability on Day 1</h4>
               <p className="text-muted text-xs leading-relaxed">
-                Langfuse telemetry is running before your first customer feature ships. Every LLM call, prompt completion, and database fetch is fully traced. When something fails or experiences high latency, you receive slack alerts detailing the exact root cause before users notice.
+                Langfuse telemetry is running before your first customer feature ships. Every LLM call, prompt completion, and database fetch is fully traced. When something fails or experiences high latency, you receive Slack alerts detailing the exact root cause before users notice.
               </p>
             </div>
           </div>

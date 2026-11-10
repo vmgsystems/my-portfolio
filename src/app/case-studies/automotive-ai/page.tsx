@@ -140,12 +140,12 @@ export default function AutomotiveAICaseStudy() {
             <p className="text-muted text-sm">Let&apos;s talk about what&apos;s broken.</p>
           </div>
           <div className="shrink-0 flex flex-col items-start md:items-end gap-2">
-            <a
+            <Link
               href="/contact"
               className="flex items-center gap-2 bg-white text-black px-8 py-4 font-bold hover:bg-gray-200 transition-all duration-300 ease-out text-sm whitespace-nowrap"
             >
               Inquire About an Audit <ArrowUpRight size={16} />
-            </a>
+            </Link>
             <p className="text-white/30 text-xs uppercase tracking-widest">Or email hello@vmg.systems</p>
           </div>
         </motion.div>

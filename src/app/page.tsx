@@ -10,7 +10,6 @@ import {
   Code2,
   Terminal,
   ChevronRight,
-  CheckCircle2,
   Layers,
   ShieldCheck,
   Server
@@ -38,7 +37,7 @@ export default function Home() {
   const [time, setTime] = useState("");
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    const updateClock = () => {
       setTime(new Date().toLocaleTimeString("en-US", {
         timeZone: "America/Chicago",
         hour: "2-digit",
@@ -46,8 +45,13 @@ export default function Home() {
         second: "2-digit",
         hour12: false
       }));
-    }, 1000);
-    return () => clearInterval(timer);
+    };
+    const initial = setTimeout(updateClock, 0);
+    const timer = setInterval(updateClock, 1000);
+    return () => {
+      clearTimeout(initial);
+      clearInterval(timer);
+    };
   }, []);
 
   return (

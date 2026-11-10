@@ -29,6 +29,7 @@ test.describe("VMG Systems Portfolio Audit", () => {
   test("Timeline has milestones", async ({ page }) => {
     await page.goto("/timeline");
     await expect(page.locator("text=Automotive Voice AI Platform (Genubi.ai)")).toBeVisible();
+    await expect(page.locator("text=Drive-Thru Systems SME")).toBeVisible();
     await expect(page.locator("text=WO2017177203A1").first()).toBeVisible();
     await expect(page.locator("text=B.S. Electrical Engineering")).toBeVisible();
   });
@@ -43,6 +44,13 @@ test.describe("VMG Systems Portfolio Audit", () => {
      await expect(page.locator("text=VMG AI OS")).toBeVisible();
      // 5 telemetry cards track Uptime metrics (Alfred, PD3board, Rambler, n8n, Langfuse)
      await expect(page.locator("text=Uptime")).toHaveCount(5);
+  });
+
+  test("Automotive AI Case Study page loads key metrics", async ({ page }) => {
+    await page.goto("/case-studies/automotive-ai");
+    await expect(page.locator("text=Voice AI: Rebuilt")).toBeVisible();
+    await expect(page.locator("text=5 services. Zero ClickOps.")).toBeVisible();
+    await expect(page.locator("text=-60%")).toBeVisible();
   });
 
   test("Contact page highlights direct channels", async ({ page }) => {

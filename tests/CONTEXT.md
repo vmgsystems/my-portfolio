@@ -4,7 +4,7 @@
 End-to-End (E2E) verification suite powered by Playwright (`@playwright/test`). Validates desktop and mobile rendering, navigation state, and content invariants across all core portfolio routes.
 
 ## Key Files & Modules
-- `portfolio.spec.ts`: Playwright E2E suite 'VMG Systems Portfolio Audit' with 5 verification specs. Specs: `test("Homepage loads and has active components")`, `test("Consulting page has pricing and methodology")`, `test("Timeline has milestones")`, `test("The Lab page features telemetry monitors")`, `test("Contact page highlights direct channels")`.
+- `portfolio.spec.ts`: Playwright E2E suite 'VMG Systems Portfolio Audit' with 6 verification specs. Specs: `test("Homepage loads and has active components")`, `test("Consulting page has pricing and methodology")`, `test("Timeline has milestones")`, `test("The Lab page features telemetry monitors")`, `test("Automotive AI Case Study page loads key metrics")`.
 
 ## Architectural Role & Dependencies
 - **Layer**: Utility

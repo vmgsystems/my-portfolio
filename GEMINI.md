@@ -125,7 +125,7 @@ const item = { hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1 } };
 1. **Automotive AI Platform** — Clean-slate rebuild: React Native + FastAPI + Gemini AI + Next.js dashboard. Live on Cloud Run, 99.5% uptime SLA. V1 delivered; currently in 12-month maintenance & equity phase.
 2. **VMG AI OS** — Air-gapped, sovereign private cloud runtime running declarative Talos Linux Kubernetes & Proxmox VE via automated FluxCD GitOps with zero manual drift. Features OPNsense VLAN micro-segmentation, Tailscale zero-trust overlay mesh, and Vaultwarden secret governance.
 3. **PD3board Terminal** — Open-source real-time financial workstation and Bloomberg Terminal emulator (FastAPI, WebSockets/SSE streaming, 60 FPS HTML5 Canvas). Public on GitHub: `guarox/PD3board`.
-4. **McDonald's AI Drive-Thru** — Pioneered video ethnography + AI order architecture for the Global Technology Division. Scaled globally across 14,000+ stores (WO2017177203A1).
+4. **McDonald's AI Drive-Thru** — Drive-Thru Systems SME & Co-Inventor of Patent WO2017177203A1. Led the SPT ML vendor RFI (Omilia & Apprente), co-engineered the Signal Essence DSP Audio Board, and integrated a 3-node Intel NUC Kubernetes edge cluster (AWS orchestrated) with HME and NewPOS across the 10-store Chicagoland pilot for 14,000+ locations.
 5. **Rambler Smart Bridge** — High-frequency NMEA 2000 CAN bus marine telemetry, NOAA HRRR 1km weather modeling, and live polar target velocity calculations.
 6. **VMG Systems** — Technical consulting: "Clean Slate" architecture methodology. Specializes in greenfield rebuilds, AI pipeline integration, cloud infrastructure.
 
