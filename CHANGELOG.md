@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file. See [standa
  ### Features
  
  * integrate Pythia CLOB & HFT Engine (`v3.0.0`, native Rust `tokio`/`axum` HFT reactor at `13.9us` p50 tick-to-trade, 6 strategies, SHA-256 SQLite WAL ledger) into `/lab`
- * upgrade Alfred (Hermes `v1.2.0`), PD3board (`v1.2.0`), VMG AI OS, and Langfuse (`v2.95.11`, 7 wired workloads) telemetry in `/lab`
+ * upgrade Alfred (Hermes `v1.2.0`), PD3board (`v1.2.1`), VMG AI OS, and Langfuse (`v2.95.11`, 7 wired workloads) telemetry in `/lab`
  * expand Infrastructure Stack and Consulting API capabilities with Rust (`Tokio / Axum`) and `SQLite WAL`
  * synchronize `README.md` and `CONTEXT.md` documentation with Candidate SSOT and mirror repository to `git.home.gilbertopina.com`
  

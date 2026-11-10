@@ -20,7 +20,7 @@ const experiments = [
     title: "Pythia CLOB & HFT Engine",
     subtitle: "Rust (Tokio/Axum) · Python 3.11 · Polymarket CLOB · SQLite WAL",
     icon: <Gauge className="text-white" />,
-    description: "Quantitative prediction market & Level-2 CLOB execution engine (v3.0.1) paired with a native #![forbid(unsafe_code)] Rust HFT reactor (pythia-rust). Executes 6 quantitative strategies (NegRisk combinatorial ARB, Logit Avellaneda-Stoikov MM_SPREAD, OFI, QUANT, MEAN_REV, AI-ALPHA) with L2-Ridge markout calibration, Quarter-Kelly (0.25x) risk gates, EIP-712 shadow signing, and a SHA-256 hash-chained SQLite WAL forensic ledger.",
+    description: "Quantitative prediction market & Level-2 CLOB execution engine (v3.0.3) paired with a native #![forbid(unsafe_code)] Rust HFT reactor (pythia-rust). Executes 6 quantitative strategies (NegRisk combinatorial ARB, Logit Avellaneda-Stoikov MM_SPREAD, OFI, QUANT, MEAN_REV, AI-ALPHA) with L2-Ridge markout calibration, Quarter-Kelly (0.25x) risk gates, EIP-712 shadow signing, and a SHA-256 hash-chained SQLite WAL forensic ledger.",
     tag: "Quant / Rust HFT",
     telemetry: {
       tickToTrade: "13.9us p50",
@@ -46,7 +46,7 @@ const experiments = [
     title: "PD3board Terminal",
     subtitle: "FastAPI · WebSockets · TradingView v4 · 22 Mnemonics",
     icon: <Terminal className="text-white" />,
-    description: "High-throughput financial workstation and Bloomberg Terminal emulator (v1.2.0). Features sub-50ms streaming ingestion across Equities, Crypto L2, FRED Treasury yield curves, and live Polymarket CLOB feeds, 22 function mnemonics (F1-F12 hotkeys), 60 FPS TradingView Lightweight Charts in phosphor amber, RFC 4180 CSV export, and Langfuse LLM trace inspection (LANG <GO>).",
+    description: "High-throughput financial workstation and Bloomberg Terminal emulator (v1.2.1). Features sub-50ms streaming ingestion across Equities, Crypto L2, FRED Treasury yield curves, and live Polymarket CLOB feeds, 22 function mnemonics (F1-F12 hotkeys), 60 FPS TradingView Lightweight Charts in phosphor amber, RFC 4180 CSV export, and Langfuse LLM trace inspection (LANG <GO>).",
     tag: "FinTech / Systems",
     telemetry: {
       feedLatency: "<50ms",
