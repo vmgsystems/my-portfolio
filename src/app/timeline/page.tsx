@@ -28,7 +28,7 @@ const milestones = [
   {
     year: "2022–Present",
     title: "Founder & Principal Architect",
-    company: "VMG Systems (Clients: Genubi.ai, Spacebot.ai, 1871 Mentorship)",
+    company: "VMG Systems (Clients: Genubi.ai, Spacebot.ai, 1871 Tech Advisory)",
     location: "Chicago, IL",
     description: "Lead an enterprise AI and cloud architecture practice built around the 'Clean Slate' methodology: 100% Terraform-codified infrastructure across GCP, AWS, and bare-metal Talos Linux Kubernetes, zero ClickOps, Hub-and-Spoke Model Context Protocol (MCP) & Agent-to-Agent (A2A) orchestration, and full Langfuse/Prometheus observability. Served as Startup Mentor & Technical Advisor at 1871 (2023–2025), advising growth-stage ventures on migrating unmanaged SaaS stacks to deterministic, zero-trust cloud-native platforms.",
     icon: <Briefcase className="text-white" />,
