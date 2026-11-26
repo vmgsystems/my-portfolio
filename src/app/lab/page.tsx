@@ -8,7 +8,6 @@ import {
   Server,
   LineChart,
   ArrowLeft,
-  Gauge,
   Activity,
   Terminal,
   Radio
@@ -16,19 +15,6 @@ import {
 import Link from "next/link";
 
 const experiments = [
-  {
-    title: "Pythia CLOB & HFT Engine",
-    subtitle: "Rust (Tokio/Axum) · Python 3.11 · Polymarket CLOB · SQLite WAL",
-    icon: <Gauge className="text-white" />,
-    description: "Quantitative prediction market & Level-2 CLOB execution engine (v3.0.3) paired with a native #![forbid(unsafe_code)] Rust HFT reactor (pythia-rust). Executes 6 quantitative strategies (NegRisk combinatorial ARB, Logit Avellaneda-Stoikov MM_SPREAD, OFI, QUANT, MEAN_REV, AI-ALPHA) with L2-Ridge markout calibration, Quarter-Kelly (0.25x) risk gates, EIP-712 shadow signing, and a SHA-256 hash-chained SQLite WAL forensic ledger.",
-    tag: "Quant / Rust HFT",
-    telemetry: {
-      tickToTrade: "13.9us p50",
-      rustRss: "11.8 MiB",
-      strategies: "6 Active",
-      forensicWal: "SHA-256 OK"
-    }
-  },
   {
     title: "Alfred (Hermes) SRE Agent",
     subtitle: "Gemini 4 Argon + 3.8 Flash · Talos K8s · Qdrant · MCP / A2A",
@@ -96,15 +82,15 @@ const experiments = [
   },
   {
     title: "Langfuse Observability",
-    subtitle: "Langfuse v2.95 · Zero-Dep REST · 7 Workloads · Nightly Evals",
+    subtitle: "Langfuse v2.95 · Zero-Dep REST · 6 Workloads · Nightly Evals",
     icon: <LineChart className="text-white" />,
-    description: "Full-fleet LLM observability pipeline ingesting real-time traces, generations, realized-PnL score feedback, and declarative frontier model costs (Gemini 4 Argon / 3.8 Flash / 2.5 Flash) across 7 production workloads (Hermes, Pythia, PD3board, OpenWebUI, Deal Sniper, FinOps Exporter, Recruiter Monitor). Paired with a nightly Kubernetes CronJob running golden SRE & Qdrant RAG benchmarks against 95%+ accuracy baselines.",
+    description: "Full-fleet LLM observability pipeline ingesting real-time traces, generations, and declarative frontier model costs (Gemini 4 Argon / 3.8 Flash / 2.5 Flash) across 6 production workloads (Hermes, PD3board, OpenWebUI, Deal Sniper, FinOps Exporter, Recruiter Monitor). Paired with a nightly Kubernetes CronJob running golden SRE & Qdrant RAG benchmarks against 95%+ accuracy baselines.",
     tag: "Observability",
     telemetry: {
       evalAccuracy: "95.4%",
       traceLatency: "<12ms",
       apiUptime: "99.99%",
-      servicesWired: "7 / 7 Live"
+      servicesWired: "6 / 6 Live"
     }
   }
 ];

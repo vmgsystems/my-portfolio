@@ -37,7 +37,7 @@ test.describe("VMG Systems Portfolio Audit", () => {
   test("The Lab page features telemetry monitors", async ({ page }) => {
     await page.goto("/lab");
      await expect(page.locator("text=The Builder’s Lab")).toBeVisible();
-     await expect(page.locator("text=Pythia CLOB & HFT Engine")).toBeVisible();
+     await expect(page.locator("text=Pythia CLOB & HFT Engine")).toHaveCount(0);
      await expect(page.locator("text=Alfred (Hermes) SRE Agent")).toBeVisible();
      await expect(page.locator("text=PD3board Terminal")).toBeVisible();
      await expect(page.locator("text=Rambler Smart Bridge")).toBeVisible();
